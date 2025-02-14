@@ -7,15 +7,7 @@ import Footer from ".././Component/Footer";
 
 const Workshops = () => {
   const workshopData = [
-    {
-      title: "Interview Boot Camp for Three Days",
-      date: "Date : 14th-Feb-2022",
-      time: "Time : 02:00 p.m. - 5:15 p.m.",
-      venue: "Venue : Auditorium",
-      description: "Access India",
-      registrationLink:
-        "https://docs.google.com/forms/d/1ot95aeKCJxycCAaxcvkUc7ymU4XHtIXGVFpblNlVDMM/edit?chromeless=1",
-    },
+  
     {
       title: "AI-Powered Tech Development",
       date: "Date : 22nd-Feb-2022",
@@ -24,27 +16,129 @@ const Workshops = () => {
       description: "Informatica",
       registrationLink: "https://forms.gle/d3eLwrQAurhRhYJz9 ",
     },
-   /* {
-      title: "Comming soon",
-      time: "",
-      venue: "",
-      description: "Celebrating Soon",
+    {
+      title: "WonderlaW: Explore the Wonder",
+      date: "Date : 24th-Feb-2025",
+      time: "Time : 09:00 a.m. - 04:15 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Optica",
       registrationLink: "",
     },
     {
-      title: "Comming soon",
-      time: "",
-      venue: "",
-      description: "Celebrating Soon",
-      registrationLink: "https://forms.gle/data_science",
+      title: "Cutting edge techniques in molecular biology",
+      date: "Date : 25th-Feb-2025",
+      time: "Time : 09:00 a.m. - 04:30 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Biogenesis",
+      registrationLink: "",
     },
     {
-      title: "Comming soon",
-      time: "",
-      venue: "",
-      description: "Celebrating Soon",
-      registrationLink: "https://forms.gle/data_science",
-    },*/
+      title: "Word and Excel",
+      date: "Date : 26th-Feb-2025",
+      time: "Time : 09:00 a.m. - 01:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Strategia",
+      registrationLink: "",
+    },
+   
+    {
+      title: "Graphics and Multimedia",
+      date: "Date : 28th-Feb-2025",
+      time: "Time : Updating Soon",
+      venue: "Venue : Computer Lab",
+      description: "Mathematica",
+      registrationLink: "",
+    },
+    
+    {
+      title: "GST-Basics",
+      date: "Date : 05th-Mar-2025",
+      time: "Time : 09:00 a.m. - 01:00 p.m.",
+      venue: "Venue : 201",
+      description: "Strategia",
+      registrationLink: "",
+    },
+   
+    {
+      title: "From Basic to Pro: Hands-on Networking with Cisco",
+      date: "Date : 07th-Mar-2025",
+      time: "Time : 09:00 a.m. - 05:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Informatica",
+      registrationLink: "",
+    },
+    {
+      title: "AI and Deep Learning",
+      date: "Date : 10th-Mar-2025",
+      time: "Time : Updating Soon",
+      venue: "Venue : Computer Lab",
+      description: "Mathematica",
+      registrationLink: "",
+    },
+   
+    {
+      title: "Industrial IoT with Robotics Applications",
+      date: "Date : 12th-Mar-2025",
+      time: "Time : 09:00 a.m. - 05:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Robotics",
+      registrationLink: "",
+    },
+    {
+      title: "Archery: Sharpen Your Focus, Hit Your Precision Goals!",
+      date: "Date : 13th-Mar-2025",
+      time: "Time : 10:00 a.m. - 01:00 p.m.",
+      venue: "Venue : Basketball Court",
+      description: "Sportiva",
+      registrationLink: "",
+    },
+    {
+      title: " A Hands-on Ethical Hacking Workshop",
+      date: "Date : 18th-Mar-2025",
+      time: "Time : 09:00 a.m. - 05:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Informatica",
+      registrationLink: "",
+    },
+   
+   
+    
+   
+    {
+      title: "Voice of Doctor",
+      date: "Date : 27th-Mar-2025",
+      time: "Time : 11:00 a.m. - 01:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Equilibria",
+      registrationLink: "",
+    },
+    {
+      title: "Rangasthalam",
+      date: "Date : 01st-Apr-2025",
+      time: "Time : 09:00 a.m. - 05:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Vinodha Vaahini",
+      registrationLink: "",
+    },
+    {
+      title: "Yoga: Sharpen Your Mental Focus, Transform Your Life!",
+      date: "Date : 02nd-Apr-2025",
+      time: "Time : 10:00 a.m. - 01:00 p.m.",
+      venue: "Venue : Drawing Hall",
+      description: "Sportiva",
+      registrationLink: "",
+    },
+   
+  
+    {
+      title: "Application Containerization Using Docker",
+      date: "Date : 04th-Apr-2025",
+      time: "Time : 09:00 a.m. - 05:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Informatica",
+      registrationLink: "",
+    },
+    
   ];
 
   return (
@@ -195,25 +289,31 @@ const Workshops = () => {
               </Typography>
               <Button
                 variant="contained"
-                href={workshop.registrationLink}
-                sx={{
-                  background: `linear-gradient(91.83deg, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%)`,
-                  width: "80%",
-                  textTransform: "none",
-                  borderRadius: "50px",
-                  fontSize: "1rem",
-                  px: [4],
-                  color: "#fff",
-                  border: "2px solid transparent",
-                  "&:hover": {
-                    background: "transparent",
-                    border: "2px solid #EF3D4E",
-                    color: "#EF3D4E",
-                  },
-                }}
-              >
-                Register Now
-              </Button>
+                 href={workshop.registrationLink || "#"}
+                 disabled={!workshop.registrationLink} // Disable only if no link
+                   sx={{
+                    background: `linear-gradient(91.83deg, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%)`,
+                    width: "80%",
+                    textTransform: "none",
+                    borderRadius: "50px",
+                    fontSize: "1rem",
+                    px: [4],
+                    color: "#fff",
+                    border: "2px solid transparent",
+                    cursor: workshop.registrationLink ? "pointer" : "not-allowed", // Disable click
+                    "&:hover": workshop.registrationLink
+                       ? {
+                        background: "transparent",
+                        border: "2px solid #EF3D4E",
+                        color: "#EF3D4E",
+                          }
+                     : {}, // No hover effect when disabled
+                    }}
+>
+  Register Now
+</Button>
+
+
             </Box>
           ))}
         </Box>

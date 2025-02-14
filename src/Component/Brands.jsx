@@ -52,7 +52,7 @@ const Brands = () => {
       }}
     >
       <Box sx={{ textAlign: "center", py: 5 }}>
-        <TitleWithDescription title="Our Past Sponsors" />
+        <TitleWithDescription title="Our Reputed Sponsors" />
       </Box>
 
       <Box

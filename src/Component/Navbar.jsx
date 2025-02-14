@@ -38,7 +38,7 @@ function HideOnScroll(props) {
 }
 
 const ScrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo(0, 0);
 };
 
 export default function Navbar(props) {
@@ -139,7 +139,7 @@ export default function Navbar(props) {
                   key={index}
                   href={item.link}
                   sx={{ fontSize: [17], fontWeight: "600", color: isDown ? "#000" : color }}
-                  onClick={handleNavClick}
+                  onClick={ScrollToTop}
                 >
                   {item.name}
                 </Button>

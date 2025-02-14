@@ -4,7 +4,7 @@ import { keyframes } from "@emotion/react";
 import { slides } from "../utility/data";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 
-const AUTO_PLAY_INTERVAL = 7000;
+const AUTO_PLAY_INTERVAL = 3500;
 const TRANSITION_DURATION = 3000;
 
 const progressAnimation = keyframes`
