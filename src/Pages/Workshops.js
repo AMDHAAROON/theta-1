@@ -85,6 +85,14 @@ const Workshops = () => {
       registrationLink: "",
     },
     {
+      title: "Archery: Sharpen Your Focus, Hit Your Precision Goals!",
+      date: "Date : 13th-Mar-2025",
+      time: "Time : 10:00 a.m. - 01:00 p.m.",
+      venue: "Venue : Basketball Court",
+      description: "Sportiva",
+      registrationLink: "",
+    },
+    {
       title: " A Hands-on Ethical Hacking Workshop",
       date: "Date : 18th-Mar-2025",
       time: "Time : 09:00 a.m. - 05:00 p.m.",
@@ -95,14 +103,7 @@ const Workshops = () => {
    
    
     
-    {
-      title: "Archery: Sharpen Your Focus, Hit Your Precision Goals!",
-      date: "Date : 13th-Mar-2025",
-      time: "Time : 10:00 a.m. - 01:00 p.m.",
-      venue: "Venue : Basketball Court",
-      description: "Sportiva",
-      registrationLink: "",
-    },
+   
     {
       title: "Voice of Doctor",
       date: "Date : 27th-Mar-2025",
