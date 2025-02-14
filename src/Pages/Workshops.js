@@ -67,6 +67,14 @@ const Workshops = () => {
       description: "Informatica",
       registrationLink: "",
     },
+    {
+      title: "AI and Deep Learning",
+      date: "Date : 10th-Mar-2025",
+      time: "Time : Updating Soon",
+      venue: "Venue : Computer Lab",
+      description: "Mathematica",
+      registrationLink: "",
+    },
    
     {
       title: "Industrial IoT with Robotics Applications",
@@ -86,14 +94,7 @@ const Workshops = () => {
     },
    
    
-    {
-      title: "AI and Deep Learning",
-      date: "Date : 10th-Mar-2025",
-      time: "Time : Updating Soon",
-      venue: "Venue : Computer Lab",
-      description: "Mathematica",
-      registrationLink: "",
-    },
+    
     {
       title: "Archery: Sharpen Your Focus, Hit Your Precision Goals!",
       date: "Date : 13th-Mar-2025",
