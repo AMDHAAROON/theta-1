@@ -1,9 +1,6 @@
 <h1 align="center">Welcome to theta 👋</h1>
 
-![React](https://img.shields.io/badge/React-18.3.1-blue.svg)  
-![Material-UI](https://img.shields.io/badge/Material--UI-6.1.4-blue.svg)  
-![License](https://img.shields.io/badge/License-MIT-green.svg)  
-![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
+![React](https://img.shields.io/badge/React-18.3.1-blue.svg)  ![Material-UI](https://img.shields.io/badge/Material--UI-6.1.4-blue.svg)  ![License](https://img.shields.io/badge/License-MIT-green.svg)  ![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
 
 ## 🎭 College Cultural Program Website
 
