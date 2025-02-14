@@ -7,15 +7,7 @@ import Footer from ".././Component/Footer";
 
 const Workshops = () => {
   const workshopData = [
-    {
-      title: "Interview Boot Camp for Three Days",
-      date: "Date : 14th-Feb-2022",
-      time: "Time : 02:00 p.m. - 5:15 p.m.",
-      venue: "Venue : Auditorium",
-      description: "Access India",
-      registrationLink:
-        "https://docs.google.com/forms/d/1ot95aeKCJxycCAaxcvkUc7ymU4XHtIXGVFpblNlVDMM/edit?chromeless=1",
-    },
+  
     {
       title: "AI-Powered Tech Development",
       date: "Date : 22nd-Feb-2022",
@@ -36,14 +28,14 @@ const Workshops = () => {
       time: "",
       venue: "",
       description: "Celebrating Soon",
-      registrationLink: "https://forms.gle/data_science",
+      registrationLink: "",
     },
     {
       title: "Comming soon",
       time: "",
       venue: "",
       description: "Celebrating Soon",
-      registrationLink: "https://forms.gle/data_science",
+      registrationLink: "",
     },*/
   ];
 
@@ -195,25 +187,31 @@ const Workshops = () => {
               </Typography>
               <Button
                 variant="contained"
-                href={workshop.registrationLink}
-                sx={{
-                  background: `linear-gradient(91.83deg, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%)`,
-                  width: "80%",
-                  textTransform: "none",
-                  borderRadius: "50px",
-                  fontSize: "1rem",
-                  px: [4],
-                  color: "#fff",
-                  border: "2px solid transparent",
-                  "&:hover": {
-                    background: "transparent",
-                    border: "2px solid #EF3D4E",
-                    color: "#EF3D4E",
-                  },
-                }}
-              >
-                Register Now
-              </Button>
+                 href={workshop.registrationLink || "#"}
+                 disabled={!workshop.registrationLink} // Disable only if no link
+                   sx={{
+                    background: `linear-gradient(91.83deg, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%)`,
+                    width: "80%",
+                    textTransform: "none",
+                    borderRadius: "50px",
+                    fontSize: "1rem",
+                    px: [4],
+                    color: "#fff",
+                    border: "2px solid transparent",
+                    cursor: workshop.registrationLink ? "pointer" : "not-allowed", // Disable click
+                    "&:hover": workshop.registrationLink
+                       ? {
+                        background: "transparent",
+                        border: "2px solid #EF3D4E",
+                        color: "#EF3D4E",
+                          }
+                     : {}, // No hover effect when disabled
+                    }}
+>
+  Register Now
+</Button>
+
+
             </Box>
           ))}
         </Box>
