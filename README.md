@@ -1,29 +1,38 @@
 <h1 align="center">Welcome to theta 👋</h1>
-<p>
-  <a href="https://www.npmjs.com/package/theta" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/theta.svg">
-  </a>
-</p>
 
-## Install
+![React](https://img.shields.io/badge/React-18.3.1-blue.svg)  
+![Material-UI](https://img.shields.io/badge/Material--UI-6.1.4-blue.svg)  
+![License](https://img.shields.io/badge/License-MIT-green.svg)  
+![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
 
-```sh
-npm install
-```
+## 🎭 College Cultural Program Website
 
-## Usage
+A dynamic website showcasing workshops and events organized by our college's cultural committee. The platform provides users with easy access to information about upcoming events, workshops, and various cultural activities.
 
-```sh
-npm run start
-```
+## Features
 
-## Run tests
+- **Event Listings**: Browse through upcoming events and workshops.
+- **Responsive Design**: Mobile-friendly interface built with Material-UI.
+- **User Interaction**: Users can register for events and workshops.
+- **Dynamic Content**: Utilizes React's array methods for efficient data management.
 
-```sh
-npm run test
-```
+## Technologies Used
 
-## Show your support
+- **React**: For building user interfaces.
+- **Material-UI**: For modern and responsive design components.
+- **JavaScript**: For dynamic content and interactivity.
+- **Clean Code Practices**: Ensures maintainable and readable code.
 
-Give a ⭐️ if this project helped you!
+## Getting Started
 
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/repo-name.git
+   ```
