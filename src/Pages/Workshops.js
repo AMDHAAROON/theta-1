@@ -16,27 +16,126 @@ const Workshops = () => {
       description: "Informatica",
       registrationLink: "https://forms.gle/d3eLwrQAurhRhYJz9 ",
     },
-   /* {
-      title: "Comming soon",
-      time: "",
-      venue: "",
-      description: "Celebrating Soon",
+    {
+      title: "WonderlaW: Explore the Wonder",
+      date: "Date : 24th-Feb-2025",
+      time: "Time : 09:00 a.m. - 04:15 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Optica",
       registrationLink: "",
     },
     {
-      title: "Comming soon",
-      time: "",
-      venue: "",
-      description: "Celebrating Soon",
+      title: "Cutting edge techniques in molecular biology",
+      date: "Date : 25th-Feb-2025",
+      time: "Time : 09:00 a.m. - 04:30 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Biogenesis",
       registrationLink: "",
     },
     {
-      title: "Comming soon",
-      time: "",
-      venue: "",
-      description: "Celebrating Soon",
+      title: "Word and Excel",
+      date: "Date : 26th-Feb-2025",
+      time: "Time : 09:00 a.m. - 01:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Strategia",
       registrationLink: "",
-    },*/
+    },
+   
+    {
+      title: "Graphics and Multimedia",
+      date: "Date : 28th-Feb-2025",
+      time: "Time : Updating Soon",
+      venue: "Venue : Computer Lab",
+      description: "Mathematica",
+      registrationLink: "",
+    },
+    
+    {
+      title: "GST-Basics",
+      date: "Date : 05th-Mar-2025",
+      time: "Time : 09:00 a.m. - 01:00 p.m.",
+      venue: "Venue : 201",
+      description: "Strategia",
+      registrationLink: "",
+    },
+   
+    {
+      title: "From Basic to Pro: Hands-on Networking with Cisco",
+      date: "Date : 07th-Mar-2025",
+      time: "Time : 09:00 a.m. - 05:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Informatica",
+      registrationLink: "",
+    },
+   
+    {
+      title: "Industrial IoT with Robotics Applications",
+      date: "Date : 12th-Mar-2025",
+      time: "Time : 09:00 a.m. - 05:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Robotics",
+      registrationLink: "",
+    },
+    {
+      title: " A Hands-on Ethical Hacking Workshop",
+      date: "Date : 18th-Mar-2025",
+      time: "Time : 09:00 a.m. - 05:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Informatica",
+      registrationLink: "",
+    },
+   
+   
+    {
+      title: "AI and Deep Learning",
+      date: "Date : 10th-Mar-2025",
+      time: "Time : Updating Soon",
+      venue: "Venue : Computer Lab",
+      description: "Mathematica",
+      registrationLink: "",
+    },
+    {
+      title: "Voice of Doctor",
+      date: "Date : 27th-Mar-2025",
+      time: "Time : 11:00 a.m. - 01:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Equilibria",
+      registrationLink: "",
+    },
+    {
+      title: "Rangasthalam",
+      date: "Date : 01st-Apr-2025",
+      time: "Time : 09:00 a.m. - 05:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Vinodha Vaahini",
+      registrationLink: "",
+    },
+    {
+      title: "Yoga: Sharpen Your Mental Focus, Transform Your Life!",
+      date: "Date : 02nd-Apr-2025",
+      time: "Time : 10:00 a.m. - 01:00 p.m.",
+      venue: "Venue : Drawing Hall",
+      description: "Sportiva",
+      registrationLink: "",
+    },
+    {
+      title: "Archery: Sharpen Your Focus, Hit Your Precision Goals!",
+      date: "Date : 13th-Mar-2025",
+      time: "Time : 10:00 a.m. - 01:00 p.m.",
+      venue: "Venue : Basketball Court",
+      description: "Sportiva",
+      registrationLink: "",
+    },
+  
+    {
+      title: "Application Containerization Using Docker",
+      date: "Date : 04th-Apr-2025",
+      time: "Time : 09:00 a.m. - 05:00 p.m.",
+      venue: "Venue : Auditorium",
+      description: "Informatica",
+      registrationLink: "",
+    },
+    
   ];
 
   return (
