@@ -28,7 +28,7 @@ export const slides = [
   {
     img: "Assets/bg-4.png",
     title: "Theta Day 1",
-    topic: "Team Swarag",
+    topic: "Team Swaraag",
     des: "Musical Fusion : Unleash the Rhythm with Our Music Teams",
     buttons: ["SEE MORE"],
     thumbnailtitle: "Day 1",
