@@ -10,7 +10,7 @@ const Workshops = () => {
   
     {
       title: "AI-Powered Tech Development",
-      date: "Date : 22nd-Feb-2022",
+      date: "Date : 22nd-Feb-2025",
       time: "Time : 09:00 a.m. - 5:00 p.m.",
       venue: "Venue : Auditorium",
       description: "Informatica",
