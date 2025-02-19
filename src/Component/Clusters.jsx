@@ -234,23 +234,9 @@ const Clusters = () => {
     },
     {
       title: "",
-      imgSrc: "Assets/st.png",
+      imgSrc: "Assets/st1.png",
       subtitle: "STRATEGIA",
       description: "Exploring new horizons in art.",
-      path: "/Workshops",
-    },
-    {
-      title: "",
-      imgSrc: "Assets/Emulsion.png",
-      subtitle: "Emulsion",
-      description: "Capturing wonders,one frame at a time",
-      path: "/Workshops",
-    },
-    {
-      title: "",
-      imgSrc: "Assets/pixel.png",
-      subtitle: "Pixelq",
-      description: "Crafting Visual Masterpieces with Precision",
       path: "/Workshops",
     },
     {
