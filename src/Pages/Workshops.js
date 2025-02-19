@@ -22,7 +22,7 @@ const Workshops = () => {
       time: "Time : 09:00 a.m. - 04:15 p.m.",
       venue: "Venue : Auditorium",
       description: "Optica",
-      registrationLink: "",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSe4Qq4hE7tdMSrrbk-3kEfgdL4iWwosdFTViNM_pfbOhnmeSw/viewform",
     },
     {
       title: "Cutting edge techniques in molecular biology",
@@ -30,7 +30,7 @@ const Workshops = () => {
       time: "Time : 09:00 a.m. - 04:30 p.m.",
       venue: "Venue : Auditorium",
       description: "Biogenesis",
-      registrationLink: "",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScNuatXd7EF6DJObLCTmRgni4FLj27W46N-U4eYWISfSO5S2A/viewform",
     },
     {
       title: "Word and Excel",
@@ -65,7 +65,7 @@ const Workshops = () => {
       time: "Time : 09:00 a.m. - 05:00 p.m.",
       venue: "Venue : Auditorium",
       description: "Informatica",
-      registrationLink: "",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeo2Dcdb81LUB_IRj7hN2t3c92Xted1zYUmThNJUmRk7caqBw/viewform",
     },
     {
       title: "AI and Deep Learning",
