@@ -171,7 +171,7 @@ const Clusters = () => {
   const cardData = [
     {
       title: "",
-      imgSrc: "Assets/Access.jpg",
+      imgSrc: "Assets/Access.png",
       subtitle: "ACCESS INDIA",
       description: "Empowering students for a innovative future.",
       path: "/Workshops",
