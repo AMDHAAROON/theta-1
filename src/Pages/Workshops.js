@@ -7,7 +7,6 @@ import Footer from ".././Component/Footer";
 
 const Workshops = () => {
   const workshopData = [
-  
     {
       title: "AI-Powered Tech Development",
       date: "Date : 22nd-Feb-2025",
@@ -40,7 +39,6 @@ const Workshops = () => {
       description: "Strategia",
       registrationLink: "",
     },
-   
     {
       title: "Graphics and Multimedia",
       date: "Date : 28th-Feb-2025",
@@ -49,7 +47,6 @@ const Workshops = () => {
       description: "Mathematica",
       registrationLink: "",
     },
-    
     {
       title: "GST-Basics",
       date: "Date : 05th-Mar-2025",
@@ -58,7 +55,6 @@ const Workshops = () => {
       description: "Strategia",
       registrationLink: "",
     },
-   
     {
       title: "From Basic to Pro: Hands-on Networking with Cisco",
       date: "Date : 07th-Mar-2025",
@@ -75,7 +71,6 @@ const Workshops = () => {
       description: "Mathematica",
       registrationLink: "",
     },
-   
     {
       title: "Industrial IoT with Robotics Applications",
       date: "Date : 12th-Mar-2025",
@@ -100,10 +95,6 @@ const Workshops = () => {
       description: "Informatica",
       registrationLink: "",
     },
-   
-   
-    
-   
     {
       title: "Voice of Doctor",
       date: "Date : 27th-Mar-2025",
@@ -128,8 +119,6 @@ const Workshops = () => {
       description: "Sportiva",
       registrationLink: "",
     },
-   
-  
     {
       title: "Application Containerization Using Docker",
       date: "Date : 04th-Apr-2025",
@@ -138,7 +127,6 @@ const Workshops = () => {
       description: "Informatica",
       registrationLink: "",
     },
-    
   ];
 
   return (
@@ -289,31 +277,29 @@ const Workshops = () => {
               </Typography>
               <Button
                 variant="contained"
-                 href={workshop.registrationLink || "#"}
-                 disabled={!workshop.registrationLink} // Disable only if no link
-                   sx={{
-                    background: linear-gradient(91.83deg, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%),
-                    width: "80%",
-                    textTransform: "none",
-                    borderRadius: "50px",
-                    fontSize: "1rem",
-                    px: [4],
-                    color: "#fff",
-                    border: "2px solid transparent",
-                    cursor: workshop.registrationLink ? "pointer" : "not-allowed", // Disable click
-                    "&:hover": workshop.registrationLink
-                       ? {
+                href={workshop.registrationLink || "#"}
+                disabled={!workshop.registrationLink} // Disable only if no link
+                sx={{
+                  background: `linear-gradient(91.83deg, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%)`,
+                  width: "80%",
+                  textTransform: "none",
+                  borderRadius: "50px",
+                  fontSize: "1rem",
+                  px: [4],
+                  color: "#fff",
+                  border: "2px solid transparent",
+                  cursor: workshop.registrationLink ? "pointer" : "not-allowed", // Disable click
+                  "&:hover": workshop.registrationLink
+                    ? {
                         background: "transparent",
                         border: "2px solid #EF3D4E",
                         color: "#EF3D4E",
-                          }
-                     : {}, // No hover effect when disabled
-                    }}
->
-  Register Now
-</Button>
-
-
+                      }
+                    : {}, // No hover effect when disabled
+                }}
+              >
+                Register Now
+              </Button>
             </Box>
           ))}
         </Box>
@@ -325,4 +311,4 @@ const Workshops = () => {
   );
 };
 
-export default Workshops;
+export default Workshops; 
