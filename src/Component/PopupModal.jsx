@@ -1,7 +1,5 @@
 import { Dialog, DialogTitle, DialogContent, DialogActions, Button, Backdrop } from "@mui/material";
 
-
-
 export default function PopupModal({ isOpen, onClose, workshop }) {
   if (!workshop) return null;
 
@@ -16,6 +14,11 @@ export default function PopupModal({ isOpen, onClose, workshop }) {
         style: {
           backdropFilter: "blur(6px)",
           backgroundColor: "rgba(0, 0, 0, 0.4)",
+        },
+      }}
+      PaperProps={{
+        sx: {
+          borderRadius: "20px", // Added roundness to the popup
         },
       }}
     >
