@@ -72,7 +72,9 @@ const ContactUs = () => {
             content: (
                 <>
                     President : Surya C <br /> Phone No : +91 93606 17308 <br/>
+                    <br/>
                    Vice-President : Venkatesh N  <br /> Phone No :+91 94437 76472<br/>
+                   <br/>
                    Vice-President : Karen Angel  <br /> Phone No :+91 74183 15768
                 </>
             ),
