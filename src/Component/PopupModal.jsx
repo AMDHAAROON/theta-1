@@ -50,11 +50,11 @@ export default function PopupModal({ isOpen, onClose, workshop }) {
             marginBottom: "16px",
           }}
         >
-          <img
-            src={workshop.image}
+         {/*.. <img
+           src={workshop.image}
             alt={workshop.title || "Event Poster"}
             style={{ width: "100%", height: "auto", objectFit: "cover" }}
-          />
+          />..*/}
         </div>
 
         <div style={{ textAlign: "center" }}>
