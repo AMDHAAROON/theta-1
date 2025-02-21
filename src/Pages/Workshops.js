@@ -7,17 +7,7 @@ import { Link } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const workshopData = [
-  {
-    id: 1,
-    title: "AI-Powered Tech Development",
-    date: "Date: 22nd-Feb-2025",
-    time: "Time: 09:00 a.m. - 5:00 p.m.",
-    venue: "Venue: Auditorium",
-    chiefGuest: "Dr.M.Dhanarajan",
-    registrationLink: "https://forms.gle/d3eLwrQAurhRhYJz9",
-    image: "./assets/ai.jpg",
-    description: "Dive into the future of technology with this workshop focusing on AI-powered solutions, practical use cases, and hands-on development techniques.",
-  },
+ 
   {
     id: 2,
     title: "WonderlaW: Explore the Wonder",
