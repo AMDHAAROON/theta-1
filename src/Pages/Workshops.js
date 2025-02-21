@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const workshopData = [
- 
   {
     id: 2,
     title: "WonderlaW: Explore the Wonder",
@@ -15,9 +14,12 @@ const workshopData = [
     time: "Time: 09:00 a.m. - 04:15 p.m.",
     venue: "Venue: Auditorium",
     chiefGuest: "Dr.E.Vinoth",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSe4Qq4hE7tdMSrrbk-3kEfgdL4iWwosdFTViNM_pfbOhnmeSw/viewform",
-    image: "./assets/wonder.png",
-    description: "Experience the wonders of law and technology combined, featuring interactive sessions, expert panels, and innovative demonstrations.",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSe4Qq4hE7tdMSrrbk-3kEfgdL4iWwosdFTViNM_pfbOhnmeSw/viewform",
+    image: "/Assets/wonderla.jpeg",
+
+    description:
+      "Experience the wonders of law and technology combined, featuring interactive sessions, expert panels, and innovative demonstrations.",
   },
   {
     id: 3,
@@ -26,9 +28,11 @@ const workshopData = [
     time: "Time: 09:00 a.m. - 04:30 p.m.",
     venue: "Venue: Auditorium",
     chiefGuest: "Dr.Kanagaraj",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScNuatXd7EF6DJObLCTmRgni4FLj27W46N-U4eYWISfSO5S2A/viewform",
-    image: "./assets/bio.png",
-    description: "Explore advanced molecular biology techniques: electrophoresis, gel documentation, PCR instrumentation, and bioinformatics analysis. Gain valuable lab experience!",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScNuatXd7EF6DJObLCTmRgni4FLj27W46N-U4eYWISfSO5S2A/viewform",
+    image: "/Assets/bio.png",
+    description:
+      "Explore advanced molecular biology techniques: electrophoresis, gel documentation, PCR instrumentation, and bioinformatics analysis. Gain valuable lab experience!",
   },
   {
     id: 4,
@@ -38,7 +42,7 @@ const workshopData = [
     venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
-    image: "./assets/word_excel.jpg",
+    image: "/Assets/word_excel.jpg",
     description: "Strategia",
   },
   {
@@ -49,7 +53,7 @@ const workshopData = [
     venue: "Venue: Computer Lab",
     chiefGuest: "",
     registrationLink: "",
-    image: "./assets/graphics_multimedia.jpg",
+    image: "/Assets/graphics_multimedia.jpg",
     description: "Mathematica",
   },
   {
@@ -60,7 +64,7 @@ const workshopData = [
     venue: "Venue: 201",
     chiefGuest: "",
     registrationLink: "",
-    image: "./assets/gst_basics.jpg",
+    image: "/Assets/gst_basics.jpg",
     description: "Strategia",
   },
   {
@@ -70,9 +74,11 @@ const workshopData = [
     time: "Time: 09:00 a.m. - 05:00 p.m.",
     venue: "Venue: Auditorium",
     chiefGuest: "Dr.P.Herbert Raj",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeo2Dcdb81LUB_IRj7hN2t3c92Xted1zYUmThNJUmRk7caqBw/viewform",
-    image: "./assets/cisco.png",
-    description: "Explore physics with 20+ thrilling experiments! Experience hands-on learning, challenge myths, and ignite curiosity in every participant.",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeo2Dcdb81LUB_IRj7hN2t3c92Xted1zYUmThNJUmRk7caqBw/viewform",
+    image: "/Assets/cisco.png",
+    description:
+      "Explore physics with 20+ thrilling experiments! Experience hands-on learning, challenge myths, and ignite curiosity in every participant.",
   },
   {
     id: 8,
@@ -82,7 +88,7 @@ const workshopData = [
     venue: "Venue: Computer Lab",
     chiefGuest: "",
     registrationLink: "",
-    image: "./assets/ai_deep_learning.jpg",
+    image: "/Assets/ai_deep_learning.jpg",
     description: "Mathematica",
   },
   {
@@ -93,7 +99,7 @@ const workshopData = [
     venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
-    image: "./assets/industrial_iot.jpg",
+    image: "/Assets/industrial_iot.jpg",
     description: "Robotics",
   },
   {
@@ -104,7 +110,7 @@ const workshopData = [
     venue: "Venue: Basketball Court",
     chiefGuest: "",
     registrationLink: "",
-    image: "./assets/archery.jpg",
+    image: "/Assets/archery.jpg",
     description: "Sportiva",
   },
   {
@@ -115,7 +121,7 @@ const workshopData = [
     venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
-    image: "./assets/ethical_hacking.jpg",
+    image: "/Assets/ethical_hacking.jpg",
     description: "Informatica",
   },
   {
@@ -126,7 +132,7 @@ const workshopData = [
     venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
-    image: "./assets/voice_doctor.jpg",
+    image: "/Assets/voice_doctor.jpg",
     description: "Equilibria",
   },
   {
@@ -137,7 +143,7 @@ const workshopData = [
     venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
-    image: "./assets/rangasthalam.jpg",
+    image: "/Assets/rangasthalam.jpg",
     description: "Vinodha Vaahini",
   },
   {
@@ -148,7 +154,7 @@ const workshopData = [
     venue: "Venue: Drawing Hall",
     chiefGuest: "",
     registrationLink: "",
-    image: "./assets/yoga.jpg",
+    image: "/Assets/yoga.jpg",
     description: "Sportiva",
   },
   {
@@ -159,9 +165,9 @@ const workshopData = [
     venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
-    image: "./assets/docker.jpg",
+    image: "/Assets/docker.jpg",
     description: "Informatica",
-  }
+  },
 ];
 
 export default function Workshops() {
@@ -234,12 +240,18 @@ export default function Workshops() {
             }}
           >
             <Link to="/" style={{ textDecoration: "none" }}>
-              <Typography sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: "18px" }}>
+              <Typography
+                sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: "18px" }}
+              >
                 Home
               </Typography>
             </Link>
-            <ArrowRightAltIcon sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: "36px" }} />
-            <Typography sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: "18px" }}>
+            <ArrowRightAltIcon
+              sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: "36px" }}
+            />
+            <Typography
+              sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: "18px" }}
+            >
               Workshops
             </Typography>
           </Box>
@@ -274,16 +286,44 @@ export default function Workshops() {
                 },
               }}
             >
-              <Typography sx={{ fontSize: "2rem", fontWeight: "bold", color: "#333", mb: 1 }}>
+              <Typography
+                sx={{
+                  fontSize: "2rem",
+                  fontWeight: "bold",
+                  color: "#333",
+                  mb: 1,
+                }}
+              >
                 {workshop.title}
               </Typography>
-              <Typography sx={{ fontSize: "1.2rem", fontWeight: 600, color: "#333", mb: 1 }}>
+              <Typography
+                sx={{
+                  fontSize: "1.2rem",
+                  fontWeight: 600,
+                  color: "#333",
+                  mb: 1,
+                }}
+              >
                 {workshop.date}
               </Typography>
-              <Typography sx={{ fontSize: "1.2rem", fontWeight: 600, color: "#333", mb: 1 }}>
+              <Typography
+                sx={{
+                  fontSize: "1.2rem",
+                  fontWeight: 600,
+                  color: "#333",
+                  mb: 1,
+                }}
+              >
                 {workshop.time}
               </Typography>
-              <Typography sx={{ fontSize: "1.2rem", fontWeight: 800, color: "#333", mb: 2 }}>
+              <Typography
+                sx={{
+                  fontSize: "1.2rem",
+                  fontWeight: 800,
+                  color: "#333",
+                  mb: 2,
+                }}
+              >
                 {workshop.venue}
               </Typography>
               <Button
@@ -300,9 +340,13 @@ export default function Workshops() {
                   fontSize: "1rem",
                   color: !workshop.registrationLink ? "#A9A9A9" : "#fff",
                   border: "2px solid transparent",
-                  cursor: !workshop.registrationLink ? "not-allowed" : "pointer",
+                  cursor: !workshop.registrationLink
+                    ? "not-allowed"
+                    : "pointer",
                   "&:hover": {
-                    background: !workshop.registrationLink ? "transparent" : "transparent",
+                    background: !workshop.registrationLink
+                      ? "transparent"
+                      : "transparent",
                     border: "2px solid #EF3D4E",
                     color: "#EF3D4E",
                   },
@@ -316,10 +360,15 @@ export default function Workshops() {
       </Box>
 
       {/* Popup Modal */}
-      <PopupModal isOpen={isModalOpen} onClose={closeModal} workshop={selectedWorkshop} />
+      <PopupModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        workshop={selectedWorkshop}
+      />
 
       {/* Footer */}
       <Footer />
     </>
   );
 }
+
