@@ -1,4 +1,11 @@
-import { Dialog, DialogTitle, DialogContent, DialogActions, Button, Backdrop } from "@mui/material";
+import {
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  Button,
+  Backdrop,
+} from "@mui/material";
 
 export default function PopupModal({ isOpen, onClose, workshop }) {
   if (!workshop) return null;
@@ -36,8 +43,15 @@ export default function PopupModal({ isOpen, onClose, workshop }) {
 
       <DialogContent sx={{ px: 3, py: 2 }}>
         <div style={{ textAlign: "center", marginBottom: "12px" }}>
-          <p style={{ fontSize: "1.2rem", fontWeight: "600", marginBottom: "8px" }}>
-            🎤 Chief Guest: <span style={{ fontWeight: "400" }}>{workshop.chiefGuest}</span>
+          <p
+            style={{
+              fontSize: "1.2rem",
+              fontWeight: "600",
+              marginBottom: "8px",
+            }}
+          >
+            🎤 Chief Guest:{" "}
+            <span style={{ fontWeight: "400" }}>{workshop.chiefGuest}</span>
           </p>
         </div>
 
@@ -50,16 +64,17 @@ export default function PopupModal({ isOpen, onClose, workshop }) {
             marginBottom: "16px",
           }}
         >
-         {/*.. <img
-           src={workshop.image}
+          <img
+            src={workshop.image}
             alt={workshop.title || "Event Poster"}
             style={{ width: "100%", height: "auto", objectFit: "cover" }}
-          />..*/}
+          />
         </div>
 
         <div style={{ textAlign: "center" }}>
           <p style={{ fontSize: "1.1rem", fontWeight: "600" }}>
-            📝 Description: <span style={{ fontWeight: "400" }}>{workshop.description}</span>
+            📝 Description:{" "}
+            <span style={{ fontWeight: "400" }}>{workshop.description}</span>
           </p>
         </div>
       </DialogContent>
@@ -83,7 +98,8 @@ export default function PopupModal({ isOpen, onClose, workshop }) {
             fontSize: "1rem",
             textAlign: "center",
             color: "white",
-            background: "linear-gradient(91.83deg, rgb(255, 81, 47), rgb(221, 36, 118))",
+            background:
+              "linear-gradient(91.83deg, rgb(255, 81, 47), rgb(221, 36, 118))",
             borderRadius: "50px",
             textDecoration: "none",
             fontWeight: "600",
@@ -95,7 +111,8 @@ export default function PopupModal({ isOpen, onClose, workshop }) {
             e.target.style.border = "2px solid #EF3D4E";
           }}
           onMouseLeave={(e) => {
-            e.target.style.background = "linear-gradient(91.83deg, rgb(255, 81, 47), rgb(221, 36, 118))";
+            e.target.style.background =
+              "linear-gradient(91.83deg, rgb(255, 81, 47), rgb(221, 36, 118))";
             e.target.style.color = "white";
             e.target.style.border = "none";
           }}
@@ -115,7 +132,7 @@ export default function PopupModal({ isOpen, onClose, workshop }) {
             border: "2px solid #EF3D4E",
             backgroundColor: "transparent",
             transition: "all 0.3s ease",
-            '&:hover': {
+            "&:hover": {
               backgroundColor: "#EF3D4E",
               color: "white",
             },
