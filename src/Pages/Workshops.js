@@ -30,7 +30,7 @@ const workshopData = [
     chiefGuest: "Dr.Kanagaraj",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScNuatXd7EF6DJObLCTmRgni4FLj27W46N-U4eYWISfSO5S2A/viewform",
-    image: "/Assets/bio.png",
+    image: "/Assets/biogenesis.jpeg",
     description:
       "Explore advanced molecular biology techniques: electrophoresis, gel documentation, PCR instrumentation, and bioinformatics analysis. Gain valuable lab experience!",
   },
@@ -76,7 +76,7 @@ const workshopData = [
     chiefGuest: "Dr.P.Herbert Raj",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSeo2Dcdb81LUB_IRj7hN2t3c92Xted1zYUmThNJUmRk7caqBw/viewform",
-    image: "/Assets/cisco.png",
+    image: "/Assets/networ.jpeg",
     description:
       "Explore physics with 20+ thrilling experiments! Experience hands-on learning, challenge myths, and ignite curiosity in every participant.",
   },
