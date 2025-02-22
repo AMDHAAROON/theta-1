@@ -61,7 +61,7 @@ const workshopData = [
     title: "GST-Basics",
     date: "Date: 05th-Mar-2025",
     time: "Time: 09:00 a.m. - 01:00 p.m.",
-    venue: "Venue: 201",
+    venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
     image: "/Assets/gst_basics.jpg",
