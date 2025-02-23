@@ -38,7 +38,7 @@ const workshopData = [
     id: 4,
     title: "Word and Excel",
     date: "Date: 26th-Feb-2025",
-    time: "Time: 09:00 a.m. - 01:00 p.m.",
+    time: "Time: 09:00 a.m. - 04:00 p.m.",
     venue: "Venue: Auditorium",
     chiefGuest: "Ms.V.Manochitra and Ms.M.Divya",
     registrationLink: "https://forms.gle/EhCcrjThdLmub8Lv9",
