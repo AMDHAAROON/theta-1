@@ -1,22 +1,24 @@
 export const brands = [
-  { id: 1, img: "Assets/cub8-modified.png" },
-  { id: 2, img: "Assets/tvslogo.png" },
-  { id: 3, img: "Assets/ongc.png" },
-  { id: 4, img: "Assets/nextgen.png" },
-  { id: 5, img: "Assets/ktm.png" },
-  { id: 6, img: "Assets/sara.png" },
-  { id: 7, img: "Assets/fuel.png" },
-  { id: 8, img: "Assets/urban.png" },
-  { id: 9, img: "Assets/ss.png" },
-  { id: 10, img: "Assets/belgum9.png" },
-  {id : 11, img: "Assets/sm.png"},
-  {id : 11, img: "Assets/es.png"},
-  {id : 11, img: "Assets/lw14.jpg"},
+  { id: 1, img: "Assets/Sponsors/cub8-modified.png" },
+  { id: 2, img: "Assets/Sponsors/tvslogo.png" },
+  { id: 3, img: "Assets/Sponsors/ongc.png" },
+  { id: 4, img: "Assets/Sponsors/nextgen.png" },
+  { id: 5, img: "Assets/Sponsors/ktm.png" },
+  { id: 6, img: "Assets/Sponsors/sara.png" },
+  { id: 7, img: "Assets/Sponsors/fuel.png" },
+  { id: 8, img: "Assets/Sponsors/urban.png" },
+  { id: 9, img: "Assets/Sponsors/ss.png" },
+  { id: 10, img: "Assets/Sponsors/belgum9.png" },
+  {id : 11, img: "Assets/Sponsors/sm.png"},
+  {id : 12, img: "Assets/Sponsors/es.png"},
+  {id : 13, img: "Assets/Sponsors/lw14.jpg"},
+  {id : 13, img: "Assets/Sponsors/leb.png"},
+  {id : 13, img: "Assets/Sponsors/mrs.png"},
 ];
 
 export const slides = [
   {
-    img: "Assets/bg-2.jpeg",
+    img: "Assets/bg/bg-2.jpeg",
     title: "THETA",
     topic: "2K25",
     des: "FUSION of ideas, FUN-filled experiences, and a grand FIESTA of celebration.",
@@ -26,7 +28,7 @@ export const slides = [
     path:'/Workshops'
   },
   {
-    img: "Assets/bg-4.png",
+    img: "Assets/bg/bg-4.png",
     title: "Theta Day 1",
     topic: "Team Swaraag",
     des: "Musical Fusion : Unleash the Rhythm with Our Music Teams",
@@ -36,7 +38,7 @@ export const slides = [
     path:'/Workshops'
   },
   {
-    img: "Assets/bg-2.png",
+    img: "Assets/bg/bg-2.png",
     title: "Theta Day 2",
     topic: "Team Recoil",
     des: "Recoil in Action : Feel the Energy with Team Recoil's Electrifying Performance",
@@ -46,7 +48,7 @@ export const slides = [
      path:'/Workshops'
   },
   {
-    img: "Assets/bg-3.jpg",
+    img: "Assets/bg/bg-3.jpg",
     title: "Theta Day 3",
     topic: "Pro Nite",
     des: "Pro Nite : Experience the Ultimate Night of Fun and Excitement!",

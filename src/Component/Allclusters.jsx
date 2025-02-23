@@ -171,7 +171,7 @@ const Allclusters = () => {
   const cardData = [
     {
       title: "",
-      imgSrc: "Assets/cluster.png",
+      imgSrc: "Assets/Clusterlogo/cluster.png",
       subtitle: "Fusion,Fun,Fiesta",
       description: "Click to uncover something amazing!",
       path: "/Cluster",

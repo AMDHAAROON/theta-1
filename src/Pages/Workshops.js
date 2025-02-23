@@ -16,7 +16,7 @@ const workshopData = [
     chiefGuest: "Dr.E.Vinoth",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSe4Qq4hE7tdMSrrbk-3kEfgdL4iWwosdFTViNM_pfbOhnmeSw/viewform",
-    image: "/Assets/wonderla.jpeg",
+    image: "/Assets/Posters/wonderla.jpeg",
 
     description:
       "Experience the wonders of law and technology combined, featuring interactive sessions, expert panels, and innovative demonstrations.",
@@ -30,7 +30,7 @@ const workshopData = [
     chiefGuest: "Dr.Kanagaraj",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScNuatXd7EF6DJObLCTmRgni4FLj27W46N-U4eYWISfSO5S2A/viewform",
-    image: "/Assets/biogenesis.jpeg",
+    image: "/Assets/Posters/biogenesis.jpeg",
     description:
       "Explore advanced molecular biology techniques: electrophoresis, gel documentation, PCR instrumentation, and bioinformatics analysis. Gain valuable lab experience!",
   },
@@ -42,7 +42,7 @@ const workshopData = [
     venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
-    image: "/Assets/word_excel.jpg",
+    image: "/Assets/Posters/word_excel.jpg",
     description: "Strategia",
   },
   {
@@ -53,7 +53,7 @@ const workshopData = [
     venue: "Venue: Computer Lab",
     chiefGuest: "",
     registrationLink: "",
-    image: "/Assets/graphics_multimedia.jpg",
+    image: "/Assets/Posters/graphics_multimedia.jpg",
     description: "Mathematica",
   },
   {
@@ -64,7 +64,7 @@ const workshopData = [
     venue: "Venue: 201",
     chiefGuest: "",
     registrationLink: "",
-    image: "/Assets/gst_basics.jpg",
+    image: "/Assets/Posters/gst_basics.jpg",
     description: "Strategia",
   },
   {
@@ -76,7 +76,7 @@ const workshopData = [
     chiefGuest: "Dr.P.Herbert Raj",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSeo2Dcdb81LUB_IRj7hN2t3c92Xted1zYUmThNJUmRk7caqBw/viewform",
-    image: "/Assets/networ.jpeg",
+    image: "/Assets/Posters/networ.jpeg",
     description:
       "Explore physics with 20+ thrilling experiments! Experience hands-on learning, challenge myths, and ignite curiosity in every participant.",
   },
@@ -88,7 +88,7 @@ const workshopData = [
     venue: "Venue: Computer Lab",
     chiefGuest: "",
     registrationLink: "",
-    image: "/Assets/ai_deep_learning.jpg",
+    image: "/Assets/Posters/ai_deep_learning.jpg",
     description: "Mathematica",
   },
   {
@@ -99,7 +99,7 @@ const workshopData = [
     venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
-    image: "/Assets/industrial_iot.jpg",
+    image: "/Assets/Posters/industrial_iot.jpg",
     description: "Robotics",
   },
   {
@@ -110,7 +110,7 @@ const workshopData = [
     venue: "Venue: Basketball Court",
     chiefGuest: "",
     registrationLink: "",
-    image: "/Assets/archery.jpg",
+    image: "/Assets/Posters/archery.jpg",
     description: "Sportiva",
   },
   {
@@ -121,7 +121,7 @@ const workshopData = [
     venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
-    image: "/Assets/ethical_hacking.jpg",
+    image: "/Assets/Posters/ethical_hacking.jpg",
     description: "Informatica",
   },
   {
@@ -132,7 +132,7 @@ const workshopData = [
     venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
-    image: "/Assets/voice_doctor.jpg",
+    image: "/Assets/Posters/voice_doctor.jpg",
     description: "Equilibria",
   },
   {
@@ -143,7 +143,7 @@ const workshopData = [
     venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
-    image: "/Assets/rangasthalam.jpg",
+    image: "/Assets/Posters/rangasthalam.jpg",
     description: "Vinodha Vaahini",
   },
   {
@@ -154,7 +154,7 @@ const workshopData = [
     venue: "Venue: Drawing Hall",
     chiefGuest: "",
     registrationLink: "",
-    image: "/Assets/yoga.jpg",
+    image: "/Assets/Posters/yoga.jpg",
     description: "Sportiva",
   },
   {
@@ -165,7 +165,7 @@ const workshopData = [
     venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
-    image: "/Assets/docker.jpg",
+    image: "/Assets/Posters/docker.jpg",
     description: "Informatica",
   },
 ];
