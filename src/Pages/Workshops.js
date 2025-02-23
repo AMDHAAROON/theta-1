@@ -12,7 +12,7 @@ const workshopData = [
     title: "WonderlaW: Explore the Wonder",
     date: "Date: 24th-Feb-2025",
     time: "Time: 09:00 a.m. - 04:15 p.m.",
-    venue: "Venue: Auditorium",
+    venue: "Venue: 201",
     chiefGuest: "Dr.E.Vinoth",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSe4Qq4hE7tdMSrrbk-3kEfgdL4iWwosdFTViNM_pfbOhnmeSw/viewform",
@@ -61,7 +61,7 @@ const workshopData = [
     title: "GST-Basics",
     date: "Date: 05th-Mar-2025",
     time: "Time: 09:00 a.m. - 01:00 p.m.",
-    venue: "Venue: 201",
+    venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
     image: "/Assets/Posters/gst_basics.jpg",
