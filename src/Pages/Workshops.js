@@ -16,7 +16,7 @@ const workshopData = [
     chiefGuest: "Dr.E.Vinoth",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSe4Qq4hE7tdMSrrbk-3kEfgdL4iWwosdFTViNM_pfbOhnmeSw/viewform",
-    image: "/Assets/Posters/wonderla.jpeg",
+    image: "/Assets/Posters/wonderla.jpg",
 
     description:
       "Experience the wonders of law and technology combined, featuring interactive sessions, expert panels, and innovative demonstrations.",
@@ -30,7 +30,7 @@ const workshopData = [
     chiefGuest: "Dr.Kanagaraj",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScNuatXd7EF6DJObLCTmRgni4FLj27W46N-U4eYWISfSO5S2A/viewform",
-    image: "/Assets/Posters/biogenesis.jpeg",
+    image: "/Assets/Posters/biogenesis.png",
     description:
       "Explore advanced molecular biology techniques: electrophoresis, gel documentation, PCR instrumentation, and bioinformatics analysis. Gain valuable lab experience!",
   },
@@ -40,10 +40,10 @@ const workshopData = [
     date: "Date: 26th-Feb-2025",
     time: "Time: 09:00 a.m. - 01:00 p.m.",
     venue: "Venue: Auditorium",
-    chiefGuest: "",
-    registrationLink: "",
-    image: "/Assets/Posters/word_excel.jpg",
-    description: "Strategia",
+    chiefGuest: "Ms.V.Manochitra and Ms.M.Divya",
+    registrationLink: "https://forms.gle/EhCcrjThdLmub8Lv9",
+    image: "/Assets/Posters/wordexcel.jpg",
+    description: "Unlock your potential through our interactive workshop to boost productivity with expert tips, smart techniques, and time-saving hacks.",
   },
   {
     id: 5,
@@ -58,6 +58,17 @@ const workshopData = [
   },
   {
     id: 6,
+    title: "AI & Neural Networks Workshop",
+    date: "Date: 03rd-Mar-2025",
+    time: "Time: 09:00 a.m. - 05:00 p.m.",
+    venue: "Venue: 201",
+    chiefGuest: "Dr.D.Venkata Subramanian and Ranga Krishnan",
+    registrationLink: "https://forms.gle/JM2gfqGtcAY9Znar8",
+    image: "/Assets/Posters/neural.jpg",
+    description: "Explore the future of AI in just one day.",
+  },
+  {
+    id: 7,
     title: "GST-Basics",
     date: "Date: 05th-Mar-2025",
     time: "Time: 09:00 a.m. - 01:00 p.m.",
@@ -68,7 +79,7 @@ const workshopData = [
     description: "Strategia",
   },
   {
-    id: 7,
+    id: 8,
     title: "From Basic to Pro: Hands-on Networking with Cisco",
     date: "Date: 07th-Mar-2025",
     time: "Time: 09:00 a.m. - 05:00 p.m.",
@@ -81,7 +92,7 @@ const workshopData = [
       "Explore physics with 20+ thrilling experiments! Experience hands-on learning, challenge myths, and ignite curiosity in every participant.",
   },
   {
-    id: 8,
+    id: 9,
     title: "AI and Deep Learning",
     date: "Date: 10th-Mar-2025",
     time: "Time: Updating Soon",
@@ -92,7 +103,7 @@ const workshopData = [
     description: "Mathematica",
   },
   {
-    id: 9,
+    id: 10,
     title: "Industrial IoT with Robotics Applications",
     date: "Date: 12th-Mar-2025",
     time: "Time: 09:00 a.m. - 05:00 p.m.",
@@ -103,7 +114,7 @@ const workshopData = [
     description: "Robotics",
   },
   {
-    id: 10,
+    id: 11,
     title: "Archery: Sharpen Your Focus, Hit Your Precision Goals!",
     date: "Date: 13th-Mar-2025",
     time: "Time: 10:00 a.m. - 01:00 p.m.",
@@ -114,7 +125,7 @@ const workshopData = [
     description: "Sportiva",
   },
   {
-    id: 11,
+    id: 12,
     title: "A Hands-on Ethical Hacking Workshop",
     date: "Date: 18th-Mar-2025",
     time: "Time: 09:00 a.m. - 05:00 p.m.",
@@ -125,7 +136,7 @@ const workshopData = [
     description: "Informatica",
   },
   {
-    id: 12,
+    id: 13,
     title: "Voice of Doctor",
     date: "Date: 27th-Mar-2025",
     time: "Time: 11:00 a.m. - 01:00 p.m.",
@@ -136,7 +147,7 @@ const workshopData = [
     description: "Equilibria",
   },
   {
-    id: 13,
+    id: 14,
     title: "Rangasthalam",
     date: "Date: 01st-Apr-2025",
     time: "Time: 09:00 a.m. - 05:00 p.m.",
@@ -147,7 +158,7 @@ const workshopData = [
     description: "Vinodha Vaahini",
   },
   {
-    id: 14,
+    id: 15,
     title: "Yoga: Sharpen Your Mental Focus, Transform Your Life!",
     date: "Date: 02nd-Apr-2025",
     time: "Time: 10:00 a.m. - 01:00 p.m.",
@@ -158,7 +169,7 @@ const workshopData = [
     description: "Sportiva",
   },
   {
-    id: 15,
+    id: 16,
     title: "Application Containerization Using Docker",
     date: "Date: 04th-Apr-2025",
     time: "Time: 09:00 a.m. - 05:00 p.m.",
