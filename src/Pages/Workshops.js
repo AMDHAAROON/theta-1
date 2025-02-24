@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const workshopData = [
-  {
+  /*{
     id: 2,
     title: "WonderlaW: Explore the Wonder",
     date: "Date: 24th-Feb-2025",
@@ -20,7 +20,7 @@ const workshopData = [
 
     description:
       "Experience the wonders of law and technology combined, featuring interactive sessions, expert panels, and innovative demonstrations.",
-  },
+  },*/
   {
     id: 3,
     title: "Cutting edge techniques in molecular biology",
