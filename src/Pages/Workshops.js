@@ -21,7 +21,7 @@ const workshopData = [
     description:
       "Experience the wonders of law and technology combined, featuring interactive sessions, expert panels, and innovative demonstrations.",
   },*/
-  {
+ /* {
     id: 3,
     title: "Cutting edge techniques in molecular biology",
     date: "Date: 25th-Feb-2025",
@@ -33,7 +33,7 @@ const workshopData = [
     image: "/Assets/Posters/biogenesis.png",
     description:
       "Explore advanced molecular biology techniques: electrophoresis, gel documentation, PCR instrumentation, and bioinformatics analysis. Gain valuable lab experience!",
-  },
+  },*/
   {
     id: 4,
     title: "Word and Excel",
