@@ -6,7 +6,28 @@ import Typography from "@mui/material/Typography";
 import { Box } from "@mui/material";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import CancelIcon from "@mui/icons-material/Cancel";
+
+/**
+ * Faq Component
+ * -------------
+ * A responsive FAQ section with expandable accordions for frequently asked questions.
+ * 
+ * Features:
+ * - Displays a list of questions and answers.
+ * - Allows users to expand/collapse individual questions.
+ * - Includes a toggle button to show or hide additional FAQs.
+ * - Smooth expand/collapse transitions with MUI Accordion.
+ * - Custom icons (AddCircleIcon and CancelIcon) indicate expand/collapse state.
+ * - Responsive typography for various screen sizes.
+ * - Styled with background gradients, shadows, and consistent spacing.
+ * 
+ * Props: None
+ * 
+ * Usage:
+ * <Faq />
+ */
 export default function Faq() {
+  // Array containing FAQ data with question and answer pairs
   const faqs = [
     {
       que: "Who can attend the cultural program?",
@@ -38,26 +59,44 @@ export default function Faq() {
     },
     {
       que: "How can I contact the event organizers?",
-      ans: "You can reach the event organizers  through our student council representatives.",
+      ans: "You can reach the event organizers through our student council representatives.",
     },
   ];
-  
-  const [currentFaq, setCurrentFaq] = React.useState(faqs);
+
+  // State to manage currently displayed FAQs (for expanding/collapsing extra questions)
+  const [currentFaq, setCurrentFaq] = React.useState(faqs); // Displays all FAQs by default
+
+  // State to track if the 'Show More/Show Less' feature is active
   const [expand, setExpand] = React.useState(false);
+
+  // State to track which accordion is currently expanded
   const [expanded, setExpanded] = React.useState(false);
 
+  /**
+   * handleExpand Function
+   * ---------------------
+   * Toggles between showing all FAQs and showing only the first seven.
+   */
   const handleExpand = () => {
     if (expand) {
-      setCurrentFaq(faqs.slice(0, 7));
+      setCurrentFaq(faqs.slice(0, 7)); // Show first 7 FAQs when collapsed
       setExpand(false);
     } else {
-      setCurrentFaq(faqs);
+      setCurrentFaq(faqs); // Show all FAQs when expanded
       setExpand(true);
     }
   };
 
+  /**
+   * handleChange Function
+   * ---------------------
+   * Handles the expansion and collapse of individual accordion items.
+   * 
+   * @param {number} panel - Index of the accordion being toggled.
+   * @returns {function} - Event handler for accordion state changes.
+   */
   const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
+    setExpanded(isExpanded ? panel : false); // Expand clicked accordion or collapse if clicked again
   };
 
   return (
@@ -65,6 +104,9 @@ export default function Faq() {
       <Box
         sx={{
           width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          gap: 1, // Adds vertical spacing between accordions
           "& .MuiPaper-root.MuiAccordion-root": {
             boxShadow: "0px 12px 21px rgb(0 0 0 / 5%)",
             borderTop: "none",
@@ -72,70 +114,45 @@ export default function Faq() {
             p: 1,
             bgcolor: "#111C3A",
             color: "#fff",
-            mb: 2,
+            mb: 2, // Adds spacing between each accordion
           },
           "& .MuiPaper-root.MuiAccordion-root.Mui-expanded": {
-            boxShadow: "0px 12px 21px rgb(0 0 0 / 5%)",
-            borderTop: "none",
-            borderRadius: ".4rem",
             background: "linear-gradient(60deg, #ED1E79, #662D8C)",
-            color: "#fff",
-            p: 1,
-          },
-          "& .MuiPaper-root.MuiAccordion-root:before": {
-            height: 0,
-          },
-          "& .MuiButtonBase-root.MuiAccordionSummary-root.Mui-expanded": {
-            color: "#fff",
-          },
-          "& .MuiCollapse-root": {
-            color: "#fff",
-          },
-          "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
-            background: "transparent",
             color: "#fff",
           },
           "& .MuiAccordionSummary-expandIconWrapper": {
             background: "transparent",
             color: "#fff",
           },
-          display: "flex",
-          flexDirection: "column",
-          gap: 1,
         }}
-        data-aos="zoom-in-up"
-        data-aos-duration="2000"
+        data-aos="zoom-in-up" // Animation effect on scroll
+        data-aos-duration="2000" // Animation duration (2000ms)
       >
-        {currentFaq.map((i, k) => (
+        {/* Maps through the currentFaq array and renders an accordion for each question */}
+        {currentFaq.map((item, index) => (
           <Accordion
-            key={k}
-            expanded={expanded === k}
-            onChange={handleChange(k)}
+            key={index} // Provides a unique key for each accordion
+            expanded={expanded === index} // Controls the expanded state of the accordion
+            onChange={handleChange(index)} // Handles accordion state changes
           >
             <AccordionSummary
-              expandIcon={expanded === k ? <CancelIcon /> : <AddCircleIcon />}
-              aria-controls={`panel1a-content-${k}`}
-              id={`panel1a-header-${k}`}
+              expandIcon={expanded === index ? <CancelIcon /> : <AddCircleIcon />} // Shows different icon based on expand state
+              aria-controls={`panel-content-${index}`} // Accessibility attribute linking to content
+              id={`panel-header-${index}`} // Accessibility attribute linking to header
             >
               <Typography
                 variant="h3"
-                sx={{
-                  fontSize: { xs: "1rem", xl: "1.2rem" },
-                  fontWeight: 400,
-                }}
+                sx={{ fontSize: { xs: "1rem", xl: "1.2rem" }, fontWeight: 400 }}
               >
-                {i.que}
+                {item.que} {/* Displays the question */}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography
                 variant="h4"
-                sx={{
-                  fontSize: { xs: "1rem", xl: "1.2rem" },
-                  fontWeight: 400,
-                }}
+                sx={{ fontSize: { xs: "1rem", xl: "1.2rem" }, fontWeight: 400 }}
               >
-                {i.ans}
+                {item.ans} {/* Displays the answer */}
               </Typography>
             </AccordionDetails>
           </Accordion>

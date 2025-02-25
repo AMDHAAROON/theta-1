@@ -4,18 +4,21 @@ import { styled } from "@mui/system";
 import { keyframes } from "@emotion/react";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 
+// Styled component for the animated card with rotating border animation
 const AnimatedCard = styled(Box)(({ theme }) => ({
-  height: "450px",
-  width: "350px",
-  background: "#222",
-  position: "relative",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  borderRadius: "10px",
-  cursor: "pointer",
-  overflow: "hidden",
+  height: "450px", // Card height
+  width: "350px", // Card width
+  background: "#222", // Dark background color
+  position: "relative", // Relative positioning for pseudo-elements
+  display: "flex", // Flexbox for alignment
+  flexDirection: "column", // Column direction for content
+  justifyContent: "center", // Center vertically
+  alignItems: "center", // Center horizontally
+  borderRadius: "10px", // Rounded corners
+  cursor: "pointer", // Pointer cursor on hover
+  overflow: "hidden", // Hide overflowing content
+  
+  // Rotating gradient border animation using ::before pseudo-element
   "&::before": {
     position: "absolute",
     content: '""',
@@ -23,27 +26,37 @@ const AnimatedCard = styled(Box)(({ theme }) => ({
     height: "180%",
     background: "#ff0800",
     transform: "rotate(45deg)",
-    animation: "animate 4s linear infinite",
+    animation: "animate 4s linear infinite", // Infinite rotation animation
   },
+  
+  // Inner card background using ::after pseudo-element
   "&::after": {
     position: "absolute",
     content: '""',
     inset: "2px",
-    background: "#000",
+    background: "#000", // Black inner background
     borderRadius: "8px",
   },
+
+  // Styling for images inside the card
   "& img": {
     width: "50%",
     height: "auto",
-    zIndex: 1,
+    zIndex: 1, // Ensure image is above pseudo-elements
   },
+
+  // Button styling inside the card
   "& button": {
     zIndex: 1,
     marginTop: "10px",
   },
+
+  // Stop animation on hover
   "&:hover::before": {
     animation: "none",
   },
+
+  // Keyframes for the rotating gradient animation
   "@keyframes animate": {
     "0%": {
       transform: "rotate(0deg)",
@@ -56,21 +69,18 @@ const AnimatedCard = styled(Box)(({ theme }) => ({
   },
 }));
 
+// Gradient border animation for the circular avatar border
 const gradientBorderAnimation = keyframes`
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 `;
 
+// Reusable card component for each cluster
 const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
   return (
-    <AnimatedCard  data-aos="fade-up">
+    <AnimatedCard data-aos="fade-up"> {/* Animated card with AOS fade-up effect */}
+      {/* Cluster title positioned at the top-left */}
       <Typography
         variant="h6"
         sx={{
@@ -81,12 +91,13 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
           fontWeight: 100,
           fontSize: "1.2rem",
           letterSpacing: 1,
-          margin: 0,
           zIndex: 1,
         }}
       >
         {title}
       </Typography>
+
+      {/* Circular avatar with animated gradient border */}
       <Box
         sx={{
           width: 140,
@@ -110,11 +121,12 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
             width: "80%",
             height: "80%",
             borderRadius: "50%",
-            scale: 2.8,
+            scale: 2.8, // Enlarges the avatar inside the circle
           }}
         />
       </Box>
 
+      {/* Cluster subtitle */}
       <Typography
         variant="h6"
         sx={{
@@ -128,6 +140,8 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
       >
         {subtitle}
       </Typography>
+
+      {/* Cluster description */}
       <Typography
         sx={{
           color: "#fff",
@@ -142,9 +156,10 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
         {description}
       </Typography>
 
+      {/* Learn More button linking to the workshops page */}
       <Button
         variant="contained"
-        endIcon={<ArrowCircleRightIcon />}
+        endIcon={<ArrowCircleRightIcon />} // Arrow icon at the end
         href={path}
         sx={{
           background: `linear-gradient(91.83deg, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%)`,
@@ -167,90 +182,26 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
   );
 };
 
+// Main Clusters component containing all cluster cards
 const Clusters = () => {
+  // Data for each cluster card
   const cardData = [
-    {
-      title: "",
-      imgSrc: "Assets/Clusterlogo/Access.png",
-      subtitle: "ACCESS INDIA",
-      description: "Empowering students for a innovative future.",
-      path: "/Workshops",
-    },
-    {
-      title: "",
-      imgSrc: "Assets/Clusterlogo/Robotics.png",
-      subtitle: "ROBOTICA",
-      description: "Innovative solutions through robotics technology.",
-      path: "/Workshops",
-    },
-    {
-      title: "",
-      imgSrc: "Assets/Clusterlogo/Informatica.png",
-      subtitle: "INFORMATICA",
-      description: "Where art meets technology in perfect harmony.",
-      path: "/Workshops",
-    },
-    {
-      title: "",
-      imgSrc: "Assets/Clusterlogo/Electronica.png",
-      subtitle: "ELECTRONICA",
-      description: "The pulse of electronic creativity.",
-      path: "/Workshops",
-    },
-    {
-      title: "",
-      imgSrc: "Assets/Clusterlogo/tamil.png",
-      subtitle: "EQUILIBRIA",
-      description: "Finding balance through artistic expression.",
-      path: "/Workshops",
-    },
-    {
-      title: "",
-      imgSrc: "Assets/Clusterlogo/Math.jpg",
-      subtitle: "MATHEMATICA",
-      description: "The beauty of mathematics in artistic form.",
-      path: "/Workshops",
-    },
-    {
-      title: "",
-      imgSrc: "Assets/Clusterlogo/Biogenesis.jpg",
-      subtitle: "BIOGENESIS",
-      description: "Life and art intertwined in a unique way.",
-      path: "/Workshops",
-    },
-    {
-      title: "",
-      imgSrc: "Assets/Clusterlogo/Optica.png",
-      subtitle: "OPTICA",
-      description: "A vision of creativity through optics.",
-      path: "/Workshops",
-    },
-    {
-      title: "",
-      imgSrc: "Assets/Clusterlogo/Sportiva.png",
-      subtitle: "SPORTIVA",
-      description: "The intersection of sport and artistic expression.",
-      path: "/Workshops",
-    },
-    {
-      title: "",
-      imgSrc: "Assets/Clusterlogo/st1.png",
-      subtitle: "STRATEGIA",
-      description: "Exploring new horizons in art.",
-      path: "/Workshops",
-    },
-    {
-      title: "",
-      imgSrc: "Assets/Clusterlogo/vv.png",
-      subtitle: "VINODHA VAAHINI",
-      description: "Uniting Hearts with Joyful Moments",
-      path: "/Workshops",
-    },
-
+    { title: "", imgSrc: "Assets/Clusterlogo/Access.png", subtitle: "ACCESS INDIA", description: "Empowering students for a innovative future.", path: "/Workshops" },
+    { title: "", imgSrc: "Assets/Clusterlogo/Robotics.png", subtitle: "ROBOTICA", description: "Innovative solutions through robotics technology.", path: "/Workshops" },
+    { title: "", imgSrc: "Assets/Clusterlogo/Informatica.png", subtitle: "INFORMATICA", description: "Where art meets technology in perfect harmony.", path: "/Workshops" },
+    { title: "", imgSrc: "Assets/Clusterlogo/Electronica.png", subtitle: "ELECTRONICA", description: "The pulse of electronic creativity.", path: "/Workshops" },
+    { title: "", imgSrc: "Assets/Clusterlogo/tamil.png", subtitle: "EQUILIBRIA", description: "Finding balance through artistic expression.", path: "/Workshops" },
+    { title: "", imgSrc: "Assets/Clusterlogo/Math.jpg", subtitle: "MATHEMATICA", description: "The beauty of mathematics in artistic form.", path: "/Workshops" },
+    { title: "", imgSrc: "Assets/Clusterlogo/Biogenesis.jpg", subtitle: "BIOGENESIS", description: "Life and art intertwined in a unique way.", path: "/Workshops" },
+    { title: "", imgSrc: "Assets/Clusterlogo/Optica.png", subtitle: "OPTICA", description: "A vision of creativity through optics.", path: "/Workshops" },
+    { title: "", imgSrc: "Assets/Clusterlogo/Sportiva.png", subtitle: "SPORTIVA", description: "The intersection of sport and artistic expression.", path: "/Workshops" },
+    { title: "", imgSrc: "Assets/Clusterlogo/st1.png", subtitle: "STRATEGIA", description: "Exploring new horizons in art.", path: "/Workshops" },
+    { title: "", imgSrc: "Assets/Clusterlogo/vv.png", subtitle: "VINODHA VAAHINI", description: "Uniting Hearts with Joyful Moments", path: "/Workshops" },
   ];
 
   return (
     <Box display="flex" gap={10} flexWrap="wrap" justifyContent="center" py={5}>
+      {/* Render a RotatingCard for each cluster in the cardData array */}
       {cardData.map((card, index) => (
         <RotatingCard
           key={index}
@@ -259,11 +210,11 @@ const Clusters = () => {
           subtitle={card.subtitle}
           description={card.description}
           path={card.path}
-           data-aos="fade-up"
+          data-aos="fade-up" // Animation on scroll
         />
       ))}
     </Box>
   );
 };
 
-export default Clusters;
+export default Clusters; // Export the Clusters component as default
