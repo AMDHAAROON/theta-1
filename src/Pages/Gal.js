@@ -198,6 +198,7 @@ const Gallery = () => (
       }}
     >
       <Box
+       
         component="img"
         src="/assets/logo.png"
         alt="Background Logo"
@@ -212,7 +213,7 @@ const Gallery = () => (
           zIndex: 1,
         }}
       />
-
+<Navbar  />
       {/* Main Gallery Header */}
       <AnimatedHeader
         title="GALLERY"
@@ -228,10 +229,10 @@ const Gallery = () => (
         </Typography>
         <Button
           variant="contained"
-         
+          color="primary"
           href='https://www.youtube.com/@TeamEmulsion'
           sx={{
-            backgroundColor: 'red', 
+            backgroundColor:' red',
             borderRadius: 2,
             px: 4,
             py: 1.5,
