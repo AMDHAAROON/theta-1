@@ -61,7 +61,7 @@ const workshopData = [
     title: "Graphics design and digital branding",
     date: "Date: 28th-Feb-2025",
     time: "Time: 9:30 a.m - 03:00 p.m.",
-    venue: "Venue: Computer Lab",
+    venue: "Venue: 201 and Computer Lab 1",
     chiefGuest: " Mr S.vishnu and Mr S.Santhosh kumar",
     registrationLink: "https://forms.gle/ZXkfGMhTYgqL6hRX7",
     image: "/Assets/Posters/graphics.png",
