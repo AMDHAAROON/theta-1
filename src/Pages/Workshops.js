@@ -33,7 +33,7 @@ const workshopData = [
     image: "/Assets/Posters/biogenesis.png",
     description:
       "Explore advanced molecular biology techniques: electrophoresis, gel documentation, PCR instrumentation, and bioinformatics analysis. Gain valuable lab experience!",
-  },*/
+  },
   {
     id: 4,
     title: "Word and Excel",
@@ -44,7 +44,7 @@ const workshopData = [
     registrationLink: "https://forms.gle/EhCcrjThdLmub8Lv9",
     image: "/Assets/Posters/wordexcel.jpg",
     description: "Unlock your potential through our interactive workshop to boost productivity with expert tips, smart techniques, and time-saving hacks.",
-  },
+  },*/
   {
     id: 5,
     title: "DE-STRESS DISTRESS ",
@@ -61,7 +61,7 @@ const workshopData = [
     title: "Graphics design and digital branding",
     date: "Date: 28th-Feb-2025",
     time: "Time: 9:30 a.m - 03:00 p.m.",
-    venue: "Venue: Computer Lab",
+    venue: "Venue: 201 and Computer Lab 1",
     chiefGuest: " Mr S.vishnu and Mr S.Santhosh kumar",
     registrationLink: "https://forms.gle/ZXkfGMhTYgqL6hRX7",
     image: "/Assets/Posters/graphics.png",
