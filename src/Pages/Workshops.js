@@ -80,9 +80,9 @@ const workshopData = [
   },
   {
     id: 8,
-    title: "GST-Basics",
+    title: "GST & Income tax",
     date: "Date: 05th-Mar-2025",
-    time: "Time: 09:00 a.m. - 01:00 p.m.",
+    time: "Time: 09:00 a.m. - 04:00 p.m.",
     venue: "Venue: Auditorium",
     chiefGuest: "",
     registrationLink: "",
