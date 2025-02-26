@@ -212,7 +212,6 @@ const Gallery = () => (
           zIndex: 1,
         }}
       />
-       <Navbar  />
 
       {/* Main Gallery Header */}
       <AnimatedHeader
@@ -229,9 +228,10 @@ const Gallery = () => (
         </Typography>
         <Button
           variant="contained"
-          color="primary"
+         
           href='https://www.youtube.com/@TeamEmulsion'
           sx={{
+            backgroundColor: 'red', 
             borderRadius: 2,
             px: 4,
             py: 1.5,
