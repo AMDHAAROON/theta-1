@@ -17,6 +17,7 @@ import Developers from "./Pages/Developers ";
 import Cluster from "./Pages/Cluster";
 import NotFound from "./Component/NotFound";
 import { Analytics } from '@vercel/analytics/react';
+import Gal from './Pages/Gal';
 
 function App() {
   useEffect(() => {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/Workshops" element={<Workshops />} />
         <Route path="/Developers" element={<Developers />} />
         <Route path="/Cluster" element={<Cluster />} />
+        <Route path="/Gal" element={<Gal />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Analytics />

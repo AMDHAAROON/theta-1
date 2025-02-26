@@ -1,7 +1,7 @@
 import React, { useEffect,  } from 'react';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { Grid, Card, CardContent, Typography, Box,  } from '@mui/material';
+import { Grid, Card, CardContent, Typography, Box,Button  } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
@@ -46,7 +46,10 @@ const ContactUs = () => {
     ];
 
     useEffect(() => { document.title = "Contact Us - Theta Program"; }, []);
-
+   
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     return (
         <ThemeProvider theme={theme}>
@@ -88,9 +91,11 @@ const ContactUs = () => {
                     </Box>
                 </Box>
             </Box>
+       
+
 
             <Box sx={{ backgroundColor: '#000212' }}>
-                <Box sx={{ pt: 10 }}>
+                <Box sx={{ pt: 6 }}>
                     <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                         <Typography data-aos="zoom-in-up" data-aos-duration="2000" sx={{ fontSize: ['30px', '46px'], fontWeight: 600, color: '#fff', textAlign: 'center', lineHeight: 1.4, mb: 2, width: ['90%', '90%', '90%', '90%', '40%'] }}>
                             Join Us for an Unforgettable Cultural Experience
@@ -116,7 +121,62 @@ const ContactUs = () => {
                         ))}
                     </Grid>
                 </Box>
-                
+                <Box sx={{ textAlign: 'center', backgroundColor: '#000212', pb: 6 }}>
+  <Typography
+    variant="h5"
+    sx={{
+      fontWeight: 1000,
+      color: '#fff',
+      mb: 2,
+      animation: 'slideDown 1s ease-out',
+      display: 'block',
+    }}
+  >
+    Visit Our Gallery
+  </Typography>
+
+  <Link to="/Gal" onClick={scrollToTop} style={{ textDecoration: 'none' }}>
+    <Button
+      variant="contained"
+      sx={{
+        backgroundColor: '#E91E63',
+        color: '#fff',
+        fontWeight: 'bold',
+        fontSize: '16px',
+        px: 4,
+        borderRadius: '8px',
+        textTransform: 'none',
+        border: '2px solid transparent',
+        animation: 'pulse 1.5s infinite',
+        transition: 'all 0.3s ease-in-out',
+        '&:hover': {
+          backgroundColor: '#fff',
+          color: '#E91E63',
+          border: '2px solid #E91E63',
+          transform: 'scale(1.05)',
+          boxShadow: '0 6px 16px rgba(0, 0, 0, 0.3)',
+        },
+      }}
+    >
+      View Gallery
+    </Button>
+  </Link>
+
+  <style>
+    {`
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+      }
+
+      @keyframes slideDown {
+        0% { opacity: 0; transform: translateY(-20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+    `}
+  </style>
+</Box>                
 
                 {/* Map Introduction Text */}
                  <Box sx={{ textAlign: 'center', mb: 3, px: [2, 3, 6] }}>
@@ -140,6 +200,9 @@ const ContactUs = () => {
                         Locate our place easily using the map above. We look forward to seeing you!
                     </Typography>
                 </Box>
+                
+              
+
                 </Box>
             <Footer />
         </ThemeProvider>
