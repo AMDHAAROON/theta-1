@@ -33,7 +33,7 @@ const workshopData = [
     image: "/Assets/Posters/biogenesis.png",
     description:
       "Explore advanced molecular biology techniques: electrophoresis, gel documentation, PCR instrumentation, and bioinformatics analysis. Gain valuable lab experience!",
-  },*/
+  },
   {
     id: 4,
     title: "Word and Excel",
@@ -44,7 +44,7 @@ const workshopData = [
     registrationLink: "https://forms.gle/EhCcrjThdLmub8Lv9",
     image: "/Assets/Posters/wordexcel.jpg",
     description: "Unlock your potential through our interactive workshop to boost productivity with expert tips, smart techniques, and time-saving hacks.",
-  },
+  },*/
   {
     id: 5,
     title: "DE-STRESS DISTRESS ",
