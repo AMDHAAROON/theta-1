@@ -44,7 +44,7 @@ const workshopData = [
     registrationLink: "https://forms.gle/EhCcrjThdLmub8Lv9",
     image: "/Assets/Posters/wordexcel.jpg",
     description: "Unlock your potential through our interactive workshop to boost productivity with expert tips, smart techniques, and time-saving hacks.",
-  },*/
+  },
   {
     id: 5,
     title: "DE-STRESS DISTRESS ",
@@ -55,7 +55,7 @@ const workshopData = [
     registrationLink: "https://docs.google.com/forms/u/1/d/e/1FAIpQLSdRruHObAbF6E8jByvn3KkWL7kwftR9jz8nVy7pSVfreTuiag/viewform?usp=send_form",
     image: "/Assets/Posters/stress.jpg",
     description: "Join us for an engaging session to unwind, recharge, and learn practical stress-relief techniques. Experience mindfulness, relaxation, and simple strategies to tackle daily challenges with ease!",
-  },
+  },*/
   {
     id: 6,
     title: "Graphics design and digital branding",
