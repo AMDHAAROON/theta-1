@@ -71,6 +71,7 @@ export default function Navbar(props) {
     !isMdUp && { link: "/Cluster", name: "Cluster" },
     { link: "/Workshops", name: "Workshops" },
     { link: "/ContactUs", name: "Contact Us" },
+    { link: "/Gal", name: "Gallery" },
   ].filter(Boolean);
 
   const drawer = (
