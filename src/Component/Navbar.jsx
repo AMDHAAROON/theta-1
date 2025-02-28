@@ -70,7 +70,7 @@ export default function Navbar(props) {
     { link: "/", name: "Home" },
     !isMdUp && { link: "/Cluster", name: "Cluster" },
     { link: "/Workshops", name: "Workshops" },
-    { link: "/Gal", name: "Gallery" },
+    { link: "/Gal", name: "Gallery" },//new navbar for testing
     { link: "/ContactUs", name: "Contact Us" },
    
   ].filter(Boolean);
