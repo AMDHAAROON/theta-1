@@ -44,7 +44,7 @@ const workshopData = [
     registrationLink: "https://forms.gle/EhCcrjThdLmub8Lv9",
     image: "/Assets/Posters/wordexcel.jpg",
     description: "Unlock your potential through our interactive workshop to boost productivity with expert tips, smart techniques, and time-saving hacks.",
-  },*/
+  },
   {
     id: 5,
     title: "DE-STRESS DISTRESS ",
@@ -66,7 +66,7 @@ const workshopData = [
     registrationLink: "https://forms.gle/ZXkfGMhTYgqL6hRX7",
     image: "/Assets/Posters/graphics.png",
     description: "Embark on a journey of Design Discovery.",
-  },
+  },*/
   {
     id: 7,
     title: "AI & Neural Networks Workshop",
