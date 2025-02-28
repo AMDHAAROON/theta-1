@@ -55,7 +55,7 @@ const workshopData = [
     registrationLink: "https://docs.google.com/forms/u/1/d/e/1FAIpQLSdRruHObAbF6E8jByvn3KkWL7kwftR9jz8nVy7pSVfreTuiag/viewform?usp=send_form",
     image: "/Assets/Posters/stress.jpg",
     description: "Join us for an engaging session to unwind, recharge, and learn practical stress-relief techniques. Experience mindfulness, relaxation, and simple strategies to tackle daily challenges with ease!",
-  },*/
+  },
   {
     id: 6,
     title: "Graphics design and digital branding",
@@ -66,7 +66,7 @@ const workshopData = [
     registrationLink: "https://forms.gle/ZXkfGMhTYgqL6hRX7",
     image: "/Assets/Posters/graphics.png",
     description: "Embark on a journey of Design Discovery.",
-  },
+  },*/
   {
     id: 7,
     title: "AI & Neural Networks Workshop",
