@@ -126,7 +126,7 @@ const ContactUs = () => {
                                     backdropFilter: 'blur(15px)',
                                     boxShadow: "0 10px 30px rgba(255, 105, 135, 0.3)",
                                     borderRadius: "20px",
-                                    p: 4,
+                                    p: 1,
                                     border: "1px solid rgba(255, 255, 255, 0.3)",
                                     '&:hover': {
                                         transform: 'scale(1.1)',
