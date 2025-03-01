@@ -28,7 +28,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/emulsion" element={<Emulsion />} />
         <Route path="/informatica" element={<Informatica />} />
         <Route path="/robotics" element={<Robotics />} />
@@ -39,7 +39,7 @@ function App() {
         <Route path="/workshops" element={<Workshops />} />
         <Route path="/developers" element={<Developers />} />
         <Route path="/cluster" element={<Cluster />} />
-        <Route path="/galary" element={<Gal />} />
+        <Route path="/gallery" element={<Gal />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Analytics />
