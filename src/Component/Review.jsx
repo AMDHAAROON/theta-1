@@ -71,7 +71,6 @@ const Review = () => {
               {review.review}
             </Typography>
             <Box display="flex" alignItems="center">
-             
               <Box>
                 <Typography
                   sx={{

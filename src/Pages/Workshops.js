@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Box, Button, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
+
 import Navbar from ".././Component/Navbar";
 import Footer from ".././Component/Footer";
 import PopupModal from "../Component/PopupModal"; // Import the modal component
-import { Link } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const workshopData = [
@@ -21,7 +22,7 @@ const workshopData = [
     description:
       "Experience the wonders of law and technology combined, featuring interactive sessions, expert panels, and innovative demonstrations.",
   },*/
- /* {
+  /* {
     id: 3,
     title: "Cutting edge techniques in molecular biology",
     date: "Date: 25th-Feb-2025",
@@ -121,9 +122,11 @@ const workshopData = [
     time: "Time: 2:00 p.m - 05:00 p.m.",
     venue: "Venue: 201 and ground",
     chiefGuest: " Mr Ramkumar Ravindran",
-    registrationLink: "https://docs.google.com/forms/u/1/d/e/1FAIpQLSdRruHObAbF6E8jByvn3KkWL7kwftR9jz8nVy7pSVfreTuiag/viewform?usp=send_form",
+    registrationLink:
+      "https://docs.google.com/forms/u/1/d/e/1FAIpQLSdRruHObAbF6E8jByvn3KkWL7kwftR9jz8nVy7pSVfreTuiag/viewform?usp=send_form",
     image: "/Assets/Posters/stress.jpg",
-    description: "Join us for an engaging session to unwind, recharge, and learn practical stress-relief techniques. Experience mindfulness, relaxation, and simple strategies to tackle daily challenges with ease!",
+    description:
+      "Join us for an engaging session to unwind, recharge, and learn practical stress-relief techniques. Experience mindfulness, relaxation, and simple strategies to tackle daily challenges with ease!",
   },
   {
     id: 12,
@@ -131,12 +134,15 @@ const workshopData = [
     date: "Date: 13th-Mar-2025",
     time: "Time: 09:00 a.m. - 05:00 p.m.",
     venue: "Venue: 201",
-    chiefGuest: "M/s. NWAREHOUSE PVT. LTD., TRICHY and M/s. CROBOT TECHNOLOGIES PVT. LTD CHENNAI",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeJ90E42YMcX7D2ljnJsBmb3YvOmWXOKKTj5kRjuHVB7fPN_w/viewform",
+    chiefGuest:
+      "M/s. NWAREHOUSE PVT. LTD., TRICHY and M/s. CROBOT TECHNOLOGIES PVT. LTD CHENNAI",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeJ90E42YMcX7D2ljnJsBmb3YvOmWXOKKTj5kRjuHVB7fPN_w/viewform",
     image: "/Assets/Posters/iot.jpeg",
-    description: "This workshop explores the integration of Industrial Internet of Things (IIoT) with Robotics, showcasing how these technologies are revolutionizing industrial automation.",
+    description:
+      "This workshop explores the integration of Industrial Internet of Things (IIoT) with Robotics, showcasing how these technologies are revolutionizing industrial automation.",
   },
-  
+
   {
     id: 14,
     title: "A Hands-on Ethical Hacking Workshop",
@@ -192,7 +198,7 @@ const workshopData = [
     image: "/Assets/Posters/archery.jpg",
     description: "Sportiva",
   },
- 
+
   {
     id: 18,
     title: "Application Containerization Using Docker",
@@ -407,4 +413,3 @@ export default function Workshops() {
     </>
   );
 }
-

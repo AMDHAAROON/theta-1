@@ -1,8 +1,11 @@
 import { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
+
 import AOS from "aos";
+import "./App.css";
 import "aos/dist/aos.css";
+
 import Home from "./Pages/Home";
 import Emulsion from "./Pages/ClustersPages/Emulsion";
 import Informatica from "./Pages/ClustersPages/Informatica";
@@ -16,7 +19,6 @@ import Workshops from "./Pages/Workshops";
 import Developers from "./Pages/Developers ";
 import Cluster from "./Pages/Cluster";
 import NotFound from "./Component/NotFound";
-import { Analytics } from "@vercel/analytics/react";
 import Gal from "./Pages/Gal";
 
 function App() {

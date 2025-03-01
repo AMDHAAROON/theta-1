@@ -9,7 +9,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 /**
  * Custom Accordion component using Material UI's Accordion.
- * 
+ *
  * Props:
  * - head (ReactNode): Content to be displayed in the accordion header.
  * - body (ReactNode): Content to be shown when the accordion is expanded.
