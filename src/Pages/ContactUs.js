@@ -109,7 +109,7 @@ const ContactUs = () => {
 
             <Box sx={{ backgroundColor: '#000212', py: 6, px: { xs: 4, sm: 6, md: 12 } }}>
             <Box sx={{  pb: 5, textAlign: 'center', backgroundColor: '#000212', px: { xs: 2, md: 6 } }}>
-                <Typography data-aos="zoom-in-up" data-aos-duration="2000" sx={{ fontSize: ['24px', '30px'], fontWeight: 700, color: '#fff', lineHeight: 1.4, mb: 4, fontFamily: '"Playfair Display", serif' }}>
+                <Typography data-aos="zoom-in-up" data-aos-duration="2000" sx={{ fontSize: ['20px', '30px'], fontWeight: 700, color: '#fff', lineHeight: 1.4, mb: 4, fontFamily: '"Playfair Display", serif' }}>
                     Join Us for an Unforgettable Cultural Experience
                 </Typography>
                 
