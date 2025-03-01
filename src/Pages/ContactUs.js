@@ -1,10 +1,10 @@
-import React, { useEffect,  } from 'react';
+import React, { useEffect } from 'react';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { Grid, Card, CardContent, Typography, Box,Button  } from '@mui/material';
-import HomeIcon from '@mui/icons-material/Home';
+import { Grid, Card, CardContent, Typography, Box, Grow,Button } from '@mui/material';
+import HowToRegIcon from '@mui/icons-material/HowToReg';
+import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 import PhoneIcon from '@mui/icons-material/Phone';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Footer from '../Component/Footer';
 import Navbar from '../Component/Navbar';
 import { Link } from 'react-router-dom';
@@ -12,44 +12,58 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const theme = createTheme({
     typography: {
-        fontFamily: `'Jost', sans-serif`,
+        fontFamily: `'Poppins', sans-serif`,
+        h6: {
+            fontWeight: 700,
+            letterSpacing: "0.5px",
+        },
+        body2: {
+            fontSize: "16px",
+            lineHeight: "1.6",
+            color: "#D3D6DB",
+        }
     },
 });
 
-
-
 const ContactUs = () => {
-   
-
     const contactInfo = [
         {
-            icon: <HomeIcon style={{ fontSize: '40px' }} />,
-            title: 'Sastra-SRC',
-            content: <>Theta Cultural Program, <br /> Kumbakonam - 612001. Tamilnadu</>,
-        },
-        {
-            icon: <PhoneIcon style={{ fontSize: '40px' }} />,
-            title: 'Contact Us',
+            icon: <SupervisorAccountIcon style={{ fontSize: '40px', color: '#009688 ' }} />, 
+            title: 'Co-Convenors',
             content: (
                 <>
-                    President : Surya C <br /> Phone No : +91 93606 17308 <br /><br />
-                    Vice-President : Venkatesh N <br /> Phone No : +91 94437 76472 <br /><br />
-                    Vice-President : Karen Angel <br /> Phone No : +91 74183 15768
+                <br />
+                    <strong>Capt. Senthilnathan T</strong> <br /> Phone No : +91 94432 75916 <br /><br />
+                    <strong>Dr. Mathi R</strong> <br /> Phone No : +91 93844 53922 <br /><br />
+                    <strong>Dr. Sundhara Raman M</strong> <br /> Phone No : +91 99407 50345 <br /><br />
+                    <strong>Mr. Swaminathan R</strong> <br /> Phone No : +91 89402 50154 <br /><br />
                 </>
             ),
         },
         {
-            icon: <MailOutlineIcon style={{ fontSize: '40px' }} />,
-            title: 'Email Us',
-            content: (<>theta@src.sastra.ac.in<br />webtek.innovators@gmail.com</>),
+            icon: < HowToRegIcon style={{ fontSize: '40px', color: '#1E88E5 ' }} />, 
+            title: 'Convenor',
+            content: <>
+            <br />
+                <strong>Dr. Srinivasan A</strong> <br /> Phone No : +91 70107 45391 <br /><br />
+            </>
+        },
+        {
+            icon: <PhoneIcon style={{ fontSize: '40px', color: '#D32F2F' }} />, 
+            title: 'Contact Us',
+            content: (
+                <>
+                <br />
+                    <strong>President : Surya C</strong> <br /> Phone No : +91 93606 17308 <br /><br />
+                    <strong>Vice-President : Venkatesh N</strong> <br /> Phone No : +91 94437 76472 <br /><br />
+                    <strong>Vice-President : Karen Angel</strong> <br /> Phone No : +91 74183 15768
+                    <br /><br /><br /><br /><br />
+                </>
+            ),
         },
     ];
 
     useEffect(() => { document.title = "Contact Us - Theta Program"; }, []);
-   
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
 
     return (
         <ThemeProvider theme={theme}>
@@ -64,6 +78,7 @@ const ContactUs = () => {
                 padding: { xs: "30px 1rem", md: "50px 10rem" },
                 height: { xs: "50vh", md: "55vh" },
                 display: "flex",
+                flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
                 zIndex: 1,
@@ -80,49 +95,80 @@ const ContactUs = () => {
                 },
             }}>
                 <Navbar color="#fff" />
-                <Box>
-                    <Typography sx={{ color: "#fff", fontWeight: "bold", fontSize: ["20px", "22px", "36px"], my: 1, textAlign: 'center' }}>Contact Us</Typography>
-                    <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', justifyContent: 'center', pb: 5 }}>
-                        <Link to="/" style={{ textDecoration: "none" }}>
-                            <Typography sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: '18px' }}>Home</Typography>
-                        </Link>
-                        <ArrowRightAltIcon sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: '36px' }} />
-                        <Typography sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: '18px' }}>Contact Us</Typography>
-                    </Box>
+                <Typography sx={{ fontSize: ['30px', '35px'], fontWeight: 600, color: '#fff', textAlign: 'center' }}>
+                    Contact Us
+                </Typography>
+                <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', justifyContent: 'center', mt: 2 }}>
+                    <Link to="/" style={{ textDecoration: "none" }}>
+                        <Typography sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: '18px' }}>Home</Typography>
+                    </Link>
+                    <ArrowRightAltIcon sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: '36px' }} />
+                    <Typography sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: '18px' }}>Contact Us</Typography>
                 </Box>
             </Box>
-       
 
+            <Box sx={{ backgroundColor: '#000212', py: 6, px: { xs: 4, sm: 6, md: 12 } }}>
+            <Box sx={{  pb: 5, textAlign: 'center', backgroundColor: '#000212', px: { xs: 2, md: 6 } }}>
+                <Typography data-aos="zoom-in-up" data-aos-duration="2000" sx={{ fontSize: ['24px', '30px'], fontWeight: 700, color: '#fff', lineHeight: 1.4, mb: 4, fontFamily: '"Playfair Display", serif' }}>
+                    Join Us for an Unforgettable Cultural Experience
+                </Typography>
+                
+            </Box>
 
-            <Box sx={{ backgroundColor: '#000212' }}>
-                <Box sx={{ pt: 6 }}>
-                    <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                        <Typography data-aos="zoom-in-up" data-aos-duration="2000" sx={{ fontSize: ['30px', '46px'], fontWeight: 600, color: '#fff', textAlign: 'center', lineHeight: 1.4, mb: 2, width: ['90%', '90%', '90%', '90%', '40%'] }}>
-                            Join Us for an Unforgettable Cultural Experience
-                        </Typography>
-                    </Box>
-                    <Typography data-aos="zoom-in-up" data-aos-duration="2500" sx={{ fontSize: '16px', color: '#A0A5AA', textAlign: 'center', lineHeight: 1.8, fontWeight: '500' }}>
-                        Get in touch for event details, collaborations, or to participate in workshops.
-                    </Typography>
-                </Box>
-
-                <Box sx={{ flexGrow: 1, px: [3, 3, 10, 10, 36], py: 5 }}>
-                    <Grid container spacing={10} justifyContent="center" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
-                        {contactInfo.map((info, index) => (
-                            <Grid item xs={12} sm={6} md={4} key={index}>
-                                <Card sx={{ minHeight: '250px', textAlign: 'center', backgroundColor: '#D3D6DB', boxShadow: "0 8px 16px rgba(0, 0, 0, 0.4)", padding: '20px' }}>
+                <Grid container spacing={4} justifyContent="center">
+                    {contactInfo.map((info, index) => (
+                        <Grid item xs={12} sm={6} md={4} key={index}>
+                            <Grow in timeout={800 + index * 200}>
+                                <Card sx={{
+                                    minHeight: '280px',
+                                    textAlign: 'center',
+                                    backgroundColor: "#1A1F36",
+                                    backdropFilter: 'blur(15px)',
+                                    boxShadow: "0 10px 30px rgba(255, 105, 135, 0.3)",
+                                    borderRadius: "20px",
+                                    p: 4,
+                                    border: "1px solid rgba(255, 255, 255, 0.3)",
+                                    '&:hover': {
+                                        transform: 'scale(1.1)',
+                                        boxShadow: "0 20px 40px rgba(255, 105, 135, 0.5)",
+                                    }
+                                }}>
                                     <CardContent>
                                         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '15px' }}>{info.icon}</Box>
-                                        <Typography variant="h6" gutterBottom>{info.title}</Typography>
-                                        <Typography variant="body2" color="text.secondary">{info.content}</Typography>
+                                        <Typography variant="h6" gutterBottom sx={{ color: info.icon.props.style.color, fontWeight: 'bold' }}>
+                                            {info.title}
+                                        </Typography>
+                                        <Typography variant="body2">{info.content}</Typography>
                                     </CardContent>
                                 </Card>
-                            </Grid>
-                        ))}
-                    </Grid>
+                            </Grow>
+                        </Grid>
+                    ))}
+                </Grid>
+                    
+        <Box sx={{ textAlign: 'center', mb: 3, mt:3,px: [2, 3, 6] }}>
+                    <Typography variant="h5" sx={{ fontWeight: 1000, color: '#fff', mb: 1 }}>Find Us Here</Typography>
+                    
                 </Box>
-                <Box sx={{ textAlign: 'center', backgroundColor: '#000212', pb: 6 }}>
-  <Typography
+
+                {/* Responsive Google Map */}
+                <Box sx={{ display: 'block', justifyContent: 'center', px: [2, 3, 10], pb:5}}>
+                    <iframe
+                        title="Sastra-SRC Location"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.9961649966363!2d79.3833342742127!3d10.963661489196678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a55337f1ce17aa5%3A0xb5ee193422b5ca2e!2sSastra%20University%20Srinivasa%20Ramanujan%20Center%2C%20Kumbakonam!5e0!3m2!1sen!2sin!4v1740157561205!5m2!1sen!2sin"
+                        width="100%"
+                        height="450"
+                        style={{ border: 0, borderRadius: '12px', boxShadow: "0 6px 12px rgba(0,0,0,0.3)" }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        
+                    ></iframe>
+                     <Typography sx={{ color: '#A0A5AA', fontSize: '16px',textAlign: 'center' ,mt:'8px'}}>
+                        Locate our place easily using the map above. We look forward to seeing you!
+                    </Typography>
+                </Box>
+                <Box sx={{ textAlign: 'center', }}>
+                <Typography
     variant="h5"
     sx={{
       fontWeight: 1000,
@@ -135,7 +181,7 @@ const ContactUs = () => {
     Visit Our Gallery
   </Typography>
 
-  <Link to="/Gal" onClick={scrollToTop} style={{ textDecoration: 'none' }}>
+  <Link to="/Gal" /*onClick={scrollToTop}*/ style={{ textDecoration: 'none' }}>
     <Button
       variant="contained"
       sx={{
@@ -160,9 +206,8 @@ const ContactUs = () => {
     >
       View Gallery
     </Button>
-  </Link>
-
-  <style>
+  </Link>
+<style>
     {`
       @keyframes pulse {
         0% { transform: scale(1); }
@@ -174,36 +219,11 @@ const ContactUs = () => {
         0% { opacity: 0; transform: translateY(-20px); }
         100% { opacity: 1; transform: translateY(0); }
       }
-    `}
-  </style>
-</Box>                
+    `}
+  </style>
+</Box>
 
-                {/* Map Introduction Text */}
-                 <Box sx={{ textAlign: 'center', mb: 3, px: [2, 3, 6] }}>
-                    <Typography variant="h5" sx={{ fontWeight: 1000, color: '#fff', mb: 1 }}>Find Us Here</Typography>
-                    
-                </Box>
-
-                {/* Responsive Google Map */}
-                <Box sx={{ display: 'block', justifyContent: 'center', px: [2, 3, 10], pb: 10 }}>
-                    <iframe
-                        title="Sastra-SRC Location"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.9961649966363!2d79.3833342742127!3d10.963661489196678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a55337f1ce17aa5%3A0xb5ee193422b5ca2e!2sSastra%20University%20Srinivasa%20Ramanujan%20Center%2C%20Kumbakonam!5e0!3m2!1sen!2sin!4v1740157561205!5m2!1sen!2sin"
-                        width="100%"
-                        height="450"
-                        style={{ border: 0, borderRadius: '12px', boxShadow: "0 6px 12px rgba(0,0,0,0.3)" }}
-                        allowFullScreen=""
-                        loading="lazy"
-                        
-                    ></iframe>
-                     <Typography sx={{ color: '#A0A5AA', fontSize: '16px',textAlign: 'center' ,mt:'8px'}}>
-                        Locate our place easily using the map above. We look forward to seeing you!
-                    </Typography>
-                </Box>
-                
-              
-
-                </Box>
+            </Box>
             <Footer />
         </ThemeProvider>
     );
