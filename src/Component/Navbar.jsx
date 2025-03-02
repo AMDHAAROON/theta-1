@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+
 import {
   Button,
   Drawer,
@@ -89,8 +90,8 @@ export default function Navbar(props) {
     { link: "/", name: "Home" },
     !isMdUp && { link: "/Cluster", name: "Cluster" },
     { link: "/Workshops", name: "Workshops" },
-    { link: "/Gal", name: "Gallery" },
-    { link: "/ContactUs", name: "Contact Us" },
+    { link: "/gallery", name: "Gallery" },
+    { link: "/contact-us", name: "Contact Us" },
   ].filter(Boolean); // Remove falsy values
 
   // Drawer component for mobile navigation
