@@ -7,14 +7,19 @@ import { useNavigate } from "react-router-dom";
  *
  * Functionality:
  * - Uses the `useNavigate` hook from React Router for client-side navigation.
- * - On button click, the user is redirected to the Developers page.
+ * - Scrolls to the top smoothly after navigation.
  */
 const DevBtn = () => {
   const navigate = useNavigate(); // Initialize navigate function for routing
 
+  const handleClick = () => {
+    navigate("/developers");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    // Button with a click event to navigate to "/developers"
-    <button className="dev-btn" onClick={() => navigate("/developers")}>
+    // Button with a click event to navigate and scroll to top
+    <button className="dev-btn" onClick={handleClick}>
       Developers
     </button>
   );

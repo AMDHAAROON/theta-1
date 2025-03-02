@@ -64,7 +64,9 @@ const ContactUs = () => {
     ];
 
     useEffect(() => { document.title = "Contact Us - Theta Program"; }, []);
-
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
@@ -181,7 +183,7 @@ const ContactUs = () => {
     Visit Our Gallery
   </Typography>
 
-  <Link to="/Gal" /*onClick={scrollToTop}*/ style={{ textDecoration: 'none' }}>
+  <Link to="/Gal" onClick={scrollToTop} style={{ textDecoration: 'none' }}>
     <Button
       variant="contained"
       sx={{
