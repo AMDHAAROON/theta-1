@@ -1,8 +1,11 @@
 import { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
+
 import AOS from "aos";
+import "./App.css";
 import "aos/dist/aos.css";
+
 import Home from "./Pages/Home";
 import Emulsion from "./Pages/ClustersPages/Emulsion";
 import Informatica from "./Pages/ClustersPages/Informatica";
@@ -16,8 +19,7 @@ import Workshops from "./Pages/Workshops";
 import Developers from "./Pages/Developers ";
 import Cluster from "./Pages/Cluster";
 import NotFound from "./Component/NotFound";
-import { Analytics } from '@vercel/analytics/react';
-import Gal from './Pages/Gal';
+import Gal from "./Pages/Gal";
 
 function App() {
   useEffect(() => {
@@ -28,18 +30,18 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/ContactUs" element={<ContactUs />} />
-        <Route path="/Emulsion" element={<Emulsion />} />
-        <Route path="/Informatica" element={<Informatica />} />
-        <Route path="/Robotics" element={<Robotics />} />
-        <Route path="/AllEvents" element={<AllEvents />} />
-        <Route path="/Day1" element={<Day1 />} />
-        <Route path="/Day2" element={<Day2 />} />
-        <Route path="/Day3" element={<Day3 />} />
-        <Route path="/Workshops" element={<Workshops />} />
-        <Route path="/Developers" element={<Developers />} />
-        <Route path="/Cluster" element={<Cluster />} />
-        <Route path="/Gal" element={<Gal />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/emulsion" element={<Emulsion />} />
+        <Route path="/informatica" element={<Informatica />} />
+        <Route path="/robotics" element={<Robotics />} />
+        <Route path="/allEvents" element={<AllEvents />} />
+        <Route path="/day-one" element={<Day1 />} />
+        <Route path="/day-two" element={<Day2 />} />
+        <Route path="/day-three" element={<Day3 />} />
+        <Route path="/workshops" element={<Workshops />} />
+        <Route path="/developers" element={<Developers />} />
+        <Route path="/cluster" element={<Cluster />} />
+        <Route path="/gallery" element={<Gal />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Analytics />

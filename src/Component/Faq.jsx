@@ -11,7 +11,7 @@ import CancelIcon from "@mui/icons-material/Cancel";
  * Faq Component
  * -------------
  * A responsive FAQ section with expandable accordions for frequently asked questions.
- * 
+ *
  * Features:
  * - Displays a list of questions and answers.
  * - Allows users to expand/collapse individual questions.
@@ -20,9 +20,9 @@ import CancelIcon from "@mui/icons-material/Cancel";
  * - Custom icons (AddCircleIcon and CancelIcon) indicate expand/collapse state.
  * - Responsive typography for various screen sizes.
  * - Styled with background gradients, shadows, and consistent spacing.
- * 
+ *
  * Props: None
- * 
+ *
  * Usage:
  * <Faq />
  */
@@ -91,7 +91,7 @@ export default function Faq() {
    * handleChange Function
    * ---------------------
    * Handles the expansion and collapse of individual accordion items.
-   * 
+   *
    * @param {number} panel - Index of the accordion being toggled.
    * @returns {function} - Event handler for accordion state changes.
    */
@@ -136,7 +136,9 @@ export default function Faq() {
             onChange={handleChange(index)} // Handles accordion state changes
           >
             <AccordionSummary
-              expandIcon={expanded === index ? <CancelIcon /> : <AddCircleIcon />} // Shows different icon based on expand state
+              expandIcon={
+                expanded === index ? <CancelIcon /> : <AddCircleIcon />
+              } // Shows different icon based on expand state
               aria-controls={`panel-content-${index}`} // Accessibility attribute linking to content
               id={`panel-header-${index}`} // Accessibility attribute linking to header
             >

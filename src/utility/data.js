@@ -9,11 +9,11 @@ export const brands = [
   { id: 8, img: "Assets/Sponsors/urban.png" },
   { id: 9, img: "Assets/Sponsors/ss.png" },
   { id: 10, img: "Assets/Sponsors/belgum9.png" },
-  {id : 11, img: "Assets/Sponsors/sm.png"},
-  {id : 12, img: "Assets/Sponsors/es.png"},
-  {id : 13, img: "Assets/Sponsors/lw14.jpg"},
-  {id : 13, img: "Assets/Sponsors/leb.png"},
-  {id : 13, img: "Assets/Sponsors/mrs.png"},
+  { id: 11, img: "Assets/Sponsors/sm.png" },
+  { id: 12, img: "Assets/Sponsors/es.png" },
+  { id: 13, img: "Assets/Sponsors/lw14.jpg" },
+  { id: 13, img: "Assets/Sponsors/leb.png" },
+  { id: 13, img: "Assets/Sponsors/mrs.png" },
 ];
 
 export const slides = [
@@ -25,7 +25,7 @@ export const slides = [
     buttons: ["SEE MORE"],
     thumbnailtitle: "Day 0",
     thumbnaildesc: "",
-    path:'/Workshops'
+    path: "/Workshops",
   },
   {
     img: "Assets/bg/bg-4.png",
@@ -35,7 +35,7 @@ export const slides = [
     buttons: ["SEE MORE"],
     thumbnailtitle: "Day 1",
     thumbnaildesc: "",
-    path:'/Workshops'
+    path: "/Workshops",
   },
   {
     img: "Assets/bg/bg-2.png",
@@ -45,7 +45,7 @@ export const slides = [
     buttons: ["SEE MORE"],
     thumbnailtitle: "Day 2",
     thumbnaildesc: " ",
-     path:'/Workshops'
+    path: "/Workshops",
   },
   {
     img: "Assets/bg/bg-3.jpg",
@@ -55,7 +55,7 @@ export const slides = [
     buttons: ["SEE MORE"],
     thumbnailtitle: "Day 3",
     thumbnaildesc: "",
-     path:'/Workshops'
+    path: "/Workshops",
   },
 ];
 
@@ -65,14 +65,16 @@ export const reviews = [
     avatar: "https://randomuser.me/api/portraits/men/1.jpg",
     name: "",
     role: "-Student",
-    review:"Theta is an amazing platform! The workshops are informative and fun! 🎉 I always leave feeling inspired.",
+    review:
+      "Theta is an amazing platform! The workshops are informative and fun! 🎉 I always leave feeling inspired.",
   },
   {
     id: 2,
     avatar: "https://randomuser.me/api/portraits/women/2.jpg",
     name: "",
     role: "-Event Organizer",
-    review: "The DJ events are electrifying! Can't wait for the next one! 🎶 Every performance is better than the last!",
+    review:
+      "The DJ events are electrifying! Can't wait for the next one! 🎶 Every performance is better than the last!",
   },
   {
     id: 3,
@@ -103,7 +105,8 @@ export const reviews = [
     avatar: "https://randomuser.me/api/portraits/women/6.jpg",
     name: "",
     role: "-Student",
-    review: "The DJs are top-notch! They keep the energy high all night long! You’ll always leave wanting more.",
+    review:
+      "The DJs are top-notch! They keep the energy high all night long! You’ll always leave wanting more.",
   },
   {
     id: 7,

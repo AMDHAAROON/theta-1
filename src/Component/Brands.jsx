@@ -36,12 +36,12 @@ const gradientBorderAnimation = keyframes`
 
 /**
  * Brands component displays a horizontally scrolling list of sponsor logos with animations.
- * 
+ *
  * Features:
  * - Logos have animated gradient borders and a pulsing effect.
  * - Continuous horizontal scroll showcasing sponsor logos.
  * - Duplicates the logo list to create a seamless infinite scroll.
- * 
+ *
  * @component
  */
 const Brands = () => {

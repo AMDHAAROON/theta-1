@@ -139,17 +139,21 @@ const Footer = () => {
           </Grid>
         </Grid>
         <Box textAlign="center" mt={5}>
-        <Typography variant="body2">
-           Copyright &copy; 2025 Theta | Designed and Developed by{" "}
-          <Link
-            to="/Developers"
-            onClick={ScrollToTop}
-             style={{ color: "#FFB700", textDecoration: "none", fontWeight: "bold" ,fontSize: "1rem"}}
-  >
-    WebTEK
-  </Link>
-</Typography>
-
+          <Typography variant="body2">
+            Copyright &copy; 2025 Theta | Designed and Developed by{" "}
+            <Link
+              to="/Developers"
+              onClick={ScrollToTop}
+              style={{
+                color: "#FFB700",
+                textDecoration: "none",
+                fontWeight: "bold",
+                fontSize: "1rem",
+              }}
+            >
+              WebTEK
+            </Link>
+          </Typography>
         </Box>
       </Box>
     </Box>

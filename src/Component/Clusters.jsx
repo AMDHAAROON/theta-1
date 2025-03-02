@@ -17,7 +17,7 @@ const AnimatedCard = styled(Box)(({ theme }) => ({
   borderRadius: "10px", // Rounded corners
   cursor: "pointer", // Pointer cursor on hover
   overflow: "hidden", // Hide overflowing content
-  
+
   // Rotating gradient border animation using ::before pseudo-element
   "&::before": {
     position: "absolute",
@@ -28,7 +28,7 @@ const AnimatedCard = styled(Box)(({ theme }) => ({
     transform: "rotate(45deg)",
     animation: "animate 4s linear infinite", // Infinite rotation animation
   },
-  
+
   // Inner card background using ::after pseudo-element
   "&::after": {
     position: "absolute",
@@ -79,7 +79,9 @@ const gradientBorderAnimation = keyframes`
 // Reusable card component for each cluster
 const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
   return (
-    <AnimatedCard data-aos="fade-up"> {/* Animated card with AOS fade-up effect */}
+    <AnimatedCard data-aos="fade-up">
+      {" "}
+      {/* Animated card with AOS fade-up effect */}
       {/* Cluster title positioned at the top-left */}
       <Typography
         variant="h6"
@@ -96,7 +98,6 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
       >
         {title}
       </Typography>
-
       {/* Circular avatar with animated gradient border */}
       <Box
         sx={{
@@ -125,7 +126,6 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
           }}
         />
       </Box>
-
       {/* Cluster subtitle */}
       <Typography
         variant="h6"
@@ -140,7 +140,6 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
       >
         {subtitle}
       </Typography>
-
       {/* Cluster description */}
       <Typography
         sx={{
@@ -155,7 +154,6 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
       >
         {description}
       </Typography>
-
       {/* Learn More button linking to the workshops page */}
       <Button
         variant="contained"
@@ -186,17 +184,83 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
 const Clusters = () => {
   // Data for each cluster card
   const cardData = [
-    { title: "", imgSrc: "Assets/Clusterlogo/Access.png", subtitle: "ACCESS INDIA", description: "Empowering students for a innovative future.", path: "/Workshops" },
-    { title: "", imgSrc: "Assets/Clusterlogo/Robotics.png", subtitle: "ROBOTICA", description: "Innovative solutions through robotics technology.", path: "/Workshops" },
-    { title: "", imgSrc: "Assets/Clusterlogo/Informatica.png", subtitle: "INFORMATICA", description: "Where art meets technology in perfect harmony.", path: "/Workshops" },
-    { title: "", imgSrc: "Assets/Clusterlogo/Electronica.png", subtitle: "ELECTRONICA", description: "The pulse of electronic creativity.", path: "/Workshops" },
-    { title: "", imgSrc: "Assets/Clusterlogo/tamil.png", subtitle: "EQUILIBRIA", description: "Finding balance through artistic expression.", path: "/Workshops" },
-    { title: "", imgSrc: "Assets/Clusterlogo/Math.jpg", subtitle: "MATHEMATICA", description: "The beauty of mathematics in artistic form.", path: "/Workshops" },
-    { title: "", imgSrc: "Assets/Clusterlogo/Biogenesis.jpg", subtitle: "BIOGENESIS", description: "Life and art intertwined in a unique way.", path: "/Workshops" },
-    { title: "", imgSrc: "Assets/Clusterlogo/Optica.png", subtitle: "OPTICA", description: "A vision of creativity through optics.", path: "/Workshops" },
-    { title: "", imgSrc: "Assets/Clusterlogo/Sportiva.png", subtitle: "SPORTIVA", description: "The intersection of sport and artistic expression.", path: "/Workshops" },
-    { title: "", imgSrc: "Assets/Clusterlogo/st1.png", subtitle: "STRATEGIA", description: "Exploring new horizons in art.", path: "/Workshops" },
-    { title: "", imgSrc: "Assets/Clusterlogo/vv.png", subtitle: "VINODHA VAAHINI", description: "Uniting Hearts with Joyful Moments", path: "/Workshops" },
+    {
+      title: "",
+      imgSrc: "Assets/Clusterlogo/Access.png",
+      subtitle: "ACCESS INDIA",
+      description: "Empowering students for a innovative future.",
+      path: "/Workshops",
+    },
+    {
+      title: "",
+      imgSrc: "Assets/Clusterlogo/Robotics.png",
+      subtitle: "ROBOTICA",
+      description: "Innovative solutions through robotics technology.",
+      path: "/Workshops",
+    },
+    {
+      title: "",
+      imgSrc: "Assets/Clusterlogo/Informatica.png",
+      subtitle: "INFORMATICA",
+      description: "Where art meets technology in perfect harmony.",
+      path: "/Workshops",
+    },
+    {
+      title: "",
+      imgSrc: "Assets/Clusterlogo/Electronica.png",
+      subtitle: "ELECTRONICA",
+      description: "The pulse of electronic creativity.",
+      path: "/Workshops",
+    },
+    {
+      title: "",
+      imgSrc: "Assets/Clusterlogo/tamil.png",
+      subtitle: "EQUILIBRIA",
+      description: "Finding balance through artistic expression.",
+      path: "/Workshops",
+    },
+    {
+      title: "",
+      imgSrc: "Assets/Clusterlogo/Math.jpg",
+      subtitle: "MATHEMATICA",
+      description: "The beauty of mathematics in artistic form.",
+      path: "/Workshops",
+    },
+    {
+      title: "",
+      imgSrc: "Assets/Clusterlogo/Biogenesis.jpg",
+      subtitle: "BIOGENESIS",
+      description: "Life and art intertwined in a unique way.",
+      path: "/Workshops",
+    },
+    {
+      title: "",
+      imgSrc: "Assets/Clusterlogo/Optica.png",
+      subtitle: "OPTICA",
+      description: "A vision of creativity through optics.",
+      path: "/Workshops",
+    },
+    {
+      title: "",
+      imgSrc: "Assets/Clusterlogo/Sportiva.png",
+      subtitle: "SPORTIVA",
+      description: "The intersection of sport and artistic expression.",
+      path: "/Workshops",
+    },
+    {
+      title: "",
+      imgSrc: "Assets/Clusterlogo/st1.png",
+      subtitle: "STRATEGIA",
+      description: "Exploring new horizons in art.",
+      path: "/Workshops",
+    },
+    {
+      title: "",
+      imgSrc: "Assets/Clusterlogo/vv.png",
+      subtitle: "VINODHA VAAHINI",
+      description: "Uniting Hearts with Joyful Moments",
+      path: "/Workshops",
+    },
   ];
 
   return (

@@ -9,6 +9,7 @@ import Clusters from "../Component/Clusters";
 import Review from "../Component/Review";
 import Footer from "../Component/Footer";
 import Allclusters from "../Component/Allclusters";
+
 const Home = () => {
   return (
     <>

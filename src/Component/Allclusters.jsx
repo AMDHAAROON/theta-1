@@ -64,8 +64,14 @@ const AnimatedCard = styled(Box)(() => ({
 
   // Keyframe animation for rotating gradient
   "@keyframes animate": {
-    "0%": { transform: "rotate(0deg)", filter: "hue-rotate(0deg) saturate(100%)" },
-    "100%": { transform: "rotate(360deg)", filter: "hue-rotate(-360deg) saturate(1000%)" },
+    "0%": {
+      transform: "rotate(0deg)",
+      filter: "hue-rotate(0deg) saturate(100%)",
+    },
+    "100%": {
+      transform: "rotate(360deg)",
+      filter: "hue-rotate(-360deg) saturate(1000%)",
+    },
   },
 }));
 
@@ -86,12 +92,14 @@ const gradientBorderAnimation = keyframes`
  * @param {string} subtitle - Subtitle displayed below the avatar.
  * @param {string} description - Description text displayed below the subtitle.
  * @param {string} path - Navigation link for the 'Learn More' button.
- * 
+ *
  * Displays an animated card with an avatar, text content, and a call-to-action button.
  */
 const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
   return (
-    <AnimatedCard data-aos="fade-up"> {/* AOS library attribute for fade-up animation on scroll */}
+    <AnimatedCard data-aos="fade-up">
+      {" "}
+      {/* AOS library attribute for fade-up animation on scroll */}
       {/* Card title */}
       <Typography
         variant="h6"
@@ -109,7 +117,6 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
       >
         {title}
       </Typography>
-
       {/* Circular avatar container with animated gradient border */}
       <Box
         sx={{
@@ -138,7 +145,6 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
           }}
         />
       </Box>
-
       {/* Subtitle below the avatar */}
       <Typography
         variant="h6"
@@ -153,7 +159,6 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
       >
         {subtitle}
       </Typography>
-
       {/* Description text */}
       <Typography
         sx={{
@@ -168,7 +173,6 @@ const RotatingCard = ({ title, imgSrc, subtitle, description, path }) => {
       >
         {description}
       </Typography>
-
       {/* 'Learn More' button with gradient background and hover effect */}
       <Button
         variant="contained"

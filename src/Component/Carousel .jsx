@@ -19,7 +19,7 @@ const progressAnimation = keyframes`
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timeoutRef = useRef(null);
-  const theme = useTheme();  // Accessing MUI theme for breakpoints
+  const theme = useTheme(); // Accessing MUI theme for breakpoints
 
   const resetTimeout = () => {
     if (timeoutRef.current) {
@@ -31,7 +31,7 @@ const Carousel = () => {
     resetTimeout();
     timeoutRef.current = setTimeout(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+        prevIndex === slides.length - 1 ? 0 : prevIndex + 1,
       );
     }, AUTO_PLAY_INTERVAL);
 
@@ -110,7 +110,7 @@ const Carousel = () => {
                     fontWeight: "bold",
                     lineHeight: "1.0em",
                     letterSpacing: 1.8,
-                    fontFamily:  "Lora, serif",  // Custom font for titles
+                    fontFamily: "Lora, serif", // Custom font for titles
                   }}
                 >
                   {slide.title}
@@ -121,7 +121,7 @@ const Carousel = () => {
                     fontWeight: "bold",
                     lineHeight: "1.3em",
                     color: "#f7ebe8",
-                     fontFamily:  "Lora, serif", 
+                    fontFamily: "Lora, serif",
                   }}
                 >
                   {slide.topic}
