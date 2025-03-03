@@ -75,9 +75,9 @@ const workshopData = [
     date: "Date: 05th-Mar-2025",
     time: "Time: 09:00 a.m. - 04:00 p.m.",
     venue: "Venue: Auditorium",
-    chiefGuest: "",
-    registrationLink: "",
-    image: "/Assets/Posters/gst_basics.jpg",
+    chiefGuest: "B. S. Umamaheswari, B.Com, (CA) , Nivedha Venkatesh, B.Com, (CA) , E. Kirubhakaran, B.Com, (CA)",
+    registrationLink: "https://forms.gle/USCwhoqVsr6uLU7X9",
+    image: "/Assets/Posters/income.jpg",
     description: "Strategia",
   },
   {
