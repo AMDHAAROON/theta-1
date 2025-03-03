@@ -81,19 +81,6 @@ const workshopData = [
     description: "Strategia",
   },
   {
-    id: 9,
-    title: "From Basic to Pro: Hands-on Networking with Cisco",
-    date: "Date: 07th-Mar-2025",
-    time: "Time: 09:00 a.m. - 05:00 p.m.",
-    venue: "Venue: Auditorium",
-    chiefGuest: "Dr.P.Herbert Raj",
-    registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSeo2Dcdb81LUB_IRj7hN2t3c92Xted1zYUmThNJUmRk7caqBw/viewform",
-    image: "/Assets/Posters/networ.jpeg",
-    description:
-      "Explore physics with 20+ thrilling experiments! Experience hands-on learning, challenge myths, and ignite curiosity in every participant.",
-  },
-  {
     id: 10,
     title: "The future of IoT and ML",
     date: "Date: 08th-Mar-2025",
@@ -175,6 +162,19 @@ const workshopData = [
     registrationLink: "",
     image: "/Assets/Posters/yoga.jpg",
     description: "Sportiva",
+  },
+  {
+    id: 9,
+    title: "From Basic to Pro: Hands-on Networking with Cisco",
+    date: "Date: 29th-Mar-2025",
+    time: "Time: 09:00 a.m. - 05:00 p.m.",
+    venue: "Venue: Auditorium",
+    chiefGuest: "Dr.P.Herbert Raj",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeo2Dcdb81LUB_IRj7hN2t3c92Xted1zYUmThNJUmRk7caqBw/viewform",
+    image: "/Assets/Posters/networ.jpeg",
+    description:
+      "Explore physics with 20+ thrilling experiments! Experience hands-on learning, challenge myths, and ignite curiosity in every participant.",
   },
   {
     id: 16,
