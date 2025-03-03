@@ -272,7 +272,7 @@ const ContactUs = () => {
             Visit Our Gallery
           </Typography>
 
-  <Link to="/Gal" /*onClick={scrollToTop}*/ style={{ textDecoration: 'none' }}>
+  <Link to="/gallery" /*onClick={scrollToTop}*/ style={{ textDecoration: 'none' }}>
     <Button
       variant="contained"
       sx={{

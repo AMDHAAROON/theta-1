@@ -57,7 +57,7 @@ const workshopData = [
     registrationLink: "https://forms.gle/ZXkfGMhTYgqL6hRX7",
     image: "/Assets/Posters/graphics.png",
     description: "Embark on a journey of Design Discovery.",
-  },*/
+  },
   {
     id: 7,
     title: "AI & Neural Networks Workshop",
@@ -68,7 +68,7 @@ const workshopData = [
     registrationLink: "https://forms.gle/JM2gfqGtcAY9Znar8",
     image: "/Assets/Posters/neural.jpg",
     description: "Explore the future of AI in just one day.",
-  },
+  },*/
   {
     id: 8,
     title: "GST & Income tax",
