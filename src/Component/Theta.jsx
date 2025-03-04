@@ -16,7 +16,8 @@ const Theta = () => {
                         letterSpacing: '1px', 
                         textTransform: 'uppercase', 
                         position: 'relative', 
-                        display: 'inline-block' 
+                        display: 'inline-block' ,
+                        mb: 5
                     }}
                 >
                     {aboutTheta.title}
