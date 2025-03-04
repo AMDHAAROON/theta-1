@@ -9,7 +9,7 @@ import Clusters from "../Component/Clusters";
 import Review from "../Component/Review";
 import Footer from "../Component/Footer";
 import Allclusters from "../Component/Allclusters";
-
+import Theta from "../Component/Theta";
 const Home = () => {
   return (
     <>
@@ -34,6 +34,9 @@ const Home = () => {
       <Box sx={{ bgcolor: "#000212", px: [3, 10] }}>
         <TitleWithDescription title="Frequently Asked Questions" />
         <Faq />
+      </Box>
+      <Box>
+        <Theta/>
       </Box>
       <Box sx={{ bgcolor: "#000212" }}>
         <Box

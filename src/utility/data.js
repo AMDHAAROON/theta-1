@@ -58,6 +58,13 @@ export const slides = [
     path: "/Workshops",
   },
 ];
+export const aboutTheta = {
+  title: "About Theta",
+  description: "Theta is a grand fusion of ideas, fun-filled experiences, and celebrations. Join us to witness an electrifying lineup of events and workshops designed to inspire and entertain!",
+  image: "../Assets/clg.jpg", // Adjust the path if needed
+  brochureLink: "https://drive.google.com/file/d/11ajdv8_SQs3pZY04ttBH0yW6NSrDrh4u/view?usp=sharing",
+  buttonText: "Download Brochure",
+};
 
 export const reviews = [
   {
