@@ -84,7 +84,7 @@ const workshopData = [
     id: 10,
     title: "The future of IoT and ML",
     date: "Date: 08th-Mar-2025",
-    time: "Time: Time: 09:00 a.m. - 05:00 p.m.",
+    time: "Time: 09:00 a.m. - 05:00 p.m.",
     venue: "Venue: Auditorium",
     chiefGuest: "Aravind Baranitharan AI/ML Specialist ",
     registrationLink: "",
