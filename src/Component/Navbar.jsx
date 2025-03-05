@@ -90,8 +90,8 @@ export default function Navbar(props) {
     { link: "/", name: "Home" },
     !isMdUp && { link: "/Cluster", name: "Cluster" },
     { link: "/Workshops", name: "Workshops" },
-    { link: "/gallery", name: "Gallery" },
     { link: "/contact-us", name: "Contact Us" },
+    { link: "/gallery", name: "Gallery" },
   ].filter(Boolean); // Remove falsy values
 
   // Drawer component for mobile navigation

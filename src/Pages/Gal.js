@@ -15,7 +15,7 @@ import {
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Navbar from "../Component/Navbar";
 import Footer from "../Component/Footer";
-
+import InstagramIcon from "@mui/icons-material/Instagram";
 // YouTube video IDs for upper and lower rows
 const upperRowVideos = [
   "5DKs_QfvCKQ",
@@ -247,7 +247,7 @@ const Gallery = () => (
           variant="h5"
           sx={{ fontWeight: 700, mb: 2, letterSpacing: "1px", color: "#fff" }}
         >
-          Stay Updated with Our Latest Videos & Events!
+          Experience the magic of Team Emulsion’s short films!
         </Typography>
         <Button
           variant="contained"
@@ -281,8 +281,34 @@ const Gallery = () => (
           </Grid>
         ))}
       </Grid> */}
+         <Box sx={{ textAlign: "center", mt: 4 }}>
+        <Typography
+          variant="h6"
+          sx={{ color: "#fff", fontWeight: 600, mb: 2 }}
+        >
+          Stay Updated with Our Latest Videos & Events!
+        </Typography>
+        <Box sx={{ display: "flex", justifyContent: "center", gap: 3 }}>
+          <IconButton
+            component={MuiLink}
+            href="https://www.youtube.com/@thetasrc"
+            target="_blank"
+            sx={{ color: "red" }}
+          >
+            <YouTubeIcon fontSize="large" />
+          </IconButton>
+          <IconButton
+            component={MuiLink}
+            href="https://www.instagram.com/theta_src?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            sx={{ color: "#E4405F" }}
+          >
+            <InstagramIcon fontSize="large" />
+          </IconButton>
+        </Box>
+      </Box>
     </Box>
-
+    
     <Footer />
 
     <style>

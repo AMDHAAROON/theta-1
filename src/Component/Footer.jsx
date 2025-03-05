@@ -22,8 +22,8 @@ const UsefulLinks = [
 
 const socialLinks = [
   { Icon: LinkedinIcon, url: "https://www.linkedin.com/company/theta-src" },
-  { Icon: InstagramIcon, url: "https://www.instagram.com/theta_src_official" },
-  { Icon: YouTubeIcon, url: "https://www.youtube.com/@TeamEmulsion" },
+  { Icon: InstagramIcon, url: "https://www.instagram.com/theta_src?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+  { Icon: YouTubeIcon, url: "https://www.youtube.com/@thetasrc" },
 ];
 
 const ScrollToTop = () => {

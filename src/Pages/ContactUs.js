@@ -95,49 +95,82 @@ const ContactUs = () => {
     },
   ];
 
-    useEffect(() => { document.title = "Contact Us - Theta Program"; }, []);
+  useEffect(() => {
+    document.title = "Contact Us - Theta Program";
+  }, []);
 
-    return (
-        <ThemeProvider theme={theme}>
-            <CssBaseline />
-            <Box sx={{
-                position: "relative",
-                backgroundImage: "url(Assets/Logo.png)",
-                backgroundSize: "20%",
-                backgroundPosition: "center",
-                backgroundRepeat: 'no-repeat',
-                color: "white",
-                padding: { xs: "30px 1rem", md: "50px 10rem" },
-                height: { xs: "50vh", md: "55vh" },
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                zIndex: 1,
-                "&::before": {
-                    content: '""',
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    backgroundColor: "#0B1121",
-                    opacity: 0.85,
-                    zIndex: -1,
-                },
-            }}>
-                <Navbar color="#fff" />
-                <Typography sx={{ fontSize: ['30px', '35px'], fontWeight: 600, color: '#fff', textAlign: 'center' }}>
-                    Contact Us
-                </Typography>
-                <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', justifyContent: 'center', mt: 2 }}>
-                    <Link to="/" style={{ textDecoration: "none" }}>
-                        <Typography sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: '18px' }}>Home</Typography>
-                    </Link>
-                    <ArrowRightAltIcon sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: '36px' }} />
-                    <Typography sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: '18px' }}>Contact Us</Typography>
-                </Box>
-            </Box>
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Box
+        sx={{
+          position: "relative",
+          backgroundImage: "url(Assets/Logo.png)",
+          backgroundSize: "20%",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          color: "white",
+          padding: { xs: "30px 1rem", md: "50px 10rem" },
+          height: { xs: "50vh", md: "55vh" },
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          zIndex: 1,
+          "&::before": {
+            content: '""',
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "#0B1121",
+            opacity: 0.85,
+            zIndex: -1,
+          },
+        }}
+      >
+        <Navbar color="#fff" />
+        <Typography
+          sx={{
+            fontSize: ["30px", "35px"],
+            fontWeight: 600,
+            color: "#fff",
+            textAlign: "center",
+          }}
+        >
+          Contact Us
+        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 1,
+            alignItems: "center",
+            justifyContent: "center",
+            mt: 2,
+          }}
+        >
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Typography
+              sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: "18px" }}
+            >
+              Home
+            </Typography>
+          </Link>
+          <ArrowRightAltIcon
+            sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: "36px" }}
+          />
+          <Typography
+            sx={{ color: "#9A9EA1", fontWeight: "bold", fontSize: "18px" }}
+          >
+            Contact Us
+          </Typography>
+        </Box>
+      </Box>
 
       <Box
         sx={{ backgroundColor: "#000212", py: 6, px: { xs: 4, sm: 6, md: 12 } }}
@@ -272,46 +305,45 @@ const ContactUs = () => {
             Visit Our Gallery
           </Typography>
 
-  <Link to="/gallery" /*onClick={scrollToTop}*/ style={{ textDecoration: 'none' }}>
-    <Button
-      variant="contained"
-      sx={{
-        backgroundColor: '#E91E63',
-        color: '#fff',
-        fontWeight: 'bold',
-        fontSize: '16px',
-        px: 4,
-        borderRadius: '8px',
-        textTransform: 'none',
-        border: '2px solid transparent',
-        animation: 'pulse 1.5s infinite',
-        transition: 'all 0.3s ease-in-out',
-        '&:hover': {
-          backgroundColor: '#fff',
-          color: '#E91E63',
-          border: '2px solid #E91E63',
-          transform: 'scale(1.05)',
-          boxShadow: '0 6px 16px rgba(0, 0, 0, 0.3)',
-        },
-      }}
-    >
-      View Gallery
-    </Button>
-  </Link>
-<style>
-    {`
-      @keyframes pulse {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.1); }
-        100% { transform: scale(1); }
-      }
+          <Link to="/gallery" onClick={scrollToTop} style={{ textDecoration: "none" }}>
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: "#E91E63",
+                color: "#fff",
+                fontWeight: "bold",
+                fontSize: "16px",
+                px: 4,
+                borderRadius: "8px",
+                textTransform: "none",
+                border: "2px solid transparent",
+                animation: "pulse 1.5s infinite",
+                transition: "all 0.3s ease-in-out",
+                "&:hover": {
+                  backgroundColor: "#fff",
+                  color: "#E91E63",
+                  border: "2px solid #E91E63",
+                  transform: "scale(1.05)",
+                  boxShadow: "0 6px 16px rgba(0, 0, 0, 0.3)",
+                },
+              }}
+            >
+              View Gallery
+            </Button>
+          </Link>
+          <style>
+            {`
+              @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.1); }
+                100% { transform: scale(1); }
+              }
 
-      @keyframes slideDown {
-        0% { opacity: 0; transform: translateY(-20px); }
-        100% { opacity: 1; transform: translateY(0); }
-      }
-    `}
-              
+              @keyframes slideDown {
+                0% { opacity: 0; transform: translateY(-20px); }
+                100% { opacity: 1; transform: translateY(0); }
+              }
+            `}
           </style>
         </Box>
       </Box>

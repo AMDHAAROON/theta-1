@@ -93,7 +93,7 @@ const workshopData = [
   },
   {
     id: 11,
-    title: "AI and Deep Learning",
+    title: "Deep Learning For Computer Vision and organizing projects with GitHub",
     date: "Date: 10th-Mar-2025",
     time: "Time: Updating Soon",
     venue: "Venue: Computer Lab",
