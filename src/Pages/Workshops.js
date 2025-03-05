@@ -68,7 +68,7 @@ const workshopData = [
     registrationLink: "https://forms.gle/JM2gfqGtcAY9Znar8",
     image: "/Assets/Posters/neural.jpg",
     description: "Explore the future of AI in just one day.",
-  },*/
+  },
   {
     id: 8,
     title: "GST & Income tax",
@@ -79,7 +79,7 @@ const workshopData = [
     registrationLink: "https://forms.gle/USCwhoqVsr6uLU7X9",
     image: "/Assets/Posters/income.jpg",
     description: "Strategia",
-  },
+  },*/
   {
     id: 10,
     title: "The future of IoT and ML",
