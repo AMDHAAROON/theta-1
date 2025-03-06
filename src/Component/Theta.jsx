@@ -17,7 +17,7 @@ const Theta = () => {
                         textTransform: 'uppercase', 
                         position: 'relative', 
                         display: 'inline-block',
-                        mb: 5
+                        mb: 2
                     }}
                 >
                     {aboutTheta.title}
@@ -40,7 +40,7 @@ const Theta = () => {
                         style={{ width: '100%', maxWidth: '500px', borderRadius: '10px', boxShadow: '0px 4px 10px rgba(255, 215, 0, 0.5)' }}
                     />
                 </Box>
-                <Typography variant="body1" color="white" paragraph sx={{ fontSize: '1.2rem', lineHeight: 1.6, fontWeight: '350' }}>
+                <Typography variant="body1" color="white" paragraph sx={{ fontSize: '1.1rem', lineHeight: 1.6, fontWeight: '350',mb:'5' }}>
                     {aboutTheta.description}
                 </Typography>
                 <Button 
