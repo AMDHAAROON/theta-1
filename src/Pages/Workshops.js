@@ -96,7 +96,7 @@ const workshopData = [
     title: "Deep Learning For Computer Vision and organizing projects with GitHub",
     date: "Date: 10th-Mar-2025",
     time: "Time: 10:15 a.m. - 04:15 p.m.",
-    venue: "Venue: Computer Lab",
+    venue: "Venue: Auditorium,Computer Lab",
     chiefGuest: "Karthik Venkatesh.N-Automation and AI Engineer,Jefferson Roosevelt.K-AI engineer,vignesh .S-Automation and AI Engineer ,Kavya-Full Stack developer.",
     registrationLink: "https://forms.gle/twvNDLwRdMZtRY5D6",
     image: "/Assets/Posters/deep.jpeg",
