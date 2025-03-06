@@ -100,7 +100,7 @@ const workshopData = [
     chiefGuest: "Karthik Venkatesh.N-Automation and AI Engineer,Jefferson Roosevelt.K-AI engineer,vignesh .S-Automation and AI Engineer ,Kavya-Full Stack developer.",
     registrationLink: "https://forms.gle/twvNDLwRdMZtRY5D6",
     image: "/Assets/Posters/deep.jpeg",
-    description: "Mathematica",
+    description: "Hands-on workshop on Deep Learning, Computer Vision, and GitHub project organization by industry experts. 🚀",
   },
   {
     id: 5,
