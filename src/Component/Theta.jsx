@@ -16,7 +16,7 @@ const Theta = () => {
                         letterSpacing: '1px', 
                         textTransform: 'uppercase', 
                         position: 'relative', 
-                        display: 'inline-block' ,
+                        display: 'inline-block',
                         mb: 5
                     }}
                 >
@@ -32,6 +32,14 @@ const Theta = () => {
                         }}
                     />
                 </Typography>
+                {/* Image below title only in mobile view */}
+                <Box sx={{ display: ['flex', 'none'], justifyContent: 'center', my: 3 }}>
+                    <img 
+                        src={aboutTheta.image} 
+                        alt="Theta Event" 
+                        style={{ width: '100%', maxWidth: '500px', borderRadius: '10px', boxShadow: '0px 4px 10px rgba(255, 215, 0, 0.5)' }}
+                    />
+                </Box>
                 <Typography variant="body1" color="white" paragraph sx={{ fontSize: '1.2rem', lineHeight: 1.6, fontWeight: '350' }}>
                     {aboutTheta.description}
                 </Typography>
@@ -63,8 +71,8 @@ const Theta = () => {
                     {aboutTheta.buttonText}
                 </Button>
             </Box>
-            {/* Right Section - Image */}
-            <Box sx={{ flex: 1, display: 'flex', justifyContent: 'center', mt: [3, 0] }}>
+            {/* Right Section - Image (Only visible in desktop view) */}
+            <Box sx={{ flex: 1, display: ['none', 'flex'], justifyContent: 'center', mt: [3, 0] }}>
                 <img 
                     src={aboutTheta.image} 
                     alt="Theta Event" 
