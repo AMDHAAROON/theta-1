@@ -84,7 +84,7 @@ const ContactUs = () => {
           <strong>Vice-President : Venkatesh N</strong> <br /> Phone No : +91
           94437 76472 <br />
           <br />
-          <strong>Vice-President : Karen Angel</strong> <br /> Phone No : +91
+          <strong>Vice-President : Karen Angel I</strong> <br /> Phone No : +91
           74183 15768
           <br />
           <br />
