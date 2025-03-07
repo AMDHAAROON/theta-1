@@ -87,9 +87,9 @@ const workshopData = [
     time: "Time: 09:00 a.m. - 05:00 p.m.",
     venue: "Venue: Auditorium",
     chiefGuest: "Aravind Baranitharan AI/ML Specialist ",
-    registrationLink: "",
-    image: "/Assets/Posters/ai_deep_learning.jpg",
-    description: "Mathematica",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScNv71LZmJbQvxC3y3fcbHXpxwypToyNmEgsmO514oZn9ZBCQ/viewform",
+    image: "/Assets/Posters/future.jpeg",
+    description: "Join the Brainstorming Session on The Future of IoT & ML to explore cutting-edge innovations in AI and IoT",
   },
   {
     id: 11,
