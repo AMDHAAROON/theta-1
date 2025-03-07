@@ -35,6 +35,18 @@ const theme = createTheme({
 
 const ContactUs = () => {
   const contactInfo = [
+   {
+      icon: <HowToRegIcon style={{ fontSize: "40px", color: "#1E88E5 " }} />,
+      title: "Convenor",
+      content: (
+        <>
+          <br />
+          <strong>Dr. Srinivasan A</strong> <br /> Phone No : +91 70107 45391{" "}
+          <br />
+          <br />
+        </>
+      ),
+    },
     {
       icon: (
         <SupervisorAccountIcon
@@ -59,18 +71,7 @@ const ContactUs = () => {
         </>
       ),
     },
-    {
-      icon: <HowToRegIcon style={{ fontSize: "40px", color: "#1E88E5 " }} />,
-      title: "Convenor",
-      content: (
-        <>
-          <br />
-          <strong>Dr. Srinivasan A</strong> <br /> Phone No : +91 70107 45391{" "}
-          <br />
-          <br />
-        </>
-      ),
-    },
+    
     {
       icon: <PhoneIcon style={{ fontSize: "40px", color: "#D32F2F" }} />,
       title: "Contact Us",
