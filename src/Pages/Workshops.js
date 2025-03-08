@@ -79,7 +79,7 @@ const workshopData = [
     registrationLink: "https://forms.gle/USCwhoqVsr6uLU7X9",
     image: "/Assets/Posters/income.jpg",
     description: "Strategia",
-  },*/
+  },
   {
     id: 10,
     title: "The future of IoT and ML",
@@ -90,7 +90,7 @@ const workshopData = [
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScNv71LZmJbQvxC3y3fcbHXpxwypToyNmEgsmO514oZn9ZBCQ/viewform",
     image: "/Assets/Posters/future.jpeg",
     description: "Join the Brainstorming Session on The Future of IoT & ML to explore cutting-edge innovations in AI and IoT",
-  },
+  },*/
   {
     id: 11,
     title: "Deep Learning For Computer Vision and organizing projects with GitHub",
