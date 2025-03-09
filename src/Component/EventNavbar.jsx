@@ -19,9 +19,9 @@ const EventNavbar = () => {
   // Navigation items with corresponding routes and display names
   const items = [
     { link: "/AllEvents", name: "All Events" },
-    { link: "/Day1", name: "Day 1" },
-    { link: "/Day2", name: "Day 2" },
-    { link: "/Day3", name: "Day 3" },
+    { link: "/day-one", name: "Day 1" },
+    { link: "/day-two", name: "Day 2" },
+    { link: "/day-three", name: "Day 3" },
   ];
 
   /**

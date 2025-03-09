@@ -1,65 +1,63 @@
-import { Box, Button, Divider, Typography } from "@mui/material";
-import React from "react";
+import { Box, Button, Typography } from "@mui/material";
+import React, { useState } from "react";
 import Navbar from "../../Component/Navbar";
 import { Link } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import Footer from "../../Component/Footer";
 import EventNavbar from "../../Component/EventNavbar";
+import EventModal from "../../Component/EventModal"; // Import the modal
+
+const contestData = [
+  {
+    id: 1,
+    title: "Word and Excel",
+    date: "Date: 26th-Feb-2025",
+    time: "Time: 09:00 a.m. - 04:00 p.m.",
+    venue: "Venue: Auditorium",
+    registrationLink: "https://forms.gle/twvNDLwRdMZtRY5D6",
+    image: "/Assets/Posters/deep.jpeg",
+    description:
+      "Unlock your potential through our interactive workshop to boost productivity with expert tips, smart techniques, and time-saving hacks.",
+  },
+  {
+    id: 2,
+    title: "CELEBRATING SOON",
+    date: "CELEBRATING SOON",
+    time: "TBA",
+    venue: "Robotics",
+    registrationLink: "",
+    image: "/Assets/Posters/event_placeholder.jpg",
+    description: "A thrilling robotics event is on the way!",
+  },
+  {
+    id: 3,
+    title: "CELEBRATING SOON",
+    date: "CELEBRATING SOON",
+    time: "TBA",
+    venue: "Informatica",
+    registrationLink: "",
+    image: "/Assets/Posters/event_placeholder.jpg",
+    description: "Gear up for an exciting informatics competition!",
+  },
+];
 
 const AllEvents = () => {
-  const contestData = [
-    {
-      title: "CELEBRATING SOON",
-      lastDate: " CELEBRATING SOON",
-      submissionDates: "Strategia",
-      registrationLink: "https://forms.gle/data_science",
-    },
-    {
-      title: "CELEBRATING SOON",
-      lastDate: "CELEBRATING SOON",
-      submissionDates: "Robotics",
-      registrationLink: "https://forms.gle/data_science",
-    },
-    {
-      title: "CELEBRATING SOON",
-      lastDate: "CELEBRATING SOON",
-      submissionDates: "Informatica",
-      registrationLink: "https://forms.gle/data_science",
-    },
-    {
-      title: "CELEBRATING SOON",
-      lastDate: "CELEBRATING SOON",
-      submissionDates: "Equilibria",
-      registrationLink: "https://forms.gle/data_science",
-    },
-    {
-      title: "CELEBRATING SOON",
-      lastDate: "CELEBRATING SOON",
-      submissionDates: "Equilibria",
-      registrationLink: "https://forms.gle/data_science",
-    },
-    {
-      title: "CELEBRATING SOON",
-      lastDate: "CELEBRATING SOON",
-      submissionDates: "Electronica",
-      registrationLink: "https://forms.gle/data_science",
-    },
-    {
-      title: "CELEBRATING SOON",
-      lastDate: "CELEBRATING SOON",
-      submissionDates: "Biogenesis",
-      registrationLink: "https://forms.gle/data_science",
-    },
-    {
-      title: "CELEBRATING SOON",
-      lastDate: "CELEBRATING SOON",
-      submissionDates: "Informatica",
-      registrationLink: "https://forms.gle/data_science",
-    },
-  ];
+  const [selectedEvent, setSelectedEvent] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = (event) => {
+    setSelectedEvent(event);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedEvent(null);
+  };
 
   return (
     <>
+      {/* Navbar and Page Title */}
       <Box
         sx={{
           position: "relative",
@@ -140,6 +138,8 @@ const AllEvents = () => {
           <EventNavbar />
         </Box>
       </Box>
+
+      {/* Event Cards */}
       <Box sx={{ py: 5, bgcolor: "#000212" }}>
         <Box
           sx={{
@@ -150,17 +150,12 @@ const AllEvents = () => {
             padding: 4,
           }}
         >
-          {contestData.map((contest, index) => (
+          {contestData.map((event) => (
             <Box
-              key={index}
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay={`${100 * index}`}
+              key={event.id}
               sx={{
                 width: { xs: "100%", sm: "90%", md: "30%" },
-                height: "auto",
                 bgcolor: "#E6F3FB",
-                gap: 2,
                 p: 3,
                 border: "3px solid #EF3D4E",
                 borderRadius: "10px",
@@ -180,108 +175,73 @@ const AllEvents = () => {
                   mb: 1,
                 }}
               >
-                {contest.title}
+                {event.title}
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "1.1rem",
-                  color: "#333",
+                  fontSize: "1.2rem",
                   fontWeight: 600,
-                  letterSpacing: 0.8,
-                  mb: 2.5,
+                  color: "#333",
+                  mb: 1,
                 }}
               >
-                {contest.lastDate}
+                {event.date}
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "1.3rem",
-                  color: "#9C79A1",
-                  fontWeight: 700,
-                  letterSpacing: 1,
-                  mb: 3,
+                  fontSize: "1.2rem",
+                  fontWeight: 600,
+                  color: "#333",
+                  mb: 1,
                 }}
               >
-                {contest.submissionDates}
+                {event.time}
               </Typography>
+              <Typography
+                sx={{
+                  fontSize: "1.2rem",
+                  fontWeight: 800,
+                  color: "#333",
+                  mb: 2,
+                }}
+              >
+                {event.venue}
+              </Typography>
+
               <Button
                 variant="contained"
-                //GOOGLE FORM
-                href={contest.registrationLink}
+                onClick={() => handleOpenModal(event)}
+                disabled={!event.registrationLink}
                 sx={{
-                  background: `linear-gradient(91.83deg, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%)`,
-                  width: "80%",
-                  textTransform: "none",
-                  borderRadius: "50px",
-                  fontSize: "1rem",
-                  px: [4],
-                  color: "#fff",
-                  border: "2px solid transparent",
-                  "&:hover": {
-                    background: "transparent",
-                    border: "2px solid #EF3D4E",
-                    color: "#EF3D4E",
-                  },
-                }} // BUTTON
-              >
-                COMMING SOON
-              </Button>
+                background: "linear-gradient(91.83deg, rgb(255, 81, 47), rgb(221, 36, 118))",
+                width: "80%",
+                borderRadius: "50px",
+                textTransform: "none",
+                fontSize: "1rem",
+                color: "#fff",
+                border: "2px solid transparent",
+                cursor: "pointer",
+                    "&:hover": {
+                                    background: "transparent",
+                                    border: "2px solid #EF3D4E",
+                                    color: "#EF3D4E",
+                                },
+                }}
+            >
+                Learn more
+            </Button>
             </Box>
           ))}
         </Box>
       </Box>
-      <Box sx={{ bgcolor: "#000212" }}>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignContent: "center",
-            py: 5,
-          }}
-        >
-          <Divider
-            variant="middle"
-            component="li"
-            sx={{
-              borderColor: "#282828",
-              width: "92%",
-              position: "relative",
-              transition: "transform 0.3s ease",
-              "&:hover": {
-                transform: "scaleY(1.1)",
-              },
-              "&::before": {
-                content: '""',
-                position: "absolute",
-                width: "30%",
-                height: "2px",
-                backgroundColor: "#FFD700",
-                top: "50%",
-                left: "0",
-                transform: "translateY(-50%)",
-                transition: "width 0.3s ease",
-              },
-              "&::after": {
-                content: '""',
-                position: "absolute",
-                width: "30%",
-                height: "2px",
-                backgroundColor: "#FFD700",
-                top: "50%",
-                right: "0",
-                transform: "translateY(-50%)",
-                transition: "width 0.3s ease",
-              },
-              "&:hover::before, &:hover::after": {
-                width: "40%",
-              },
-            }}
-          />
-        </Box>
-      </Box>
-      <Box>
-        <Footer />
-      </Box>
+
+      {/* Event Modal */}
+      {selectedEvent && (
+        <EventModal isOpen={isModalOpen} onClose={handleCloseModal} event={selectedEvent} />
+      )}
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 };

@@ -92,6 +92,7 @@ export default function Navbar(props) {
     { link: "/Workshops", name: "Workshops" },
     { link: "/contact-us", name: "Contact Us" },
     { link: "/gallery", name: "Gallery" },
+  //  { link: "/allEvents", name: "Events" },
   ].filter(Boolean); // Remove falsy values
 
   // Drawer component for mobile navigation
