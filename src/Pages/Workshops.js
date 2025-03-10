@@ -90,7 +90,7 @@ const workshopData = [
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScNv71LZmJbQvxC3y3fcbHXpxwypToyNmEgsmO514oZn9ZBCQ/viewform",
     image: "/Assets/Posters/future.jpeg",
     description: "Join the Brainstorming Session on The Future of IoT & ML to explore cutting-edge innovations in AI and IoT",
-  },*/
+  },
   {
     id: 11,
     title: "Deep Learning For Computer Vision and organizing projects with GitHub",
@@ -101,7 +101,7 @@ const workshopData = [
     registrationLink: "https://forms.gle/twvNDLwRdMZtRY5D6",
     image: "/Assets/Posters/deep.jpeg",
     description: "Hands-on workshop on Deep Learning, Computer Vision, and GitHub project organization by industry experts. 🚀",
-  },
+  },*/
   {
     id: 5,
     title: "DE-STRESS DISTRESS ",
