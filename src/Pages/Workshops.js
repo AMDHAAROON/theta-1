@@ -108,7 +108,7 @@ const workshopData = [
     date: "Date: 11th-Mar-2025",
     time: "Time: 2:00 p.m - 05:00 p.m.",
     venue: "Venue: 201 and ground",
-    chiefGuest: " Mr Ramkumar Ravindran",
+    chiefGuest: "Staff: Siva Vidhya and Durga Ravi ",
     registrationLink:
       "https://docs.google.com/forms/u/1/d/e/1FAIpQLSdRruHObAbF6E8jByvn3KkWL7kwftR9jz8nVy7pSVfreTuiag/viewform?usp=send_form",
     image: "/Assets/Posters/stress.jpg",
