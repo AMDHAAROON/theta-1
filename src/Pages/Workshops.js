@@ -121,8 +121,7 @@ const workshopData = [
     date: "Date: 13th-Mar-2025",
     time: "Time: 09:00 a.m. - 05:00 p.m.",
     venue: "Venue: 201",
-    chiefGuest:
-      "M/s. NWAREHOUSE PVT. LTD., TRICHY and M/s. CROBOT TECHNOLOGIES PVT. LTD CHENNAI",
+    chiefGuest:"M/s. NWAREHOUSE PVT. LTD., TRICHY and M/s. CROBOT TECHNOLOGIES PVT. LTD CHENNAI",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSeJ90E42YMcX7D2ljnJsBmb3YvOmWXOKKTj5kRjuHVB7fPN_w/viewform",
     image: "/Assets/Posters/iot.jpeg",
@@ -136,10 +135,10 @@ const workshopData = [
     date: "Date: 18th-Mar-2025",
     time: "Time: 09:00 a.m. - 05:00 p.m.",
     venue: "Venue: Auditorium",
-    chiefGuest: "",
-    registrationLink: "",
-    image: "/Assets/Posters/ethical_hacking.jpg",
-    description: "Informatica",
+    chiefGuest: "A.Devaprathima, certified ethical Hacker cyber security Engy at spam technologies",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeuuHyGVdyn5l8Xjx4dvsU8EvagYIRq7HYRLgdxaNfYYv6fMA/viewform",
+    image: "/Assets/Posters/hack.jpeg",
+    description: "Gain insights into cybersecurity, ethical hacking concepts, and system protection.",
   },
   {
     id: 15,
@@ -158,10 +157,10 @@ const workshopData = [
     date: "Date: 28th-Mar-2025",
     time: "Time: 10:00 a.m. - 01:00 p.m.",
     venue: "Venue: Drawing Hall",
-    chiefGuest: "",
+    chiefGuest: "R. Ganesh Kumar, Proffessional Physical Director,Kumbakonam",
     registrationLink: "",
-    image: "/Assets/Posters/yoga.jpg",
-    description: "Sportiva",
+    image: "/Assets/Posters/yoga.jpeg",
+    description: "Enhance flexibility, relaxation, and well-being with guided yoga techniques.",
   },
   {
     id: 9,
@@ -193,10 +192,10 @@ const workshopData = [
     date: "Date: 03rd-Apr-2025",
     time: "Time: 10:00 a.m. - 01:00 p.m.",
     venue: "Venue: Basketball Court",
-    chiefGuest: "Dr.Shihan Hussaini",
+    chiefGuest: "vDr.Shihan Hussaini, level 3 world archery coach and  Dr.Vijayabalan, PAN INDIA trained level 2 archery Coach ",
     registrationLink: "",
-    image: "/Assets/Posters/archery.jpg",
-    description: "Sportiva",
+    image: "/Assets/Posters/archery.jpeg",
+    description: "Learn precision, accuracy, and focus in this hands-on archery session.",
   },
 
   {
