@@ -107,7 +107,7 @@ const workshopData = [
     title: "DE-STRESS DISTRESS ",
     date: "Date: 11th-Mar-2025",
     time: "Time: 2:00 p.m - 05:00 p.m.",
-    venue: "Venue: 201 and ground",
+    venue: "Venue: 201 and Drawing hall",
     chiefGuest: "Staff: Siva Vidhya and Durga Ravi ",
     registrationLink:
       "https://docs.google.com/forms/u/1/d/e/1FAIpQLSdRruHObAbF6E8jByvn3KkWL7kwftR9jz8nVy7pSVfreTuiag/viewform?usp=send_form",
