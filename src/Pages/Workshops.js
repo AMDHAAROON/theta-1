@@ -101,7 +101,7 @@ const workshopData = [
     registrationLink: "https://forms.gle/twvNDLwRdMZtRY5D6",
     image: "/Assets/Posters/deep.jpeg",
     description: "Hands-on workshop on Deep Learning, Computer Vision, and GitHub project organization by industry experts. 🚀",
-  },*/
+  },
   {
     id: 5,
     title: "DE-STRESS DISTRESS ",
@@ -114,7 +114,7 @@ const workshopData = [
     image: "/Assets/Posters/stress.jpg",
     description:
       "Join us for an engaging session to unwind, recharge, and learn practical stress-relief techniques. Experience mindfulness, relaxation, and simple strategies to tackle daily challenges with ease!",
-  },
+  },*/
   {
     id: 12,
     title: "Industrial IoT with Robotics Applications",
