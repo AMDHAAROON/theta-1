@@ -16,35 +16,15 @@ import EventModal from '../../Component/EventModal';
 
 const day3Events = [
     {
-        id: 9,
-        title: 'Escape Room',
-        date: 'Date: 27th-Feb-2025',
-        time: '10:00 a.m. - 1:00 p.m.',
-        venue: 'Venue: 406',
-        image: './assets/escape-room.jpg',
-        description: 'Solve puzzles and escape before time runs out!',
-        registrationLink: ''
-    },
-    {
-        id: 10,
-        title: 'Robo-Saga',
-        date: 'Date: 27th-Feb-2025',
-        time: '9:30 a.m. - 1:30 p.m.',
-        venue: 'Venue: Basketball Court',
-        image: '/assets/robo-saga.jpg',
-        description: 'Experience the ultimate robotics showdown!',
-        registrationLink: "https://forms.gle/example2",
-    },
-    {
-        id: 11,
-        title: 'Code Hunt',
-        date: 'Date: 27th-Feb-2025',
-        time: '2:00 p.m. - 5:00 p.m.',
-        venue: 'Venue: LAB-2',
-        image: '/assets/code-hunt.jpg',
-        description: 'Hunt for the hidden code and crack the challenges!',
-        registrationLink: ''
-    }
+        id: 1,
+        title: "Tech Talent",
+        date: "Date: 13th-Apr-2025",
+        time: "Time: Updating soon",
+        venue: "Venue: Lab 2",
+        registrationLink: "",
+        image: "",
+        description: "",
+      },
 ];
 
 const Day3 = () => {
