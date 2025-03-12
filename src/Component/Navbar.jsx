@@ -92,6 +92,7 @@ export default function Navbar(props) {
     { link: "/allEvents", name: "Events" },
     !isMdUp && { link: "/Cluster", name: "Clusters" },
     { link: "/contact-us", name: "Contact Us" },
+  //  { link: "/Tshirt", name: "Tshirt" },
     { link: "/gallery", name: "Gallery" },
     
   ].filter(Boolean); // Remove falsy values

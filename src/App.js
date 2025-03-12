@@ -20,6 +20,7 @@ import Developers from "./Pages/Developers ";
 import Cluster from "./Pages/Cluster";
 import NotFound from "./Component/NotFound";
 import Gal from "./Pages/Gal";
+import Tshirt from "./Pages/Tshirt";
 
 function App() {
   useEffect(() => {
@@ -42,6 +43,7 @@ function App() {
         <Route path="/developers" element={<Developers />} />
         <Route path="/cluster" element={<Cluster />} />
         <Route path="/gallery" element={<Gal />} />
+        <Route path="/Tshirt" element={<Tshirt />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Analytics />
