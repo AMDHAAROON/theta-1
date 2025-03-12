@@ -16,7 +16,8 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import Navbar from "../Component/Navbar";
 import Footer from "../Component/Footer";
 import InstagramIcon from "@mui/icons-material/Instagram";
-// YouTube video IDs for upper and lower rows
+
+// YouTube video IDs for the upper and lower rows
 const upperRowVideos = [
   "5DKs_QfvCKQ",
   "i1gpjjsxxkw",
@@ -35,7 +36,15 @@ const lowerRowVideos = [
   "KVs8elKplrs",
 ];
 
-// Placeholder images (ensure these images are inside public/assets/ directory)
+const thetaVideos = [
+  "G9G1qxu32Ss",
+  "qo6K_E48iNk",
+  "bzBS3RLWlTE",
+  "oNklbpbEWKk",
+  "qVrlXjyl2Os",
+];
+
+// Placeholder images for the gallery (ensure images are placed in public/assets/ directory)
 const imageLinks = [
   "/assets/image1.jpg",
   "/assets/image2.jpg",
@@ -45,6 +54,7 @@ const imageLinks = [
   "/assets/image6.jpg",
 ];
 
+// Component for Sliding Rows of YouTube Thumbnails
 const SlidingRow = ({ videos, direction }) => (
   <Box
     sx={{
@@ -57,6 +67,7 @@ const SlidingRow = ({ videos, direction }) => (
       zIndex: 2,
     }}
   >
+    {/* Slide container with looping animation */}
     <Box
       sx={{
         display: "flex",
@@ -65,6 +76,7 @@ const SlidingRow = ({ videos, direction }) => (
         animation: `${direction}-scroll 30s linear infinite`,
       }}
     >
+      {/* Map over the video IDs to create YouTube thumbnail cards */}
       {[...videos, ...videos].map((videoId, index) => (
         <MuiLink
           key={index}
@@ -85,6 +97,7 @@ const SlidingRow = ({ videos, direction }) => (
               position: "relative",
             }}
           >
+            {/* YouTube Thumbnail Image */}
             <CardMedia
               component="img"
               image={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
@@ -114,6 +127,7 @@ const SlidingRow = ({ videos, direction }) => (
   </Box>
 );
 
+// Component for Animated Image Cards in the Gallery
 const AnimatedImageCard = ({ src, alt }) => {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -149,6 +163,7 @@ const AnimatedImageCard = ({ src, alt }) => {
   );
 };
 
+// Component for Animated Header with Scroll-Reactivated Effects
 const AnimatedHeader = ({ title, subtitle }) => {
   const headerRef = useRef(null);
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
@@ -217,6 +232,7 @@ const Gallery = () => (
         overflow: "hidden",
       }}
     >
+      {/* Background logo with reduced opacity */}
       <Box
         component="img"
         src="/assets/logo.png"
@@ -233,15 +249,18 @@ const Gallery = () => (
         }}
       />
       <Navbar />
+
       {/* Main Gallery Header */}
       <AnimatedHeader
         title="GALLERY"
         subtitle="Experience Team Emulsions' creativity through captivating short films."
       />
 
-      {/* Sliding YouTube Thumbnails */}
+      {/* Sliding rows of videos */}
       <SlidingRow videos={upperRowVideos} direction="left" />
       <SlidingRow videos={lowerRowVideos} direction="right" />
+
+      {/* Call-to-action button */}
       <Box sx={{ textAlign: "center", mt: 8, mb: 8 }}>
         <Typography
           variant="h5"
@@ -254,7 +273,7 @@ const Gallery = () => (
           color="primary"
           href="https://www.youtube.com/@TeamEmulsion"
           sx={{
-            backgroundColor: " red",
+            backgroundColor: "red",
             borderRadius: 2,
             px: 4,
             py: 1.5,
@@ -265,30 +284,27 @@ const Gallery = () => (
         </Button>
       </Box>
 
-      {/* New Title After Second Slider */}
-      {/* <AnimatedHeader title="Cherished Moments from Our Workshops." />
 
-    
-       <Grid
-        container
-        spacing={4}
-        justifyContent="center"
-        sx={{ px: { xs: 2, sm: 3, md: 4 }, position: 'relative', zIndex: 2 }}
-      >
-        {imageLinks.map((src, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <AnimatedImageCard src={src} alt={`Gallery Image ${index + 1}`} />
-          </Grid>
-        ))}
-      </Grid> */}
-         <Box sx={{ textAlign: "center", mt: 4 }}>
+            // theta Videos
+
+
+      {/* Section with Theta videos */}
+      <Box sx={{ py: "3" }}>
+        <AnimatedHeader title="Check out our Theta videos!" />
+                {/* Sliding YouTube Thumbnails */}
+                <SlidingRow videos={thetaVideos} direction="left" />
+      </Box>
+
+      {/* Footer section with social media icons */}
+      <Box sx={{ textAlign: "center" }}>
         <Typography
           variant="h6"
           sx={{ color: "#fff", fontWeight: 600, mb: 2 }}
         >
           Stay Updated with Our Latest Videos & Events!
         </Typography>
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 3 }}>
+        <Box sx={{ display: "flex", justifyContent: "center", gap: 3, mb: 4 }}>
+          {/* YouTube Channel Icon */}
           <IconButton
             component={MuiLink}
             href="https://www.youtube.com/@thetasrc"
@@ -297,6 +313,7 @@ const Gallery = () => (
           >
             <YouTubeIcon fontSize="large" />
           </IconButton>
+          {/* Instagram Page Icon */}
           <IconButton
             component={MuiLink}
             href="https://www.instagram.com/theta_src?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -308,34 +325,33 @@ const Gallery = () => (
         </Box>
       </Box>
     </Box>
-    
+
+    {/* Footer Component */}
     <Footer />
 
+    {/* CSS Animations */}
     <style>
       {`
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Oswald:wght@700&display=swap');
 
+        /* Keyframe animation for left-scrolling effect */
         @keyframes left-scroll {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
 
+        /* Keyframe animation for right-scrolling effect */
         @keyframes right-scroll {
           0% { transform: translateX(-50%); }
           100% { transform: translateX(0); }
         }
-          @keyframes pulse {
-        0% {
-        transform: scale(1);
-            }
-        50% {
-        transform: scale(1.05);
-          }
-       100% {
-        transform: scale(1);
-         }  
-          }
 
+        /* Keyframe animation for pulsing button effect */
+        @keyframes pulse {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.05); }
+          100% { transform: scale(1); }
+        }
       `}
     </style>
   </>
