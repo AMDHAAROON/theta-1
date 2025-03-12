@@ -16,4 +16,3 @@ const Cluster = () => {
   );
 };
 export default Cluster;
-
