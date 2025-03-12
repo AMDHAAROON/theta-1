@@ -19,9 +19,21 @@ const day3Events = [
         id: 1,
         title: "Tech Talent",
         date: "Date: 13th-Apr-2025",
-        time: "Time: Updating soon",
-        venue: "Venue: Lab 2",
+        time: "Time: 02:00 p.m. - 04:00 p.m.",
+        venue: "Venue: Lab 1",
         registrationLink: "",
+        cluster:"INFORMATICA",
+        image: "",
+        description: "",
+      },
+      {
+        id: 32,
+        title: "Eureka Odyssey",
+        date: "Date: 13th-Apr-2025",
+        time: "Time: 10:00 a.m. - 12:00 p.m.",
+        venue: "Venue: 512",
+        registrationLink: "",
+         cluster:"Optica",
         image: "",
         description: "",
       },
@@ -128,6 +140,9 @@ const Day3 = () => {
                             <Typography sx={{ fontSize: '1.2rem', fontWeight: 800, color: '#333', mb: 2 }}>
                                 {event.venue}
                             </Typography>
+                             <Typography sx={{fontSize: "1.2rem",fontWeight: 800,color: "#E02870", mb: 2,}} >
+                              {event.cluster}
+                               </Typography>
                             <Button
                                 variant="contained"
                                 onClick={() => handleOpenModal(event)}
