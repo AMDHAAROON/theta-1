@@ -16,10 +16,10 @@ export const brands = [
   { id: 13, img: "Assets/Sponsors/mrs.png" },
 ];
 // Path to T-shirt image
-export const tshirtImage = 'Assets/tshirt.png'; // Replace with actual path
+export const tshirtImage = './Assets/tshirt1.png'; // Replace with actual path
 
 // Path to Background Image
-export const backgroundImage = 'Assets/tbg.jpeg'; 
+export const backgroundImage = './Assets/tbg.jpeg'; 
 
 export const slides = [
   {
