@@ -235,7 +235,7 @@ const Gallery = () => (
       {/* Background logo with reduced opacity */}
       <Box
         component="img"
-        src="/assets/logo.png"
+        src="/Assets/logo.png"
         alt="Background Logo"
         sx={{
           position: "absolute",
@@ -287,7 +287,7 @@ const Gallery = () => (
         </Box>
       </Box>
 
-      
+
       {/* Main Gallery Header */}
       <AnimatedHeader
         title="GALLERY"
