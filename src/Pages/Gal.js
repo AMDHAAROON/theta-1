@@ -249,7 +249,45 @@ const Gallery = () => (
         }}
       />
       <Navbar />
+        
+      {/* Section with Theta videos */}
+      <Box sx={{ py: "3" }}>
+        <AnimatedHeader title="Check out our Theta videos!" />
+                {/* Sliding YouTube Thumbnails */}
+                <SlidingRow videos={thetaVideos} direction="left" />
+      </Box>
 
+      //Social media icons
+      <Box sx={{ textAlign: "center" }}>
+        <Typography
+          variant="h6"
+          sx={{ color: "#fff", fontWeight: 600, mb: 2 }}
+        >
+          Stay Updated with Our Latest Videos & Events!
+        </Typography>
+        <Box sx={{ display: "flex", justifyContent: "center", gap: 3, mb: 4 }}>
+          {/* YouTube Channel Icon */}
+          <IconButton
+            component={MuiLink}
+            href="https://www.youtube.com/@thetasrc"
+            target="_blank"
+            sx={{ color: "red" }}
+          >
+            <YouTubeIcon fontSize="large" />
+          </IconButton>
+          {/* Instagram Page Icon */}
+          <IconButton
+            component={MuiLink}
+            href="https://www.instagram.com/theta_src?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            sx={{ color: "#E4405F" }}
+          >
+            <InstagramIcon fontSize="large" />
+          </IconButton>
+        </Box>
+      </Box>
+
+      
       {/* Main Gallery Header */}
       <AnimatedHeader
         title="GALLERY"
@@ -288,42 +326,6 @@ const Gallery = () => (
             // theta Videos
 
 
-      {/* Section with Theta videos */}
-      <Box sx={{ py: "3" }}>
-        <AnimatedHeader title="Check out our Theta videos!" />
-                {/* Sliding YouTube Thumbnails */}
-                <SlidingRow videos={thetaVideos} direction="left" />
-      </Box>
-
-      {/* Footer section with social media icons */}
-      <Box sx={{ textAlign: "center" }}>
-        <Typography
-          variant="h6"
-          sx={{ color: "#fff", fontWeight: 600, mb: 2 }}
-        >
-          Stay Updated with Our Latest Videos & Events!
-        </Typography>
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 3, mb: 4 }}>
-          {/* YouTube Channel Icon */}
-          <IconButton
-            component={MuiLink}
-            href="https://www.youtube.com/@thetasrc"
-            target="_blank"
-            sx={{ color: "red" }}
-          >
-            <YouTubeIcon fontSize="large" />
-          </IconButton>
-          {/* Instagram Page Icon */}
-          <IconButton
-            component={MuiLink}
-            href="https://www.instagram.com/theta_src?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            target="_blank"
-            sx={{ color: "#E4405F" }}
-          >
-            <InstagramIcon fontSize="large" />
-          </IconButton>
-        </Box>
-      </Box>
     </Box>
 
     {/* Footer Component */}
