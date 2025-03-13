@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const navLinks = [
   { title: "Home", path: "/" },
   { title: "Workshops", path: "/Workshops" },
-  { title: "Events", path: "/Allevents" },
+  { title: "Events", path: "/allEvents" },
   { title: "Contact Us", path: "/contact-us" },
   
 ];
