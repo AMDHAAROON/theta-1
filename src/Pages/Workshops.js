@@ -114,7 +114,7 @@ const workshopData = [
     image: "/Assets/Posters/stress.jpg",
     description:
       "Join us for an engaging session to unwind, recharge, and learn practical stress-relief techniques. Experience mindfulness, relaxation, and simple strategies to tackle daily challenges with ease!",
-  },*/
+  },
   {
     id: 12,
     title: "Industrial IoT with Robotics Applications",
@@ -127,7 +127,7 @@ const workshopData = [
     image: "/Assets/Posters/iot.jpeg",
     description:
       "This workshop explores the integration of Industrial Internet of Things (IIoT) with Robotics, showcasing how these technologies are revolutionizing industrial automation.",
-  },
+  }, */
 
   {
     id: 14,
