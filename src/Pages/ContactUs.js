@@ -40,7 +40,7 @@ const ContactUs = () => {
       title: "Convenor",
       content: (
         <>
-          <br />
+          
           <strong>Dr. Srinivasan A</strong> <br /> Phone No : +91 70107 45391{" "}
         
         </>
@@ -75,7 +75,7 @@ const ContactUs = () => {
       title: "Contact Us",
       content: (
         <>
-          <br />
+        
           <strong>President : Surya C</strong> <br /> Phone No : +91 93606 17308{" "}
           <br />
           <br />
