@@ -1,24 +1,14 @@
-import React, { useState } from 'react';
-import { Box, Typography, Button, CardMedia, Grid, Slide, Fade, IconButton } from '@mui/material';
-import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
+import React from 'react';
+import { Box, Typography, Button, CardMedia, Grid, Slide, Fade } from '@mui/material';
 import Footer from "../Component/Footer";
 import Navbar from "../Component/Navbar";
-import { tshirtFrontImage, tshirtBackImage, backgroundImage } from "../utility/data";
+import { tshirtImage } from "../utility/data";
+import { backgroundImage } from "../utility/data";
 
 const TShirtPage = () => {
-  const [currentImage, setCurrentImage] = useState(0);
-  const images = [tshirtFrontImage, tshirtBackImage];
-
-  const handleNext = () => {
-    setCurrentImage((prev) => (prev + 1) % images.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
-  };
-
   return (
     <>
+      {/* Background + Overlay */}
       <Box
         sx={{
           width: '100%',
@@ -33,6 +23,7 @@ const TShirtPage = () => {
           px: { xs: 2, sm: 4 },
         }}
       >
+        {/* Overlay */}
         <Box
           sx={{
             position: 'absolute',
@@ -46,6 +37,7 @@ const TShirtPage = () => {
         />
         <Navbar />
         
+        {/* Slide + Fade */}
         <Fade in={true} timeout={800}>
           <Slide direction="up" in={true} timeout={800}>
             <Grid 
@@ -63,49 +55,21 @@ const TShirtPage = () => {
               }}
             >
               {/* Left Side (T-shirt Image) */}
-              <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
+              <Grid item xs={12} md={6}>
                 <CardMedia
                   component="img"
-                  image={images[currentImage]}
+                  image={tshirtImage}
                   alt="T-shirt"
                   sx={{
                     width: '100%',
                     height: '100%',
                     objectFit: 'cover',
                     transition: 'transform 0.4s ease',
-                    '&:hover': { transform: 'scale(1.05)' },
+                    '&:hover': {
+                      transform: 'scale(1.05)',
+                    },
                   }}
                 />
-                {/* Left Arrow */}
-                <IconButton
-                  onClick={handlePrev}
-                  sx={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: 15,
-                    transform: 'translateY(-50%)',
-                    backgroundColor: 'rgba(0, 0, 0, 0.6)',
-                    color: '#fff',
-                    '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.8)' }
-                  }}
-                >
-                  <ArrowBackIos />
-                </IconButton>
-                {/* Right Arrow */}
-                <IconButton
-                  onClick={handleNext}
-                  sx={{
-                    position: 'absolute',
-                    top: '50%',
-                    right: 10,
-                    transform: 'translateY(-50%)',
-                    backgroundColor: 'rgba(0, 0, 0, 0.6)',
-                    color: '#fff',
-                    '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.8)' }
-                  }}
-                >
-                  <ArrowForwardIos />
-                </IconButton>
               </Grid>
 
               {/* Right Side (Centered Text & Button) */}
@@ -122,12 +86,13 @@ const TShirtPage = () => {
                   p: 3,
                 }}
               >
+                {/* Title */}
                 <Typography
                   sx={{
                     fontWeight: 'bold',
-                    fontSize: { xs: '1.3rem', sm: '2.4rem' },
+                    fontSize: { xs: '1.3rem', sm: '2.4rem', }, // Custom size
                     fontFamily: "'Roboto', sans-serif",
-                    background: 'linear-gradient(90deg, #7d3cff, #ff7f50, #ff4500, #9370db)',
+                    background: 'linear-gradient(90deg, #7d3cff, #ff7f50, #ff4500, #9370db);', // Custom gradient
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
                     mb: 2,
@@ -136,6 +101,7 @@ const TShirtPage = () => {
                   Theta 2025 Exclusive T-shirt
                 </Typography>
 
+                {/* Description */}
                 <Typography
                   variant="h6"
                   sx={{
@@ -149,10 +115,11 @@ const TShirtPage = () => {
                   Celebrate Theta 2025 in style with this premium, comfortable T-shirt — available in multiple sizes. Grab yours before it's gone! 
                 </Typography>
 
+                {/* Button */}
                 <Button
                   variant="contained"
                   sx={{
-                    background: 'linear-gradient(90deg, #ff5733, #ff33ff)',
+                    background: 'linear-gradient(90deg, #ff5733, #ff33ff)', // Custom gradient
                     color: '#fff',
                     fontFamily: "'Roboto', sans-serif",
                     fontWeight: 'bold',
