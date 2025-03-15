@@ -67,10 +67,19 @@ export default function Navbar(props) {
         setTimeLeft("It's time! 🎉");
         return;
       }
-      const days = String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(2, "0");
-      const hours = String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2, "0");
-      const minutes = String(Math.floor((difference / (1000 * 60)) % 60)).padStart(2, "0");
-      const seconds = String(Math.floor((difference / 1000) % 60)).padStart(2, "0");
+      const days = String(
+        Math.floor(difference / (1000 * 60 * 60 * 24)),
+      ).padStart(2, "0");
+      const hours = String(
+        Math.floor((difference / (1000 * 60 * 60)) % 24),
+      ).padStart(2, "0");
+      const minutes = String(
+        Math.floor((difference / (1000 * 60)) % 60),
+      ).padStart(2, "0");
+      const seconds = String(Math.floor((difference / 1000) % 60)).padStart(
+        2,
+        "0",
+      );
       setTimeLeft(`${days}d ${hours}:${minutes}:${seconds}`);
     };
     const timerInterval = setInterval(updateTimer, 1000);
@@ -88,7 +97,7 @@ export default function Navbar(props) {
   // Navigation items
   const navItems = [
     { link: "/", name: "Home" },
-  //  { link: "/Tshirt", name: "Tshirt" },
+    // { link: "/merchandise", name: "Merchandise" },
     { link: "/gallery", name: "Gallery" },
     { link: "/Workshops", name: "Workshops" },
     { link: "/allEvents", name: "Events" },
@@ -98,18 +107,40 @@ export default function Navbar(props) {
 
   // Drawer component for mobile navigation
   const drawer = (
-    <Stack direction="column" sx={{ width: "100vw", height: "100vh", bgcolor: "#181818" }}>
+    <Stack
+      direction="column"
+      sx={{ width: "100vw", height: "100vh", bgcolor: "#181818" }}
+    >
       <Toolbar sx={{ display: "flex", justifyContent: "flex-end", pr: 2 }}>
         <IconButton onClick={() => setMobileOpen(false)}>
           <CloseIcon sx={{ color: "#fff" }} />
         </IconButton>
       </Toolbar>
-      <List sx={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%" }}>
+      <List
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          width: "100%",
+        }}
+      >
         {navItems.map((item, index) => (
-          <ListItem button key={index} onClick={() => handleNavClick(item.link)} sx={{ justifyContent: "center" }}>
+          <ListItem
+            button
+            key={index}
+            onClick={() => handleNavClick(item.link)}
+            sx={{ justifyContent: "center" }}
+          >
             <ListItemText
               primary={
-                <Typography sx={{ fontWeight: "bold", fontSize: "1.3rem", color: "#fff", textAlign: "center" }}>
+                <Typography
+                  sx={{
+                    fontWeight: "bold",
+                    fontSize: "1.3rem",
+                    color: "#fff",
+                    textAlign: "center",
+                  }}
+                >
                   {item.name}
                 </Typography>
               }
@@ -129,41 +160,85 @@ export default function Navbar(props) {
       <HideOnScroll {...props}>
         <AppBar
           sx={{
-            backgroundColor: isDown ? "rgba(255, 255, 255, 0.6)" : "transparent",
+            backgroundColor: isDown
+              ? "rgba(255, 255, 255, 0.6)"
+              : "transparent",
             backdropFilter: isDown ? "blur(10px)" : "none",
             boxShadow: isDown ? 3 : 0,
             borderRadius: isDown ? "0 0 2rem 2rem" : "0",
           }}
         >
-          <Toolbar sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <Toolbar
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
             {/* Logo */}
-            <ImageListItem onClick={() => handleNavClick("/")} style={{ cursor: "pointer" }}>
-              <Box component="img" src="/Assets/logo1.png" sx={{ width: { xs: "50px", sm: "80px" }, height: "auto", ml: 2 }} alt="logo" />
+            <ImageListItem
+              onClick={() => handleNavClick("/")}
+              style={{ cursor: "pointer" }}
+            >
+              <Box
+                component="img"
+                src="/Assets/logo1.png"
+                sx={{
+                  width: { xs: "50px", sm: "80px" },
+                  height: "auto",
+                  ml: 2,
+                }}
+                alt="logo"
+              />
             </ImageListItem>
             {/* Countdown Timer */}
-            <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}>
-              <Typography sx={{ fontWeight: "bold", fontSize: { xs: "1rem", sm: "1.2rem" }, color: isDown ? "#000" : "#fff" }}>
+            <Box
+              sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}
+            >
+              <Typography
+                sx={{
+                  fontWeight: "bold",
+                  fontSize: { xs: "1rem", sm: "1.2rem" },
+                  color: isDown ? "#000" : "#fff",
+                }}
+              >
                 {timeLeft}
               </Typography>
             </Box>
             {/* Desktop Navigation */}
             <Box sx={{ display: { xs: "none", md: "flex" }, gap: "1rem" }}>
               {navItems.map((item, index) => (
-                <Button key={index} onClick={() => handleNavClick(item.link)} sx={{ fontSize: "1rem", fontWeight: "600", color: isDown ? "#000" : "#fff" }}>
+                <Button
+                  key={index}
+                  onClick={() => handleNavClick(item.link)}
+                  sx={{
+                    fontSize: "1rem",
+                    fontWeight: "600",
+                    color: isDown ? "#000" : "#fff",
+                  }}
+                >
                   {item.name}
                 </Button>
               ))}
               <DevBtn />
             </Box>
             {/* Mobile Navigation Button */}
-            <IconButton sx={{ display: { xs: "block", md: "none" } }} onClick={() => setMobileOpen(true)} color="inherit">
+            <IconButton
+              sx={{ display: { xs: "block", md: "none" } }}
+              onClick={() => setMobileOpen(true)}
+              color="inherit"
+            >
               <MenuIcon />
             </IconButton>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
       <Toolbar />
-      <Drawer anchor="right" open={mobileOpen} onClose={() => setMobileOpen(false)}>
+      <Drawer
+        anchor="right"
+        open={mobileOpen}
+        onClose={() => setMobileOpen(false)}
+      >
         {drawer}
       </Drawer>
     </>

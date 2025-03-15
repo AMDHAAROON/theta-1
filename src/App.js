@@ -43,7 +43,7 @@ function App() {
         <Route path="/developers" element={<Developers />} />
         <Route path="/cluster" element={<Cluster />} />
         <Route path="/gallery" element={<Gal />} />
-        <Route path="/Tshirt" element={<Tshirt />} />
+        <Route path="/merchandise" element={<Tshirt />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Analytics />
