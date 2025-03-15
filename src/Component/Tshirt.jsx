@@ -86,7 +86,7 @@ const TShirtPage = () => {
                     height: '100%',
                     objectFit: 'cover',
                     transition: 'transform 0.4s ease',
-                    '&:hover': { transform: 'scale(1.05)' },
+                    '&:hover': { transform: 'scale(1.08)' },
                   }}
                 />
                 {/* Left Arrow */}
@@ -146,7 +146,7 @@ const TShirtPage = () => {
                     mb: 2,
                   }}
                 >
-                  Theta 2025 Exclusive T-shirt
+                  Theta 2k25 Exclusive T-shirt
                 </Typography>
 
                 <Typography
@@ -157,9 +157,10 @@ const TShirtPage = () => {
                     color: '#ddd',
                     letterSpacing: '0.5px',
                     mb: 3,
+                    textAlign: 'center', 
                   }}
                 >
-                 Get your exclusive Theta 2K25 T-shirt for just ₹200! Stylish, comfortable, and available in multiple sizes — don’t miss out!
+                 Get your Theta 2K25's exclusive T-shirt for just ₹200! Stylish, comfortable, and available in multiple sizes — don’t miss out!
                 </Typography>
 
                 <Button
