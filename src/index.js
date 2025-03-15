@@ -17,7 +17,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: `'Source Sans 3', sans-serif`,
+    fontFamily: `'Poppins', sans-serif`,
     fontSize: 12,
   },
 });
@@ -28,4 +28,3 @@ ReactDOM.render(
   </ThemeProvider>,
   document.getElementById("root"),
 );
-

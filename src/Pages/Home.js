@@ -10,6 +10,7 @@ import Review from "../Component/Review";
 import Footer from "../Component/Footer";
 import Allclusters from "../Component/Allclusters";
 import Theta from "../Component/Theta";
+
 const Home = () => {
   return (
     <>
@@ -36,7 +37,7 @@ const Home = () => {
         <Faq />
       </Box>
       <Box>
-        <Theta/>
+        <Theta />
       </Box>
       <Box sx={{ bgcolor: "#000212" }}>
         <Box
