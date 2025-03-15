@@ -114,7 +114,7 @@ const workshopData = [
     image: "/Assets/Posters/stress.jpg",
     description:
       "Join us for an engaging session to unwind, recharge, and learn practical stress-relief techniques. Experience mindfulness, relaxation, and simple strategies to tackle daily challenges with ease!",
-  },*/
+  },
   {
     id: 12,
     title: "Industrial IoT with Robotics Applications",
@@ -127,7 +127,7 @@ const workshopData = [
     image: "/Assets/Posters/iot.jpeg",
     description:
       "This workshop explores the integration of Industrial Internet of Things (IIoT) with Robotics, showcasing how these technologies are revolutionizing industrial automation.",
-  },
+  }, */
 
   {
     id: 14,
@@ -142,14 +142,14 @@ const workshopData = [
   },
   {
     id: 15,
-    title: "Voice of Doctor",
+    title: "Femcare 360",
     date: "Date: 27th-Mar-2025",
-    time: "Time: 11:00 a.m. - 01:00 p.m.",
+    time: "Time: 09:00 a.m. - 01:00 p.m.",
     venue: "Venue: Auditorium",
-    chiefGuest: "",
-    registrationLink: "",
-    image: "/Assets/Posters/voice_doctor.jpg",
-    description: "Equilibria",
+    chiefGuest: "Dr. N. Sukanya – MBBS MS in Obstetrics & Gynecology and Dr. M.R. Suchitra – Assistant Professor-III and Dr. R. Renuka – Assistant Professor-II , SASTRA-SRC",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfJqIgOpH_Vn4nraDMBtY18-shDuxFNfqLg3FJpy3Hc4N6G0g/viewform",
+    image: "/Assets/Posters/fem.jpg",
+    description: "FemCare 360 is a women's wellness workshop focused on reproductive health, nutrition, and hygiene, led by expert doctors.",
   },
   {
     id: 17,
@@ -158,7 +158,7 @@ const workshopData = [
     time: "Time: 10:00 a.m. - 01:00 p.m.",
     venue: "Venue: Drawing Hall",
     chiefGuest: "R. Ganesh Kumar, Proffessional Physical Director,Kumbakonam",
-    registrationLink: "",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeZkIW0wgB2Uv7X9OY5ycq0mIKp3AfEDNOC-MzWxkFWd676ew/viewform",
     image: "/Assets/Posters/yoga.jpeg",
     description: "Enhance flexibility, relaxation, and well-being with guided yoga techniques.",
   },
@@ -193,7 +193,7 @@ const workshopData = [
     time: "Time: 10:00 a.m. - 01:00 p.m.",
     venue: "Venue: Basketball Court",
     chiefGuest: "vDr.Shihan Hussaini, level 3 world archery coach and  Dr.Vijayabalan, PAN INDIA trained level 2 archery Coach ",
-    registrationLink: "",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSf3ODMuanFra-7Z73nayAUE46INoN8HwvLx7BKzLvuqSK5q-A/viewform",
     image: "/Assets/Posters/archery.jpeg",
     description: "Learn precision, accuracy, and focus in this hands-on archery session.",
   },

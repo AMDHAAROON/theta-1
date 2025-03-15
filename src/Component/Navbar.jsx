@@ -88,13 +88,12 @@ export default function Navbar(props) {
   // Navigation items
   const navItems = [
     { link: "/", name: "Home" },
+  //  { link: "/Tshirt", name: "Tshirt" },
+    { link: "/gallery", name: "Gallery" },
     { link: "/Workshops", name: "Workshops" },
     { link: "/allEvents", name: "Events" },
     !isMdUp && { link: "/Cluster", name: "Clusters" },
     { link: "/contact-us", name: "Contact Us" },
-  //  { link: "/Tshirt", name: "Tshirt" },
-    { link: "/gallery", name: "Gallery" },
-    
   ].filter(Boolean); // Remove falsy values
 
   // Drawer component for mobile navigation

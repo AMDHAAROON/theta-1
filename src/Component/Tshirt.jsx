@@ -1,58 +1,51 @@
-import React from 'react';
-import { Box, Typography, Button, Card, CardMedia } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, Typography, Button, CardMedia, Grid, Slide, Fade, IconButton } from '@mui/material';
+import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
 import Footer from "../Component/Footer";
 import Navbar from "../Component/Navbar";
-import {tshirtImage} from "../utility/data";
-import {backgroundImage} from "../utility/data";
-
+import confetti from 'canvas-confetti';
+import { tshirtFrontImage, tshirtBackImage, backgroundImage } from "../utility/data";
 
 const TShirtPage = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [tshirtFrontImage, tshirtBackImage];
+
+  const handleNext = () => {
+    setCurrentImage((prev) => (prev + 1) % images.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  const handleOrderClick = () => {
+    // Trigger confetti
+    confetti({
+      particleCount: 200,
+      spread: 70,
+      origin: { y: 0.6 },
+    });
+    setTimeout(() => {
+      window.open('https://forms.gle/BYyT7hvovJp3rx1K8', '_blank');
+    }, 1500); // 1000 ms = 1 second
+  };
+
   return (
     <>
-    <Navbar/>
-    <Box
-      sx={{
-        width: '100%',
-        height: '100vh', // Full viewport height
-        backgroundImage: `url(${backgroundImage})`, // Background image
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        position: 'relative',
-        overflow: 'hidden',
-        px: { xs: 2, sm: 4 }, // Side padding for mobile view
-      }}
-    >
-      {/* T-shirt Display Card */}
-      <Card
+      <Box
         sx={{
-          width: { xs: '90%', sm: '60%', md: '40%' },
-          borderRadius: 4,
-          boxShadow: 3,
-          overflow: 'hidden',
+          width: '100%',
+          height: '100vh',
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
           position: 'relative',
-          transform: 'translateY(0)',
-          transition: 'transform 0.5s ease, box-shadow 0.5s ease',
-          '&:hover': {
-            transform: 'translateY(-10px)', // Hover animation
-            boxShadow: 6,
-          },
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          px: { xs: 2, sm: 4 },
         }}
       >
-        {/* T-shirt Image */}
-        <CardMedia
-          component="img"
-          image={tshirtImage}
-          alt="T-shirt"
-          sx={{
-            width: '100%',
-            height: { xs: 240, sm: 320, md: 400 },
-            objectFit: 'cover',
-          }}
-        />
-        {/* Overlay Text */}
         <Box
           sx={{
             position: 'absolute',
@@ -60,45 +53,143 @@ const TShirtPage = () => {
             left: 0,
             width: '100%',
             height: '100%',
-            backgroundColor: 'rgba(0,0,0,0.3)', // Dark overlay
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            opacity: 0,
-            transition: 'opacity 0.5s ease',
-            '&:hover': {
-              opacity: 1, // Fade in on hover
-            },
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            zIndex: 0,
           }}
-        >
-          <Typography
-            variant="h5"
-            sx={{
-              color: '#fff',
-              fontWeight: 'bold',
-              mb: 2,
-              letterSpacing: '1px',
-            }}
-          >
-            Theta 2025 Exclusive T-shirt
-          </Typography>
-          <Button
-            variant="contained"
-            color="primary"
-            sx={{
-              backgroundColor: '#ff3d00', // Custom color
-              '&:hover': {
-                backgroundColor: '#e33c00', // Darker on hover
-              },
-            }}
-          >
-            Buy Now
-          </Button>
-        </Box>
-      </Card>
-    </Box>
-    <Footer/>
+        />
+        <Navbar />
+        
+        <Fade in={true} timeout={800}>
+          <Slide direction="up" in={true} timeout={800}>
+            <Grid 
+              container 
+              spacing={2}
+              sx={{
+                width: { xs: '90%', sm: '80%', md: '70%' },
+                backgroundColor: 'rgba(255, 255, 255, 0.3)',
+                backdropFilter: 'blur(8px)',
+                borderRadius: 4,
+                boxShadow: 4,
+                overflow: 'hidden',
+                zIndex: 1,
+                marginTop: '50px',
+              }}
+            >
+              {/* Left Side (T-shirt Image) */}
+              <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
+                <CardMedia
+                  component="img"
+                  image={images[currentImage]}
+                  alt="T-shirt"
+                  sx={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    transition: 'transform 0.4s ease',
+                    '&:hover': { transform: 'scale(1.08)' },
+                  }}
+                />
+                {/* Left Arrow */}
+                <IconButton
+                  onClick={handlePrev}
+                  sx={{
+                    position: 'absolute',
+                    top: '50%',
+                    left: 15,
+                    transform: 'translateY(-50%)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+                    color: '#fff',
+                    '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.8)' }
+                  }}
+                >
+                  <ArrowBackIos />
+                </IconButton>
+                {/* Right Arrow */}
+                <IconButton
+                  onClick={handleNext}
+                  sx={{
+                    position: 'absolute',
+                    top: '50%',
+                    right: 10,
+                    transform: 'translateY(-50%)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+                    color: '#fff',
+                    '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.8)' }
+                  }}
+                >
+                  <ArrowForwardIos />
+                </IconButton>
+              </Grid>
+
+              {/* Right Side (Centered Text & Button) */}
+              <Grid 
+                item 
+                xs={12} 
+                md={6} 
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  textAlign: 'center',
+                  p: 3,
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontWeight: 'bold',
+                    fontSize: { xs: '1.3rem', sm: '2.4rem' },
+                    fontFamily: "'Roboto', sans-serif",
+                    background: 'linear-gradient(90deg, #7d3cff, #ff7f50, #ff4500, #9370db)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    mb: 2,
+                  }}
+                >
+                  Theta 2k25 Exclusive T-shirt
+                </Typography>
+
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 'bold',
+                    fontFamily: "'Roboto', sans-serif",
+                    color: '#ddd',
+                    letterSpacing: '0.5px',
+                    mb: 3,
+                    textAlign: 'center', 
+                  }}
+                >
+                 Get your Theta 2K25's exclusive T-shirt for just ₹200! Stylish, comfortable, and available in multiple sizes — don’t miss out!
+                </Typography>
+
+                <Button
+  variant="contained"
+  onClick={handleOrderClick}
+  sx={{
+    background: 'linear-gradient(90deg, #ff5733, #ff33ff)',
+    color: '#fff',
+    fontFamily: "'Roboto', sans-serif",
+    fontWeight: 'bold',
+    padding: '14px 34px',
+    borderRadius: '30px',
+    boxShadow: '0 4px 10px rgba(0,0,0,0.3)',
+    transition: 'transform 0.3s ease',
+    '&:hover': {
+      background: 'linear-gradient(90deg, #ff33ff, #ff5733)',
+      transform: 'scale(1.08)',
+      boxShadow: '0 6px 15px rgba(0,0,0,0.4)',
+    },
+  }}
+>
+  Order Now — Limited Stock!
+</Button>
+              </Grid>
+            </Grid>
+          </Slide>
+        </Fade>
+      </Box>
+      <Footer />
     </>
   );
 };
