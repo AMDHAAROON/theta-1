@@ -97,7 +97,7 @@ export default function Navbar(props) {
   // Navigation items
   const navItems = [
     { link: "/", name: "Home" },
-    // { link: "/merchandise", name: "Merchandise" },
+    { link: "/merchandise", name: "Merchandise" },
     { link: "/gallery", name: "Gallery" },
     { link: "/Workshops", name: "Workshops" },
     { link: "/allEvents", name: "Events" },
