@@ -174,8 +174,8 @@ const TShirtPage = () => {
                     textAlign: "center",
                   }}
                 >
-                  Get your Theta 2K25's exclusive T-shirt for just ₹200!
-                  Stylish, comfortable, and available in multiple sizes — don’t
+                  Get your Theta 2K25's exclusive Tees for just ₹200!
+                  stylish, comfortable, and available in multiple sizes — don’t
                   miss out!
                 </Typography>
 
