@@ -15,12 +15,15 @@ export const brands = [
   { id: 13, img: "Assets/Sponsors/leb.png" },
   { id: 13, img: "Assets/Sponsors/mrs.png" },
 ];
-// Path to T-shirt image
-export const tshirtFrontImage = "./Assets/backimg.png"; // Replace with actual path
-export const tshirtBackImage = "./Assets/frontimg.png"; // Replace with actual path
 
-// Path to Background Image
-export const backgroundImage = "./Assets/tbg.jpeg";
+//images to Tshirt component
+export const Tshirt = {
+  Front: "./Assets/tshirt/frontimg1.png", 
+  Back: "./Assets/tshirt/backimg.png", 
+  background: "./Assets/bg/tbg.jpeg", 
+};
+
+
 
 export const slides = [
   {
@@ -68,7 +71,7 @@ export const aboutTheta = {
   title: "About Theta",
   description:
     "Theta is a grand fusion of ideas, fun-filled experiences, and celebrations. Join us to witness an electrifying lineup of events and workshops designed to inspire and entertain!",
-  image: "../Assets/clg.jpg", // Adjust the path if needed
+  image: "../Assets/bg/clg.jpg", // Adjust the path if needed
   brochureLink: "../Assets/theta.pdf",
   buttonText: "Download Brochure",
 };
