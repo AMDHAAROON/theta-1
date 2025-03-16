@@ -152,9 +152,9 @@ const TShirtPage = () => {
                   sx={{
                     fontWeight: "bold",
                     fontSize: { xs: "1.3rem", sm: "2.4rem" },
-                    fontFamily: "'Henny Penny', sans-serif",
+                    fontFamily: "'Concert One', sans-serif",
                     background:
-                      "linear-gradient(90deg, #7d3cff, #ff7f50, #ff4500, #9370db)",
+                      "linear-gradient(90deg, #7d3cff, #ff7f50, #ff4500,rgb(132, 71, 255))",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     mb: 2,
