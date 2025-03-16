@@ -18,8 +18,8 @@ export const brands = [
 
 //images to Tshirt component
 export const Tshirt = {
-  Front: "./Assets/tshirt/frontimg1.png", 
-  Back: "./Assets/tshirt/backimg.png", 
+  Back: "./Assets/tshirt/frontimg1.png", 
+  Front: "./Assets/tshirt/backimg.png", 
   background: "./Assets/bg/tbg.jpeg", 
 };
 
