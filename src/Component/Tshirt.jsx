@@ -151,7 +151,7 @@ const TShirtPage = () => {
                 <Typography
                   sx={{
                     fontWeight: "bold",
-                    fontSize: { xs: "1.3rem", sm: "2.4rem" },
+                    fontSize: { xs: "1.8rem", sm: "2.4rem" },
                     fontFamily: "'Concert One', sans-serif",
                     background:
                       "linear-gradient(90deg, #7d3cff, #ff7f50, #ff4500,rgb(132, 71, 255))",
