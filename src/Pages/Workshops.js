@@ -127,7 +127,7 @@ const workshopData = [
     image: "/Assets/Posters/iot.jpeg",
     description:
       "This workshop explores the integration of Industrial Internet of Things (IIoT) with Robotics, showcasing how these technologies are revolutionizing industrial automation.",
-  }, */
+  }, 
 
   {
     id: 14,
@@ -139,7 +139,7 @@ const workshopData = [
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeuuHyGVdyn5l8Xjx4dvsU8EvagYIRq7HYRLgdxaNfYYv6fMA/viewform",
     image: "/Assets/Posters/hack.jpeg",
     description: "Gain insights into cybersecurity, ethical hacking concepts, and system protection.",
-  },
+  },*/
   {
     id: 15,
     title: "Femcare 360",
@@ -164,7 +164,7 @@ const workshopData = [
   },
   {
     id: 9,
-    title: "From Basic to Pro: Hands-on Networking with Cisco",
+    title: "Hands-on Networking with Cisco",
     date: "Date: 29th-Mar-2025",
     time: "Time: 09:00 a.m. - 05:00 p.m.",
     venue: "Venue: Auditorium",
@@ -188,7 +188,7 @@ const workshopData = [
   },
   {
     id: 13,
-    title: "Archery: Sharpen Your Focus, Hit Your Precision Goals!",
+    title: "Archery",
     date: "Date: 03rd-Apr-2025",
     time: "Time: 10:00 a.m. - 01:00 p.m.",
     venue: "Venue: Basketball Court",
@@ -329,7 +329,7 @@ export default function Workshops() {
             >
               <Typography
                 sx={{
-                  fontSize: "2rem",
+                  fontSize: "1.6rem",
                   fontWeight: "bold",
                   color: "#333",
                   mb: 1,
