@@ -220,7 +220,7 @@ export default function Navbar(props) {
                   {item.name}
                 </Button>
               ))}
-              <DevBtn />
+             {/* <DevBtn />*/}  //hidded dev button temporarily
             </Box>
             {/* Mobile Navigation Button */}
             <IconButton
