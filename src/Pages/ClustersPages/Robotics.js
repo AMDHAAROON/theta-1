@@ -48,7 +48,7 @@ const Robotics = () => {
       <Box
         sx={{
           position: "relative",
-          backgroundImage: "url(Assets/Electronica.png)",
+          backgroundImage: "url(Assets/Clusterlogo/Electronica.png)",
           backgroundSize: "50%",
           backgroundPosition: "center",
           color: "white",
