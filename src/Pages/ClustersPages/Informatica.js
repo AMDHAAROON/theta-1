@@ -13,43 +13,43 @@ import Footer from "../../Component/Footer";
 
 const Informatica = () => {
   const contestData = [
-    {
-      title: "Capture the flag",
-      lastDate: "20 - 04 - 2023",
-      submissionDates: "20th April - 25 April",
-    },
-    {
-      title: "Code a thon",
-      lastDate: "20 - 04 - 2023",
-      submissionDates: "20th April - 25 April",
-    },
-    {
-      title: "Tech Quiz",
-      lastDate: "20 - 04 - 2023",
-      submissionDates: "20th April - 25 April",
-    },
-    {
-      title: "Ideathon",
-      lastDate: "20 - 04 - 2023",
-      submissionDates: "20th April - 25 April",
-    },
+    // {
+    //   title: "Capture the flag",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
+    // {
+    //   title: "Code a thon",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
+    // {
+    //   title: "Tech Quiz",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
+    // {
+    //   title: "Ideathon",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
   ];
   const faqs = [
     {
-      que: "Capture the flag?",
-      ans: "A Capture the Flag (CTF) event is a cybersecurity competition where participants try to solve a series of challenges that involve hacking, cryptography, forensics, and other skills related to cybersecurity.",
+      que: "How can I register for the workshop?",
+      ans: "You can register through the official website or the registration link provided in the event details.",
     },
     {
-      que: "Code a thon?",
-      ans: " Software Development Competition that challenges participants to develop a project or solution in a limited amount of time to a given scenario.The best 3 Solutions will be Shortlisted and provided with prizes.",
+      que: "Is there any registration fee?",
+      ans: " The registration fee, if applicable, will be mentioned in the event details.",
     },
     {
-      que: "Tech Quiz?",
-      ans: "Join our Tech Quiz competition and put your tech knowledge to the test! The event is open to individuals and teams of up to four members, with separate tracks for students and professionals. Get ready to compete, have fun, and win exciting prizes!",
+      que: "Will I receive a certificate?",
+      ans: "Yes, participants who complete the workshop will receive a certificate of participation.",
     },
     {
-      que: "Ideathon?",
-      ans: "Anyone with a tech-based idea is eligible to participate in the event, which exclusively welcomes project ideas related to technology. It's a chance to showcase your passion and creativity in the field of technology and receive recognition for your innovative ideas. Join in and share your ideas with others who share the same passion for technology!",
+      que: "Who can join the workshop?",
+      ans: "The workshop welcomes all students, regardless of their background, department, or experience level.",
     },
   ];
   const [currentFaq, setCurrentFaq] = React.useState(faqs);
@@ -158,12 +158,13 @@ const Informatica = () => {
             color: "#847D77",
             textAlign: "center",
             letterSpacing: 2,
+            paddingTop: "1.5rem",
           }}
         >
           "Where Tech Enthusiasts Unite"
         </Typography>
       </Box>
-      <Box sx={{ py: 5, bgcolor: "#000212" }}>
+      {/* <Box sx={{ py: 5, bgcolor: "#000212" }}>
         <TitleWithDescription title="Event Registration" />
         <Box
           sx={{
@@ -299,9 +300,9 @@ const Informatica = () => {
             }}
           />
         </Box>
-      </Box>
+      </Box> */}
       <Box sx={{ p: [5, 10], bgcolor: "#000212" }}>
-        <TitleWithDescription title="About our Contest" />
+        <TitleWithDescription title="About our Workshops" />
         <Box
           sx={{
             width: "100%",

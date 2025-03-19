@@ -11,16 +11,41 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 import CancelIcon from "@mui/icons-material/Cancel";
 import Footer from "../../Component/Footer";
 
-const Robotics = () => {
+const Access = () => {
   const contestData = [
-    // {
-    //   title: "Robo Craze",
-    //   lastDate: "04 - 05 - 2023",
-    //   submissionDates: "20th April - 25 April",
-    // },
+   /* {
+      title: "Short Film Contest Registration",
+      lastDate: "20 - 04 - 2023",
+      submissionDates: "20th April - 25 April",
+    },
+    {
+      title: "Mobile Photography Contest",
+      lastDate: "20 - 04 - 2023",
+      submissionDates: "20th April - 25 April",
+    },
+    {
+      title: "AD Film Contest",
+      lastDate: "20 - 04 - 2023",
+      submissionDates: "20th April - 25 April",
+    },
+    {
+      title: "MashUp Contest",
+      lastDate: "20 - 04 - 2023",
+      submissionDates: "20th April - 25 April",
+    },
+    {
+      title: "Digital Camera Photography Contest",
+      lastDate: "20 - 04 - 2023",
+      submissionDates: "20th April - 25 April",
+    },
+    {
+      title: "On spot Photography Contest",
+      lastDate: "20 - 04 - 2023",
+      submissionDates: "20th April - 25 April",
+    },*/
   ];
   const faqs = [
-    {
+   {
       que: "How can I register for the workshop?",
       ans: "You can register through the official website or the registration link provided in the event details.",
     },
@@ -36,6 +61,7 @@ const Robotics = () => {
       que: "Who can join the workshop?",
       ans: "The workshop welcomes all students, regardless of their background, department, or experience level.",
     },
+   
   ];
   const [currentFaq, setCurrentFaq] = React.useState(faqs);
   const [expand, setExpand] = React.useState(false);
@@ -60,7 +86,7 @@ const Robotics = () => {
       <Box
         sx={{
           position: "relative",
-          backgroundImage: "url(Assets/Clusterlogo/Robotics.png)",
+          backgroundImage: "url(Assets/Clusterlogo/Access.png)",
           backgroundSize: "50%",
           backgroundPosition: "center",
           color: "white",
@@ -94,7 +120,7 @@ const Robotics = () => {
               textAlign: "center",
             }}
           >
-            Robotics
+            Access India
           </Typography>
           <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
             <Link to="/" style={{ textDecoration: "none" }}>
@@ -122,15 +148,15 @@ const Robotics = () => {
                 fontSize: "18px",
               }}
             >
-              Robotica
+              Access India
             </Typography>
           </Box>
         </Box>
       </Box>
-      <Box sx={{ py: 5, px: 2, bgcolor: "#000212" }}>
-        <TitleWithDescription
-          title="About Robotica"
-          description="Robotica Cluster dives into the field of robotics, offering students insights into robotic design, automation, and real-world applications. It helps students explore the latest advancements in technology and engineering."
+      <Box sx={{ py: 5, px: 2, bgcolor: "#000212" ,textAlign:'center'}}>
+        <TitleWithDescription 
+          title="About Access India"
+          description="Access India Cluster helps students strengthen their ability to work together, communicate effectively, and think creatively. It creates an environment where students learn to adapt, lead, and solve challenges as a team."
         />
         <Typography
           gutterBottom
@@ -146,11 +172,11 @@ const Robotics = () => {
             paddingTop: "1.5rem",
           }}
         >
-          "From Fiction to Reality"
+          "We learn, we grow, we achieve."
         </Typography>
       </Box>
       {/* <Box sx={{ py: 5, bgcolor: "#000212" }}>
-        <TitleWithDescription title="Event Registration" />
+        <TitleWithDescription title="Contest Registration" />
         <Box
           sx={{
             display: "flex",
@@ -426,4 +452,4 @@ const Robotics = () => {
   );
 };
 
-export default Robotics;
+export default Access;

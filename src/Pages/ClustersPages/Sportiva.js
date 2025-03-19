@@ -11,31 +11,56 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 import CancelIcon from "@mui/icons-material/Cancel";
 import Footer from "../../Component/Footer";
 
-const Robotics = () => {
+const Sportiva = () => {
   const contestData = [
     // {
-    //   title: "Robo Craze",
-    //   lastDate: "04 - 05 - 2023",
+    //   title: "Short Film Contest Registration",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
+    // {
+    //   title: "Mobile Photography Contest",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
+    // {
+    //   title: "AD Film Contest",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
+    // {
+    //   title: "MashUp Contest",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
+    // {
+    //   title: "Digital Camera Photography Contest",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
+    // {
+    //   title: "On spot Photography Contest",
+    //   lastDate: "20 - 04 - 2023",
     //   submissionDates: "20th April - 25 April",
     // },
   ];
   const faqs = [
     {
-      que: "How can I register for the workshop?",
-      ans: "You can register through the official website or the registration link provided in the event details.",
-    },
-    {
-      que: "Is there any registration fee?",
-      ans: " The registration fee, if applicable, will be mentioned in the event details.",
-    },
-    {
-      que: "Will I receive a certificate?",
-      ans: "Yes, participants who complete the workshop will receive a certificate of participation.",
-    },
-    {
-      que: "Who can join the workshop?",
-      ans: "The workshop welcomes all students, regardless of their background, department, or experience level.",
-    },
+        que: "How can I register for the workshop?",
+        ans: "You can register through the official website or the registration link provided in the event details.",
+      },
+      {
+        que: "Is there any registration fee?",
+        ans: " The registration fee, if applicable, will be mentioned in the event details.",
+      },
+      {
+        que: "Will I receive a certificate?",
+        ans: "Yes, participants who complete the workshop will receive a certificate of participation.",
+      },
+      {
+        que: "Who can join the workshop?",
+        ans: "The workshop welcomes all students, regardless of their background, department, or experience level.",
+      },
   ];
   const [currentFaq, setCurrentFaq] = React.useState(faqs);
   const [expand, setExpand] = React.useState(false);
@@ -60,7 +85,7 @@ const Robotics = () => {
       <Box
         sx={{
           position: "relative",
-          backgroundImage: "url(Assets/Clusterlogo/Robotics.png)",
+          backgroundImage: "url(Assets/Clusterlogo/Sportiva.png)",
           backgroundSize: "50%",
           backgroundPosition: "center",
           color: "white",
@@ -94,7 +119,7 @@ const Robotics = () => {
               textAlign: "center",
             }}
           >
-            Robotics
+            Sportiva
           </Typography>
           <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
             <Link to="/" style={{ textDecoration: "none" }}>
@@ -122,15 +147,15 @@ const Robotics = () => {
                 fontSize: "18px",
               }}
             >
-              Robotica
+              Sportiva
             </Typography>
           </Box>
         </Box>
       </Box>
       <Box sx={{ py: 5, px: 2, bgcolor: "#000212" }}>
         <TitleWithDescription
-          title="About Robotica"
-          description="Robotica Cluster dives into the field of robotics, offering students insights into robotic design, automation, and real-world applications. It helps students explore the latest advancements in technology and engineering."
+          title="About Sportiva"
+          description="Sportiva Cluster promotes the spirit of sports and fitness, encouraging students to build strength, resilience, and teamwork through various athletic and recreational activities."
         />
         <Typography
           gutterBottom
@@ -143,14 +168,14 @@ const Robotics = () => {
             color: "#847D77",
             textAlign: "center",
             letterSpacing: 2,
-            paddingTop: "1.5rem",
+            paddingTop:"1.5rem",
           }}
         >
-          "From Fiction to Reality"
+        "Beyond the game, we chase greatness."
         </Typography>
       </Box>
       {/* <Box sx={{ py: 5, bgcolor: "#000212" }}>
-        <TitleWithDescription title="Event Registration" />
+        <TitleWithDescription title="Contest Registration" />
         <Box
           sx={{
             display: "flex",
@@ -426,4 +451,4 @@ const Robotics = () => {
   );
 };
 
-export default Robotics;
+export default Sportiva;

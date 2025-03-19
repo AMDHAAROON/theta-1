@@ -21,6 +21,15 @@ import Cluster from "./Pages/Cluster";
 import NotFound from "./Component/NotFound";
 import Gal from "./Pages/Gal";
 import Tshirt from "./Pages/Tshirt";
+import Access from "./Pages/ClustersPages/Access";
+import Electronica from "./Pages/ClustersPages/Electronica";
+import Equilibria from "./Pages/ClustersPages/Equilibria";
+import Mathematica from "./Pages/ClustersPages/Mathematica";
+import Biogenesis from "./Pages/ClustersPages/Biogenesis";
+import Optica from "./Pages/ClustersPages/Optica";
+import Sportiva from "./Pages/ClustersPages/Sportiva";
+import Strategia from "./Pages/ClustersPages/Strategia";
+import Vv from "./Pages/ClustersPages/Vv";
 
 function App() {
   useEffect(() => {
@@ -35,6 +44,15 @@ function App() {
         <Route path="/emulsion" element={<Emulsion />} />
         <Route path="/robotics" element={<Robotics />} />
         <Route path="/informatica" element={<Informatica />} />
+        <Route path="/Access" element={<Access />} />
+        <Route path="/Electronica" element={<Electronica />} />
+        <Route path="/Equilibria" element={<Equilibria />} />
+        <Route path="/Mathematica" element={<Mathematica />} />
+        <Route path="/Biogenesis" element={<Biogenesis />} />
+        <Route path="/Optica" element={<Optica />} />
+        <Route path="/Sportiva" element={<Sportiva />} />
+        <Route path="/Strategia" element={<Strategia />} />
+        <Route path="/Vv" element={<Vv />} />
         <Route path="/allEvents" element={<AllEvents />} />
         <Route path="/day-one" element={<Day1 />} />
         <Route path="/day-two" element={<Day2 />} />

@@ -11,31 +11,56 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 import CancelIcon from "@mui/icons-material/Cancel";
 import Footer from "../../Component/Footer";
 
-const Robotics = () => {
+const Equilibria = () => {
   const contestData = [
     // {
-    //   title: "Robo Craze",
-    //   lastDate: "04 - 05 - 2023",
+    //   title: "Short Film Contest Registration",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
+    // {
+    //   title: "Mobile Photography Contest",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
+    // {
+    //   title: "AD Film Contest",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
+    // {
+    //   title: "MashUp Contest",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
+    // {
+    //   title: "Digital Camera Photography Contest",
+    //   lastDate: "20 - 04 - 2023",
+    //   submissionDates: "20th April - 25 April",
+    // },
+    // {
+    //   title: "On spot Photography Contest",
+    //   lastDate: "20 - 04 - 2023",
     //   submissionDates: "20th April - 25 April",
     // },
   ];
   const faqs = [
     {
-      que: "How can I register for the workshop?",
-      ans: "You can register through the official website or the registration link provided in the event details.",
-    },
-    {
-      que: "Is there any registration fee?",
-      ans: " The registration fee, if applicable, will be mentioned in the event details.",
-    },
-    {
-      que: "Will I receive a certificate?",
-      ans: "Yes, participants who complete the workshop will receive a certificate of participation.",
-    },
-    {
-      que: "Who can join the workshop?",
-      ans: "The workshop welcomes all students, regardless of their background, department, or experience level.",
-    },
+        que: "How can I register for the workshop?",
+        ans: "You can register through the official website or the registration link provided in the event details.",
+      },
+      {
+        que: "Is there any registration fee?",
+        ans: " The registration fee, if applicable, will be mentioned in the event details.",
+      },
+      {
+        que: "Will I receive a certificate?",
+        ans: "Yes, participants who complete the workshop will receive a certificate of participation.",
+      },
+      {
+        que: "Who can join the workshop?",
+        ans: "The workshop welcomes all students, regardless of their background, department, or experience level.",
+      },
   ];
   const [currentFaq, setCurrentFaq] = React.useState(faqs);
   const [expand, setExpand] = React.useState(false);
@@ -60,7 +85,7 @@ const Robotics = () => {
       <Box
         sx={{
           position: "relative",
-          backgroundImage: "url(Assets/Clusterlogo/Robotics.png)",
+          backgroundImage: "url(Assets/Clusterlogo/tamil.png)",
           backgroundSize: "50%",
           backgroundPosition: "center",
           color: "white",
@@ -94,7 +119,7 @@ const Robotics = () => {
               textAlign: "center",
             }}
           >
-            Robotics
+            Equilibria
           </Typography>
           <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
             <Link to="/" style={{ textDecoration: "none" }}>
@@ -122,35 +147,35 @@ const Robotics = () => {
                 fontSize: "18px",
               }}
             >
-              Robotica
+              Equilibria
             </Typography>
           </Box>
         </Box>
       </Box>
       <Box sx={{ py: 5, px: 2, bgcolor: "#000212" }}>
         <TitleWithDescription
-          title="About Robotica"
-          description="Robotica Cluster dives into the field of robotics, offering students insights into robotic design, automation, and real-world applications. It helps students explore the latest advancements in technology and engineering."
+          title="About Equilibria"
+          description="Equilibria Cluster explores the harmony between knowledge and language, encouraging students to express ideas clearly, think critically, and understand diverse perspectives."
         />
         <Typography
           gutterBottom
           data-aos="fade-up"
           data-aos-duration="1000"
           sx={{
-            fontSize: { xs: "30px", sm: "35px", md: "32px" },
+            fontSize: { xs: "25px", sm: "20px", md: "32px" },
             fontWeight: "semibold",
             marginTop: "-2rem",
             color: "#847D77",
             textAlign: "center",
             letterSpacing: 2,
-            paddingTop: "1.5rem",
+            paddingTop:"1.5rem",
           }}
         >
-          "From Fiction to Reality"
+          "Through knowledge and language, we find balance."
         </Typography>
       </Box>
       {/* <Box sx={{ py: 5, bgcolor: "#000212" }}>
-        <TitleWithDescription title="Event Registration" />
+        <TitleWithDescription title="Contest Registration" />
         <Box
           sx={{
             display: "flex",
@@ -426,4 +451,4 @@ const Robotics = () => {
   );
 };
 
-export default Robotics;
+export default Equilibria;
