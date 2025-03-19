@@ -1,5 +1,5 @@
 import { Box, List, ListItem, ListItemText } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 /**
@@ -14,23 +14,39 @@ import { Link, useLocation } from "react-router-dom";
  * - Responsive design with horizontal scrolling for smaller screens.
  */
 const EventNavbar = () => {
-  const location = useLocation(); // Get the current route location
+  // Get the current route location
+  const location = useLocation();
+
+  // State to store the active path
+  const [activePath, setActivePath] = useState("");
+
+  /**
+   * useEffect Hook
+   * -------------------
+   * - Updates the active path when the route location changes.
+   * - If the path is "/", sets the active path to "/allEvents".
+   * - Ensures the correct tab is highlighted after a redirect or refresh.
+   */
+  useEffect(() => {
+    setActivePath(location.pathname === "/" ? "/allEvents" : location.pathname);
+  }, [location.pathname]);
 
   // Navigation items with corresponding routes and display names
   const items = [
-    { link: "/AllEvents", name: "All Events" },
+    { link: "/allEvents", name: "All Events" },
     { link: "/day-one", name: "Day 1" },
     { link: "/day-two", name: "Day 2" },
     { link: "/day-three", name: "Day 3" },
   ];
 
   /**
-   * ScrollToTop Function
+   * handleScrollToTop Function
    * -------------------
-   * Scrolls the window to the top of the page.
+   * - Scrolls the window to the top of the page.
+   * - Uses smooth scrolling for better UX.
    */
-  const ScrollToTop = () => {
-    window.scrollTo(0, 0);
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -49,34 +65,46 @@ const EventNavbar = () => {
           display: "flex",
           flexDirection: "row",
           padding: 0,
-          overflowX: "auto",
-          flexWrap: "nowrap",
+          overflowX: "auto", // Allow horizontal scrolling if items exceed screen width
+          flexWrap: "nowrap", // Prevent items from wrapping to the next line
         }}
       >
         {items.map((item, index) => {
-          const isActive = location.pathname === item.link; // Check if the current route matches the item link
+          // Check if the current route matches the item link
+          const isActive = activePath === item.link;
 
           return (
             <Link
               key={index}
               to={item.link}
-              onClick={ScrollToTop}
-              style={{ textDecoration: "none", color: "#fff" }} // Remove default link styles and set text color
+              onClick={() => {
+                setActivePath(item.link); // ✅ Sync state on click
+                handleScrollToTop(); // ✅ Scroll to top after click
+              }}
+              style={{
+                textDecoration: "none", // Remove default link underline
+                color: isActive ? "#FFB700" : "#fff", // Highlight active tab with color change
+                fontWeight: isActive ? "600" : "400", // Bold text for active tab
+              }}
             >
               <ListItem
                 sx={{
-                  width: "auto",
-                  py: 0,
-                  px: { xs: "1rem", sm: "2.3rem" },
-                  borderBottom: isActive ? "2px solid #FFB700" : "none", // Highlight active tab
-                  fontSize: { xs: "0.75rem", sm: "1rem" },
+                  width: "auto", // Adjust width to content size
+                  py: 1, // Vertical padding
+                  px: { xs: "1rem", sm: "2rem" }, // Horizontal padding
+                  borderBottom: isActive ? "2px solid #FFB700" : "none", // Highlight active tab with bottom border
+                  transition: "background-color 0.2s ease", // Smooth transition for hover effect
+                  "&:hover": {
+                    backgroundColor: "#333", // Dark background on hover
+                  },
                 }}
               >
                 <ListItemText
                   primary={item.name}
                   sx={{
-                    color: isActive ? "#FFB700" : "inherit", // Change text color for active tab
-                    fontSize: { xs: "0.75rem", sm: "1rem" },
+                    fontSize: { xs: "0.85rem", sm: "1rem" }, // Responsive font size
+                    fontWeight: isActive ? "600" : "400", // Bold for active tab
+                    textTransform: "capitalize", // Capitalize first letter of each word
                   }}
                 />
               </ListItem>
