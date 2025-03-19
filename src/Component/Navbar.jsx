@@ -97,12 +97,13 @@ export default function Navbar(props) {
   // Navigation items
   const navItems = [
     { link: "/", name: "Home" },
-    { link: "/merchandise", name: "Merchandise" },
+    
     { link: "/gallery", name: "Gallery" },
     { link: "/Workshops", name: "Workshops" },
     { link: "/allEvents", name: "Events" },
     !isMdUp && { link: "/Cluster", name: "Clusters" },
     { link: "/contact-us", name: "Contact Us" },
+    { link: "/merchandise", name: "Merchandise" },
   ].filter(Boolean); // Remove falsy values
 
   // Drawer component for mobile navigation
@@ -147,9 +148,9 @@ export default function Navbar(props) {
             />
           </ListItem>
         ))}
-        <ListItem sx={{ justifyContent: "center" }}>
+       {/* <ListItem sx={{ justifyContent: "center" }}>
           <DevBtn />
-        </ListItem>
+        </ListItem>*/}
       </List>
     </Stack>
   );
