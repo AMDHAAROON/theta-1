@@ -119,15 +119,16 @@ const Equilibria = () => {
               textAlign: "center",
             }}
           >
-            Equilibria
+            பொதிகைத் தமிழ் மன்றம்
           </Typography>
-          <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
+          {/* <Box sx={{ display: "flex", gap: 1, alignItems: "center",textAlign:"center" }}>
             <Link to="/" style={{ textDecoration: "none" }}>
               <Typography
                 sx={{
                   color: "#9A9EA1",
                   fontWeight: "bold",
                   fontSize: "18px",
+                  
                 }}
               >
                 Home
@@ -147,15 +148,15 @@ const Equilibria = () => {
                 fontSize: "18px",
               }}
             >
-              Equilibria
+              பொதிகைத் தமிழ் மன்றம்
             </Typography>
-          </Box>
+          </Box> */}
         </Box>
       </Box>
       <Box sx={{ py: 5, px: 2, bgcolor: "#000212",textAlign:'center' }}>
         <TitleWithDescription
-          title="About Equilibria"
-          description="Equilibria Cluster explores the harmony between knowledge and language, encouraging students to express ideas clearly, think critically, and understand diverse perspectives."
+          title="பொதிகைத் தமிழ் மன்றம்"
+          description="பொதிகைத் தமிழ் மன்றம் Cluster explores the harmony between knowledge and language, encouraging students to express ideas clearly, think critically, and understand diverse perspectives."
         />
         <Typography
           gutterBottom

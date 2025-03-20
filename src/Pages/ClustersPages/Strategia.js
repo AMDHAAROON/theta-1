@@ -155,7 +155,7 @@ const Strategia = () => {
       <Box sx={{ py: 5, px: 2, bgcolor: "#000212" ,textAlign:'center'}}>
         <TitleWithDescription
           title="About Strategia"
-          description="Strategia Cluster focuses on strategic thinking and decision-making, helping students develop analytical skills, foresight, and the ability to navigate complex challenges."
+          description="Strategia Cluster, driven by the Commerce Department, sharpens your financial foresight and strategic perception! Master the art of market dynamics, balance the books of uncertainty, and calculate your next move with precision—because in strategy, every decision counts!"
         />
         <Typography
           gutterBottom

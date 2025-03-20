@@ -155,7 +155,7 @@ const Vv = () => {
       <Box sx={{ py: 5, px: 2, bgcolor: "#000212",textAlign:'center' }}>
         <TitleWithDescription
           title="About Vinodha vaahini"
-          description="Vinodha Vaahini Cluster encourages students to express themselves confidently, fostering creativity and connection through engaging activities and meaningful conversations."
+          description="Vinodha Vaahini Cluster encourages students to express themselves confidently through creative activities, storytelling, and lively conversations, fostering a deep connection to the Telugu language and its rich literary heritage."
         />
         <Typography
           gutterBottom
