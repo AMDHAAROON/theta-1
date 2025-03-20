@@ -152,7 +152,7 @@ const Mathematica = () => {
           </Box>
         </Box>
       </Box>
-      <Box sx={{ py: 5, px: 2, bgcolor: "#000212" }}>
+      <Box sx={{ py: 5, px: 2, bgcolor: "#000212",textAlign:'center' }}>
         <TitleWithDescription
           title="About Mathematica"
           description="Mathematica Cluster delves into the world of numbers and patterns, helping students explore mathematical concepts, problem-solving strategies, and logical thinking."

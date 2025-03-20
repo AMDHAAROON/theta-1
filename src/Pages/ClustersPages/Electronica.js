@@ -152,7 +152,7 @@ const Electronica = () => {
           </Box>
         </Box>
       </Box>
-      <Box sx={{ py: 5, px: 2, bgcolor: "#000212" }}>
+      <Box sx={{ py: 5, px: 2, bgcolor: "#000212",textAlign:'center' }}>
         <TitleWithDescription
           title="About Electronica"
           description="Electronica Cluster focuses on the world of electronics, guiding students through circuits, microcontrollers, and innovative electronic systems. It explores the latest trends in electronic design and technology."

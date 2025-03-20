@@ -142,7 +142,7 @@ const Informatica = () => {
           </Box>
         </Box>
       </Box>
-      <Box sx={{ py: 5, px: 2, bgcolor: "#000212" }}>
+      <Box sx={{ py: 5, px: 2, bgcolor: "#000212",textAlign:'center' }}>
         <TitleWithDescription
           title="About Informatica"
           description="Informatica is a student-run organization focused on bringing together like-minded individuals interested in computer science and technology. The club aims to provide its members with opportunities to develop their technical skills, participate in coding competitions, network with industry professionals, and learn about emerging trends in the field"

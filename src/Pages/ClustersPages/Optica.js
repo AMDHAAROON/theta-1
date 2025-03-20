@@ -152,7 +152,7 @@ const Optica = () => {
           </Box>
         </Box>
       </Box>
-      <Box sx={{ py: 5, px: 2, bgcolor: "#000212" }}>
+      <Box sx={{ py: 5, px: 2, bgcolor: "#000212" ,textAlign:'center'}}>
         <TitleWithDescription
           title="About Optica"
           description="Optica Cluster focuses on precision and clarity, helping students sharpen their perspective and explore new ways of seeing and understanding the world."

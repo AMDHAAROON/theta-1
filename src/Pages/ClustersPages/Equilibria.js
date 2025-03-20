@@ -152,7 +152,7 @@ const Equilibria = () => {
           </Box>
         </Box>
       </Box>
-      <Box sx={{ py: 5, px: 2, bgcolor: "#000212" }}>
+      <Box sx={{ py: 5, px: 2, bgcolor: "#000212",textAlign:'center' }}>
         <TitleWithDescription
           title="About Equilibria"
           description="Equilibria Cluster explores the harmony between knowledge and language, encouraging students to express ideas clearly, think critically, and understand diverse perspectives."
