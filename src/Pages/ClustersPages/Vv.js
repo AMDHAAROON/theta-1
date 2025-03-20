@@ -85,7 +85,7 @@ const Vv = () => {
       <Box
         sx={{
           position: "relative",
-          backgroundImage: "url(Assets/Clusterlogo/vv.png)",
+          backgroundImage: "url(Assets/Clusterlogo/vv2.png)",
           backgroundSize: "50%",
           backgroundPosition: "center",
           color: "white",

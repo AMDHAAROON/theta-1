@@ -85,7 +85,7 @@ const Strategia = () => {
       <Box
         sx={{
           position: "relative",
-          backgroundImage: "url(Assets/Clusterlogo/st1.png)",
+          backgroundImage: "url(Assets/Clusterlogo/st3.png)",
           backgroundSize: "50%",
           backgroundPosition: "center",
           color: "white",

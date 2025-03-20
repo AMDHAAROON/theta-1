@@ -85,7 +85,7 @@ const Equilibria = () => {
       <Box
         sx={{
           position: "relative",
-          backgroundImage: "url(Assets/Clusterlogo/tamil.png)",
+          backgroundImage: "url(Assets/Clusterlogo/tamil1.png)",
           backgroundSize: "50%",
           backgroundPosition: "center",
           color: "white",
