@@ -14,56 +14,52 @@ import Footer from "../../Component/Footer";
 const Emulsion = () => {
   const contestData = [
     {
-      title: "Short Film Contest Registration",
-      lastDate: "20 - 04 - 2023",
-      submissionDates: "20th April - 25 April",
+      title: "Short Film Contest ",
+      lastDate: "25th - Mar - 2025",
+      submissionDates: "16th - Mar -2025",
+      Link:"https://forms.gle/5kN76mhQqFvEG5uS8",
     },
     {
       title: "Mobile Photography Contest",
-      lastDate: "20 - 04 - 2023",
-      submissionDates: "20th April - 25 April",
-    },
-    {
-      title: "AD Film Contest",
-      lastDate: "20 - 04 - 2023",
-      submissionDates: "20th April - 25 April",
+      lastDate: "25th - Mar - 2025",
+      submissionDates: "16th - Mar -2025",
+      Link:"https://forms.gle/fSRMLtcVoFat1Mus8",
     },
     {
       title: "MashUp Contest",
-      lastDate: "20 - 04 - 2023",
-      submissionDates: "20th April - 25 April",
+      lastDate: "25th - Mar - 2025",
+      submissionDates: "16th - Mar -2025",
+      Link:"https://forms.gle/NJACW6dxvKawTEEW7",
     },
     {
       title: "Digital Camera Photography Contest",
-      lastDate: "20 - 04 - 2023",
-      submissionDates: "20th April - 25 April",
+      lastDate: "25th - Mar - 2025",
+      submissionDates: "16th - Mar - 2025",
+      Link:"https://forms.gle/kfm8Q2BbSERbb3247",
     },
     {
-      title: "On spot Photography Contest",
-      lastDate: "20 - 04 - 2023",
-      submissionDates: "20th April - 25 April",
+      title: "On spot Photography contest",
+      lastDate: "09 - Apr - 2025",
+      submissionDates: "09th - April - 2025",
+      Link:"https://forms.gle/3QGJrYZ7gXkpj7pf6",
     },
   ];
   const faqs = [
     {
-      que: "Short Film Contest?",
-      ans: "Currently enrolled college students can register for a short film contest with a PG-13 theme, with a 7-8 minute limit on the film's duration. The registration concludes on April 20th, 2023 and the deadline for submission is April 25th, 2023. Cash prizes of Rs. 15,000, Rs. 7,000, and Rs. 3,000 will be awarded to the top three films.",
+      que: "About Short Film Contest?",
+      ans: "Only PG-13 films (2–12 minutes) are allowed, with no adult content, vulgarity, or copyrighted material. The director must be a registered college student and provide a college ID.",
     },
     {
-      que: "AD Film Contest?",
-      ans: " Currently enrolled college students can register for a AD film contest, with a 2-3 minute limit on the AD's duration. The registration concludes on April 20th, 2023 and the deadline for submission is April 25th, 2023. Cash prizes of Rs. 3,000, Rs. 1,500, and Rs. 500 will be awarded to the top three films.",
+      que: "About MashUp Contest?",
+      ans: "Every contestant must upload one mashup, renamed with their name and without watermarks. Only registered college students can participate and must provide a college ID. Registration starts on March 5th, 2025, and closes before March 25th, 2025.",
     },
     {
-      que: "MashUp Contest?",
-      ans: "Currently enrolled college students can register for a MashUp contest with a theme of biography or creating awareness for society, with a duration of 2-3 minutes and may contain copyrighted material. Submissions online and prizes of Rs. 3000, Rs. 1500, and Rs. 500 for the top 3 winners.",
+      que: "About Mobile Photography Contest?",
+      ans: "Every contestant must upload one vehicle-themed photo, renamed with their name and without watermarks. Only registered college students can participate and must provide a college ID. Registration starts on March 5th, 2025, and closes before March 25th, 2025.",
     },
     {
-      que: "Photography Contest?",
-      ans: "This photography contest is open to college students and has two themes: digital camera photography (reflection) and mobile photography (environmental portrait). Registration concludes on April 15th, with the submission deadline on April 25th. Prizes are awarded for both categories: Rs. 3,000, Rs. 1,500, and Rs. 500 for digital camera photography, and Rs. 1,500, Rs. 700, and Rs. 300 for mobile photography. Participants must not upload photos on any social media platforms and follow all event guidelines.",
-    },
-    {
-      que: "On spot Photography Contest?",
-      ans: "On Spot Photography Contest for for currently enrolled college students. Theme will be revealed during the fest. Participants have 30 minutes to capture their best shot on the day of the event. Registration fee is Rs. 50 and prizes are Rs. 1,500 for first place, Rs. 700 for second place, and Rs. 300 for third place.",
+      que: " About On spot Photography Contest?",
+      ans: "The photograph must be shot on April 10th, 2025, and should be renamed without watermarks. Only registered college students can participate and must provide a college ID. Registration starts on March 6th, 2025, and closes on April 9th, 2025.",
     },
   ];
   const [currentFaq, setCurrentFaq] = React.useState(faqs);
@@ -157,9 +153,9 @@ const Emulsion = () => {
         </Box>
       </Box>
       <Box sx={{ py: 5, px: 2, bgcolor: "#000212" }}>
-        <TitleWithDescription
+        <TitleWithDescription sx={{ textAlign: "center",}}
           title="About Emlusion"
-          description="Emulsion celebrates creativity and innovation in various forms of media and art. It includes contests such as photography, videography, AD, and short films. Participants showcase their skills and creativity in friendly competition."
+          description="Emulsion, SASTRA SRC's Cinematography & Photography Club, fosters creativity in filmmaking and photography. It helps students develop storytelling and technical skills through competitions, providing a platform to showcase their talent during Theta."
         />
         <Typography
           gutterBottom
@@ -172,6 +168,7 @@ const Emulsion = () => {
             color: "#847D77",
             textAlign: "center",
             letterSpacing: 2,
+            PaddingTop:"2rem",
           }}
         >
           "We Speak Cinema"
@@ -240,27 +237,31 @@ const Emulsion = () => {
                   mb: 3,
                 }}
               >
-                Submission dates: {contest.submissionDates}
+                Submission  starts from:<br/> {contest.submissionDates}
               </Typography>
               <Button
-                variant="contained"
-                sx={{
-                  background: `linear-gradient(91.83deg, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%)`,
-                  textTransform: "none",
-                  borderRadius: "50px",
-                  fontSize: "1rem",
-                  px: [4],
-                  color: "#fff",
-                  border: "2px solid transparent",
-                  "&:hover": {
-                    background: "transparent",
-                    border: "2px solid #EF3D4E",
-                    color: "#EF3D4E",
-                  },
-                }}
-              >
-                Register Now
-              </Button>
+  variant="contained"
+  href={contest.Link}
+  target="_blank"
+  rel="noopener noreferrer"
+  sx={{
+    background: `linear-gradient(91.83deg, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%)`,
+    textTransform: "none",
+    borderRadius: "50px",
+    fontSize: "1rem",
+    px: [4],
+    color: "#fff",
+    border: "2px solid transparent",
+    "&:hover": {
+      background: "transparent",
+      border: "2px solid #EF3D4E",
+      color: "#EF3D4E",
+    },
+  }}
+>
+  Register Now
+</Button>
+
             </Box>
           ))}
         </Box>
