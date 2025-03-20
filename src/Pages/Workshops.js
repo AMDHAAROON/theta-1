@@ -151,17 +151,7 @@ const workshopData = [
     image: "/Assets/Posters/fem.jpg",
     description: "FemCare 360 is a women's wellness workshop focused on reproductive health, nutrition, and hygiene, led by expert doctors.",
   },
-  {
-    id: 19,
-    title: "Inaugural event of vinodha vaahini",
-    date: "Date: 28th-Mar-2025",
-    time: "Time: 03:00 p.m. - 04:30 p.m.",
-    venue: "Venue: 201",
-    chiefGuest: "",
-    registrationLink: "",
-    image: "/Assets/Posters/fem.jpg",
-    description: "",
-  },
+  
   {
     id: 17,
     title: "Yoga",
