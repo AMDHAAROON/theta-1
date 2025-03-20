@@ -223,8 +223,8 @@ const Clusters = () => {
     {
       title: "",
       imgSrc: "Assets/Clusterlogo/tamil.png",
-      subtitle: "EQUILIBRIA",
-      description: "Finding balance through artistic expression.",
+      subtitle: "பொதிகைத் தமிழ் மன்றம்",
+      description: "வேற்றுமை இன்றி ழகரம் பழகுவோம்.",
       path: "/Equilibria",
     },
     {

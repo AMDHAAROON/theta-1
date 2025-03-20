@@ -171,7 +171,7 @@ const Equilibria = () => {
             paddingTop:"1.5rem",
           }}
         >
-          "Through knowledge and language, we find balance."
+          "வேற்றுமை இன்றி ழகரம் பழகுவோம்"
         </Typography>
       </Box>
       {/* <Box sx={{ py: 5, bgcolor: "#000212" }}>
