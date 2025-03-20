@@ -186,6 +186,14 @@ const Clusters = () => {
   const cardData = [
     {
       title: "",
+      imgSrc: "Assets/Clusterlogo/Emulsion.png",
+      subtitle: "Emulsion",
+      description: "Emulsion captures creativity through competitions.",
+      path: "/Emulsion",
+    },
+   
+    {
+      title: "",
       imgSrc: "Assets/Clusterlogo/Access.png",
       subtitle: "ACCESS INDIA",
       description: "Empowering students for a innovative future.",
