@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";//Add button while using cards
 import React from "react";
 import Navbar from "../../Component/Navbar";
 import { Link } from "react-router-dom";
@@ -12,38 +12,38 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import Footer from "../../Component/Footer";
 
 const Equilibria = () => {
-  const contestData = [
-    // {
-    //   title: "Short Film Contest Registration",
-    //   lastDate: "20 - 04 - 2023",
-    //   submissionDates: "20th April - 25 April",
-    // },
-    // {
-    //   title: "Mobile Photography Contest",
-    //   lastDate: "20 - 04 - 2023",
-    //   submissionDates: "20th April - 25 April",
-    // },
-    // {
-    //   title: "AD Film Contest",
-    //   lastDate: "20 - 04 - 2023",
-    //   submissionDates: "20th April - 25 April",
-    // },
-    // {
-    //   title: "MashUp Contest",
-    //   lastDate: "20 - 04 - 2023",
-    //   submissionDates: "20th April - 25 April",
-    // },
-    // {
-    //   title: "Digital Camera Photography Contest",
-    //   lastDate: "20 - 04 - 2023",
-    //   submissionDates: "20th April - 25 April",
-    // },
-    // {
-    //   title: "On spot Photography Contest",
-    //   lastDate: "20 - 04 - 2023",
-    //   submissionDates: "20th April - 25 April",
-    // },
-  ];
+  // const contestData = [
+  //   // {
+  //   //   title: "Short Film Contest Registration",
+  //   //   lastDate: "20 - 04 - 2023",
+  //   //   submissionDates: "20th April - 25 April",
+  //   // },
+  //   // {
+  //   //   title: "Mobile Photography Contest",
+  //   //   lastDate: "20 - 04 - 2023",
+  //   //   submissionDates: "20th April - 25 April",
+  //   // },
+  //   // {
+  //   //   title: "AD Film Contest",
+  //   //   lastDate: "20 - 04 - 2023",
+  //   //   submissionDates: "20th April - 25 April",
+  //   // },
+  //   // {
+  //   //   title: "MashUp Contest",
+  //   //   lastDate: "20 - 04 - 2023",
+  //   //   submissionDates: "20th April - 25 April",
+  //   // },
+  //   // {
+  //   //   title: "Digital Camera Photography Contest",
+  //   //   lastDate: "20 - 04 - 2023",
+  //   //   submissionDates: "20th April - 25 April",
+  //   // },
+  //   // {
+  //   //   title: "On spot Photography Contest",
+  //   //   lastDate: "20 - 04 - 2023",
+  //   //   submissionDates: "20th April - 25 April",
+  //   // },
+  // ];
   const faqs = [
     {
         que: "How can I register for the workshop?",
@@ -62,19 +62,19 @@ const Equilibria = () => {
         ans: "The workshop welcomes all students, regardless of their background, department, or experience level.",
       },
   ];
-  const [currentFaq, setCurrentFaq] = React.useState(faqs);
-  const [expand, setExpand] = React.useState(false);
+  const [currentFaq, ] = React.useState(faqs);
+ // const [expand, setExpand] = React.useState(false);
   const [expanded, setExpanded] = React.useState(false);
 
-  const handleExpand = () => {
-    if (expand) {
-      setCurrentFaq(faqs.slice(0, 7));
-      setExpand(false);
-    } else {
-      setCurrentFaq(faqs);
-      setExpand(true);
-    }
-  };
+  // const handleExpand = () => {
+  //   if (expand) {
+  //     setCurrentFaq(faqs.slice(0, 7));
+  //     setExpand(false);
+  //   } else {
+  //     setCurrentFaq(faqs);
+  //     setExpand(true);
+  //   }
+  // };
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);

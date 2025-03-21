@@ -222,7 +222,7 @@ const Clusters = () => {
     },
     {
       title: "",
-      imgSrc: "Assets/Clusterlogo/tamil.png",
+      imgSrc: "Assets/Clusterlogo/tamil1.png",
       subtitle: "பொதிகைத் தமிழ் மன்றம்",
       description: "வேற்றுமை இன்றி ழகரம் பழகுவோம்.",
       path: "/Equilibria",

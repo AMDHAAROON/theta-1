@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Typography } from "@mui/material";
+import { Box,Divider,Typography } from "@mui/material";//Add button while using cards
 import React from "react";
 import Navbar from "../../Component/Navbar";
 import { Link } from "react-router-dom";
@@ -12,8 +12,8 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import Footer from "../../Component/Footer";
 
 const Access = () => {
-  const contestData = [
-   /* {
+  /*const contestData = [
+    {
       title: "Short Film Contest Registration",
       lastDate: "20 - 04 - 2023",
       submissionDates: "20th April - 25 April",
@@ -42,8 +42,8 @@ const Access = () => {
       title: "On spot Photography Contest",
       lastDate: "20 - 04 - 2023",
       submissionDates: "20th April - 25 April",
-    },*/
-  ];
+    },
+  ];*/
   const faqs = [
    {
       que: "How can I register for the workshop?",
@@ -63,19 +63,20 @@ const Access = () => {
     },
    
   ];
-  const [currentFaq, setCurrentFaq] = React.useState(faqs);
-  const [expand, setExpand] = React.useState(false);
+  const [currentFaq] = React.useState(faqs);
+  //const [currentFaq, setCurrentFaq] = React.useState(faqs);
+  //const [expand, setExpand] = React.useState(false);
   const [expanded, setExpanded] = React.useState(false);
 
-  const handleExpand = () => {
-    if (expand) {
-      setCurrentFaq(faqs.slice(0, 7));
-      setExpand(false);
-    } else {
-      setCurrentFaq(faqs);
-      setExpand(true);
-    }
-  };
+  // const handleExpand = () => {
+  //   if (expand) {
+  //     setCurrentFaq(faqs.slice(0, 7));
+  //     setExpand(false);
+  //   } else {
+  //     setCurrentFaq(faqs);
+  //     setExpand(true);
+  //   }
+  // };
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
