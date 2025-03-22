@@ -15,7 +15,7 @@ const Emulsion = () => {
   const contestData = [
     {
       title: "Short Film Contest ",
-      lastDate: "25th - Mar - 2025",
+      lastDate: "30th - Mar - 2025",
       submissionDates: "1st - Apr -2025",
       Link:"https://forms.gle/5kN76mhQqFvEG5uS8",
     },
@@ -27,26 +27,26 @@ const Emulsion = () => {
     },
     {
       title: "Mobile Photography Contest",
-      lastDate: "25th - Mar - 2025",
+      lastDate: "30th - Mar - 2025",
       submissionDates: "5th - Apr -2025",
       Link:"https://forms.gle/fSRMLtcVoFat1Mus8",
     },
     {
       title: "MashUp Contest",
-      lastDate: "25th - Mar - 2025",
+      lastDate: "30th - Mar - 2025",
       submissionDates: "5th - Apr -2025",
       Link:"https://forms.gle/NJACW6dxvKawTEEW7",
     },
     {
       title: "Digital Camera Photography ",
-      lastDate: "25th - Mar - 2025",
+      lastDate: "30th - Mar - 2025",
       submissionDates: "5th - Apr -2025",
       Link:"https://forms.gle/kfm8Q2BbSERbb3247",
     },
     {
       title: "On spot Photography contest",
-      lastDate: "09 - Apr - 2025",
-      submissionDates: "Unveiling soon",
+      lastDate: "9th - Apr - 2025",
+      submissionDates: "10th - Apr - 2025",
       Link:"https://forms.gle/3QGJrYZ7gXkpj7pf6",
     },
   ];
