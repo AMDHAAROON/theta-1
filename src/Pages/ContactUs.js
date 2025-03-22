@@ -298,7 +298,7 @@ const ContactUs = () => {
             }}
           >
             Locate our place easily using the map above. We look forward to
-            seeing you!
+            see you!
           </Typography>
         </Box>
         <Box sx={{ textAlign: "center" }}>
