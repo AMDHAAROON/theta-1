@@ -199,7 +199,7 @@ const Day1 = () => {
       <Box
         sx={{
           position: "relative",
-          backgroundImage: "url(Assets/Logo2.png)",
+          backgroundImage: "url(Assets/logo2.png)",
           backgroundSize:{ xs:"50%",sm:"30%"},
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
