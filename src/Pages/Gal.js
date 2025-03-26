@@ -235,17 +235,19 @@ const Gallery = () => (
       {/* Background logo with reduced opacity */}
       <Box
         component="img"
-        src="./Assets/Logo.png"
+        src="./Assets/Logo2.png"
         alt="Background Logo"
+        
         sx={{
           position: "absolute",
-          top: "50%",
+          top: "40%",
           left: "50%",
           transform: "translate(-50%, -50%)",
-          opacity: 0.05,
-          width: { xs: "180px", sm: "280px", md: "360px" },
+          opacity: 0.10,
+          width: { xs: "300px", sm: "280px", md: "380px" },
           pointerEvents: "none",
           zIndex: 1,
+          
         }}
       />
       <Navbar />

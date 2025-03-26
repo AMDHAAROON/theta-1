@@ -183,11 +183,11 @@ export default function Navbar(props) {
             >
               <Box
                 component="img"
-                src="/Assets/logo1.png"
+                src="/Assets/logo2.png"
                 sx={{
-                  width: { xs: "50px", sm: "80px" },
+                  width: { xs: "70px", sm: "80px" },
                   height: "auto",
-                  ml: 2,
+                  ml: 1,
                 }}
                 alt="logo"
               />
