@@ -151,19 +151,7 @@ const workshopData = [
     image: "/Assets/Posters/fem.jpg",
     description: "FemCare 360 is a women's wellness workshop focused on reproductive health, nutrition, and hygiene, led by expert doctors.",
   },*/
-  {
-    id: 9,
-    title: "Hands-on Networking with Cisco",
-    date: "Date: 29th-Mar-2025",
-    time: "Time: 09:00 a.m. - 05:00 p.m.",
-    venue: "Venue: Auditorium",
-    chiefGuest: "Dr.P.Herbert Raj",
-    registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSeo2Dcdb81LUB_IRj7hN2t3c92Xted1zYUmThNJUmRk7caqBw/viewform",
-    image: "/Assets/Posters/networ.jpeg",
-    description:
-      "Explore physics with 20+ thrilling experiments! Experience hands-on learning, challenge myths, and ignite curiosity in every participant.",
-  },
+
   {
     id: 16,
     title: "Rangasthalam",
@@ -174,6 +162,19 @@ const workshopData = [
     registrationLink: "",
     image: "/Assets/Posters/rangasthalam.jpg",
     description: "Vinodha Vaahini",
+  },
+  {
+    id: 9,
+    title: "Hands-on Networking with Cisco",
+    date: "Date: 02nd-Apr-2025",
+    time: "Time: 09:00 a.m. - 05:00 p.m.",
+    venue: "Venue: Auditorium",
+    chiefGuest: "Dr.P.Herbert Raj",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeo2Dcdb81LUB_IRj7hN2t3c92Xted1zYUmThNJUmRk7caqBw/viewform",
+    image: "/Assets/Posters/networ.jpeg",
+    description:
+      "Explore physics with 20+ thrilling experiments! Experience hands-on learning, challenge myths, and ignite curiosity in every participant.",
   },
   {
     id: 13,
@@ -192,7 +193,7 @@ const workshopData = [
     title: "Application Containerization Using Docker",
     date: "Date: 04th and 05th-Apr-2025 ",
     time: "Time: 09:00 a.m. - 05:00 p.m.",
-    venue: "Venue: Auditorium",
+    venue: "Venue: 201 & Auditorium",
     chiefGuest: "",
     registrationLink: "",
     image: "/Assets/Posters/docker.jpg",
@@ -202,7 +203,7 @@ const workshopData = [
   {
     id: 17,
     title: "Yoga",
-    date: "Date: Updating soon",
+    date: "Date: Unveiling soon",
     time: "Time: 10:00 a.m. - 01:00 p.m.",
     venue: "Venue: Drawing Hall",
     chiefGuest: "R. Ganesh Kumar, Proffessional Physical Director,Kumbakonam",
