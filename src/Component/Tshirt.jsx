@@ -42,9 +42,9 @@ const TShirtPage = () => {
     });
 
     // Open order form link in a new tab after a delay of 1.5 seconds
-    setTimeout(() => {
-      window.open("https://forms.gle/BYyT7hvovJp3rx1K8", "_blank");
-    }, 1500);
+    // setTimeout(() => {
+    //   window.open("https://forms.gle/BYyT7hvovJp3rx1K8", "_blank");
+    // }, 1500);
   };
 
   return (
@@ -188,13 +188,13 @@ const TShirtPage = () => {
                   }}
                 >
                   Get your Theta 2K25's exclusive Tees for just ₹200!
-                  Stylish, comfortable, and available in multiple sizes — don’t
-                  miss out!
+                  Stylish, comfortable, and available in multiple sizes
                 </Typography>
 
                 {/* Order Button */}
                 <Button
                   variant="contained"
+                  disabled={true}
                   onClick={handleOrderClick}
                   sx={{
                     background: "linear-gradient(90deg, #ff5733, #ff33ff)", // Gradient button color
@@ -205,14 +205,20 @@ const TShirtPage = () => {
                     borderRadius: "30px", // Rounded button corners
                     boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
                     transition: "transform 0.3s ease",
+                    opacity:1,
                     "&:hover": {
                       background: "linear-gradient(90deg, #ff33ff, #ff5733)",
                       transform: "scale(1.08)", // Button scale on hover
                       boxShadow: "0 6px 15px rgba(0,0,0,0.4)",
                     },
+                    "&.Mui-disabled": {
+      color: "#CCCBCB !important", // Bright text even when disabled
+      opacity: 1, // Ensure full visibility
+      background: "linear-gradient(90deg, #ff5733, #ff33ff)", // Keep background
+    },
                   }}
                 >
-                  Order Now — Limited Stock!
+                  Registrations closed
                 </Button>
               </Grid>
             </Grid>
