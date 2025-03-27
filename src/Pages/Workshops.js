@@ -139,7 +139,7 @@ const workshopData = [
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeuuHyGVdyn5l8Xjx4dvsU8EvagYIRq7HYRLgdxaNfYYv6fMA/viewform",
     image: "/Assets/Posters/hack.jpeg",
     description: "Gain insights into cybersecurity, ethical hacking concepts, and system protection.",
-  },*/
+  },
   {
     id: 15,
     title: "Femcare 360",
@@ -150,19 +150,7 @@ const workshopData = [
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfJqIgOpH_Vn4nraDMBtY18-shDuxFNfqLg3FJpy3Hc4N6G0g/viewform",
     image: "/Assets/Posters/fem.jpg",
     description: "FemCare 360 is a women's wellness workshop focused on reproductive health, nutrition, and hygiene, led by expert doctors.",
-  },
-  
-  {
-    id: 17,
-    title: "Yoga",
-    date: "Date: 28th-Mar-2025",
-    time: "Time: 10:00 a.m. - 01:00 p.m.",
-    venue: "Venue: Drawing Hall",
-    chiefGuest: "R. Ganesh Kumar, Proffessional Physical Director,Kumbakonam",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeZkIW0wgB2Uv7X9OY5ycq0mIKp3AfEDNOC-MzWxkFWd676ew/viewform",
-    image: "/Assets/Posters/yoga.jpeg",
-    description: "Enhance flexibility, relaxation, and well-being with guided yoga techniques.",
-  },
+  },*/
   {
     id: 9,
     title: "Hands-on Networking with Cisco",
@@ -209,6 +197,18 @@ const workshopData = [
     registrationLink: "",
     image: "/Assets/Posters/docker.jpg",
     description: "Informatica",
+  },
+   
+  {
+    id: 17,
+    title: "Yoga",
+    date: "Date: Updating soon",
+    time: "Time: 10:00 a.m. - 01:00 p.m.",
+    venue: "Venue: Drawing Hall",
+    chiefGuest: "R. Ganesh Kumar, Proffessional Physical Director,Kumbakonam",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeZkIW0wgB2Uv7X9OY5ycq0mIKp3AfEDNOC-MzWxkFWd676ew/viewform",
+    image: "/Assets/Posters/yoga.jpeg",
+    description: "Enhance flexibility, relaxation, and well-being with guided yoga techniques.",
   },
 ];
 
