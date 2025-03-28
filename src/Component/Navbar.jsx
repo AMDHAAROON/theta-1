@@ -103,7 +103,7 @@ export default function Navbar(props) {
     { link: "/allEvents", name: "Events" },
     !isMdUp && { link: "/Cluster", name: "Clusters" },
     { link: "/contact-us", name: "Contact Us" },
-    { link: "/merchandise", name: "Merchandise" },
+   // { link: "/merchandise", name: "Merchandise" },
   ].filter(Boolean); // Remove falsy values
 
   // Drawer component for mobile navigation
@@ -148,9 +148,9 @@ export default function Navbar(props) {
             />
           </ListItem>
         ))}
-       {/* <ListItem sx={{ justifyContent: "center" }}>
+       <ListItem sx={{ justifyContent: "center" }}>
           <DevBtn />
-        </ListItem>*/}
+        </ListItem>
       </List>
     </Stack>
   );
@@ -221,7 +221,7 @@ export default function Navbar(props) {
                   {item.name}
                 </Button>
               ))}
-             {/* <DevBtn />*/}  
+             <DevBtn />  
             </Box>
             {/* Mobile Navigation Button */}
             <IconButton

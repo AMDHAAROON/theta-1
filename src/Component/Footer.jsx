@@ -9,48 +9,60 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
 
+// Navigation links for quick access
 const navLinks = [
   { title: "Home", path: "/" },
   { title: "Workshops", path: "/Workshops" },
   { title: "Events", path: "/allEvents" },
   { title: "Contact Us", path: "/contact-us" },
-  
 ];
 
+// Useful external links
 const UsefulLinks = [
   { title: "Sastra University", href: "https://src.sastra.edu/" },
   { title: "Rules & Regulation", path: "https://src.sastra.edu/" },
 ];
 
+// Social media links
 const socialLinks = [
   { Icon: LinkedinIcon, url: "https://www.linkedin.com/company/theta-src" },
-  { Icon: InstagramIcon, url: "https://www.instagram.com/theta_src?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+  {
+    Icon: InstagramIcon,
+    url: "https://www.instagram.com/theta_src?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+  },
   { Icon: YouTubeIcon, url: "https://www.youtube.com/@thetasrc" },
 ];
 
+// Function to scroll to top when links are clicked
 const ScrollToTop = () => {
   window.scrollTo(0, 0);
 };
 
 const Footer = () => {
+  // State for responsive handling
   const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
   const [isTablet, setIsTablet] = useState(
-    window.innerWidth >= 600 && window.innerWidth < 960,
+    window.innerWidth >= 600 && window.innerWidth < 960
   );
+
+  // Function to handle window resizing
   const handleResize = () => {
     setIsMobile(window.innerWidth < 600);
     setIsTablet(window.innerWidth >= 600 && window.innerWidth < 960);
   };
+
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <Box sx={{ bgcolor: "#000212", color: "white", px: { xs: 2 } }}>
       <Box sx={{ py: 5 }}>
         <Grid container spacing={4} justifyContent="center">
+          {/* Contact Information Section */}
           <Grid item xs={12} sm={6} md={4}>
             <Typography variant="h6" gutterBottom>
               National Level Techno-Management Fest, Theta
@@ -70,6 +82,8 @@ const Footer = () => {
               <Typography sx={{ ml: 2 }}>theta@src.sastra.ac.in</Typography>
             </Box>
           </Grid>
+
+          {/* Quick Links Section */}
           <Grid item xs={12} sm={6} md={2}>
             <Typography variant="h6" gutterBottom>
               Quick Links
@@ -86,6 +100,8 @@ const Footer = () => {
               </Typography>
             ))}
           </Grid>
+
+          {/* Useful Links Section */}
           <Grid item xs={12} sm={6} md={2}>
             <Typography variant="h6" gutterBottom>
               Useful links
@@ -113,6 +129,8 @@ const Footer = () => {
               </Typography>
             ))}
           </Grid>
+
+          {/* Social Media Section */}
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" gutterBottom>
               Subscribe for latest updates
@@ -140,6 +158,8 @@ const Footer = () => {
             </Box>
           </Grid>
         </Grid>
+
+        {/* Footer Copyright Section */}
         <Box textAlign="center" mt={5}>
           <Typography variant="body2">
             Copyright &copy; 2025 Theta | Designed and Developed by{" "}
@@ -162,4 +182,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer; // Footer component for the website

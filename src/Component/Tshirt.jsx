@@ -18,7 +18,7 @@ import { Tshirt } from "../utility/data"; // Import images and background from u
 const TShirtPage = () => {
   // State to track the current displayed T-shirt image
   const [currentImage, setCurrentImage] = useState(0);
-  
+
   // Array containing front and back T-shirt images
   const images = [Tshirt.Front, Tshirt.Back];
 
@@ -54,7 +54,7 @@ const TShirtPage = () => {
         sx={{
           width: "100%",
           height: "100vh",
-          backgroundImage: `url(${Tshirt.background})`,// Set background image
+          backgroundImage: `url(${Tshirt.background})`, // Set background image
           backgroundSize: "cover",
           backgroundPosition: "center",
           position: "relative",
@@ -187,8 +187,8 @@ const TShirtPage = () => {
                     textAlign: "center",
                   }}
                 >
-                  Get your Theta 2K25's exclusive Tees for just ₹200!
-                  Stylish, comfortable, and available in multiple sizes
+                  Get your Theta 2K25's exclusive Tees for just ₹200! Stylish,
+                  comfortable, and available in multiple sizes
                 </Typography>
 
                 {/* Order Button */}
@@ -205,17 +205,17 @@ const TShirtPage = () => {
                     borderRadius: "30px", // Rounded button corners
                     boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
                     transition: "transform 0.3s ease",
-                    opacity:1,
+                    opacity: 1,
                     "&:hover": {
                       background: "linear-gradient(90deg, #ff33ff, #ff5733)",
                       transform: "scale(1.08)", // Button scale on hover
                       boxShadow: "0 6px 15px rgba(0,0,0,0.4)",
                     },
                     "&.Mui-disabled": {
-      color: "#CCCBCB !important", // Bright text even when disabled
-      opacity: 1, // Ensure full visibility
-      background: "linear-gradient(90deg, #ff5733, #ff33ff)", // Keep background
-    },
+                      color: "#CCCBCB !important", // Bright text even when disabled
+                      opacity: 1, // Ensure full visibility
+                      background: "linear-gradient(90deg, #ff5733, #ff33ff)", // Keep background
+                    },
                   }}
                 >
                   Registrations closed
