@@ -10,6 +10,7 @@ import Review from "../Component/Review";
 import Footer from "../Component/Footer";
 import Allclusters from "../Component/Allclusters";
 import Theta from "../Component/Theta";
+import Events from "../Component/Events"
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <Carousel />
         <Navbar color="#fff" />
       </Box>
+      {/* <Box><Events/></Box> */}
       <Box sx={{ display: { xs: "none", md: "block" } }}>
         <TitleWithDescription title="Visit our Clusters" />
         <Clusters />
