@@ -1,5 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, } from "react";
 import { Card, CardContent, Typography, Button, Box } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Events = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -72,6 +73,8 @@ const Events = () => {
           </Typography>
           <Button
             variant="contained"
+          component={Link}
+           to="/Emulsion"
             sx={{
               mt: 3,
               background: "linear-gradient(to right, #ff4444, #cc0000)",

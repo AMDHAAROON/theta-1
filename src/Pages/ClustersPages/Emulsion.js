@@ -50,6 +50,14 @@ const Emulsion = () => {
       Link:"https://forms.gle/3QGJrYZ7gXkpj7pf6",
     },
   ];
+  const EventData = [
+    {
+      title: "Cinepattrai ",
+      lastDate: "30th - Mar - 2025",
+      submissionDates: "1st - Apr -2025",
+      Link:"https://forms.gle/5kN76mhQqFvEG5uS8",
+    },
+  ];
   const faqs = [
     {
       que: "About Short Film Contest?",
@@ -180,6 +188,98 @@ const Emulsion = () => {
           "We Speak Cinema"
         </Typography>
       </Box>
+      {/* <Box sx={{ py: 5, bgcolor: "#000212" }}>
+        <TitleWithDescription title="Our Special Events" />
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: 3,
+            padding: 4,
+          }}
+        >
+          {EventData.map((contest, index) => (
+            <Box
+              key={index}
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={`${100 * index}`}
+              sx={{
+                width: { xs: "100%", sm: "90%", md: "30%" },
+                height: "auto",
+                bgcolor: "#E6F3FB",
+                gap: 2,
+                p: 3,
+                border: "3px solid #EF3D4E",
+                borderRadius: "10px",
+                textAlign: "center",
+                transition: "transform 0.3s ease, box-shadow 0.5s ease-in-out",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                  boxShadow: "0px 0px 103px -25px rgba(125,125,125,1)",
+                },
+              }}
+            >
+              <Typography
+                sx={{
+                  fontSize: "1.2rem",
+                  fontWeight: "bold",
+                  color: "#333",
+                  mb: 1,
+                }}
+              >
+                {contest.title}
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: "1.1rem",
+                  color: "#333",
+                  fontWeight: 600,
+                  letterSpacing: 0.8,
+                  mb: 2.5,
+                }}
+              >
+                Last Date for Registration:
+                <br /> {contest.lastDate}
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: "1.1rem",
+                  color: "#9C79A1",
+                  letterSpacing: 0.8,
+                  mb: 3,
+                }}
+              >
+                Last Date for Submission:<br/> {contest.submissionDates}
+              </Typography>
+              <Button
+  variant="contained"
+  href={contest.Link}
+  target="_blank"
+  rel="noopener noreferrer"
+  sx={{
+    background: `linear-gradient(91.83deg, rgb(255, 81, 47) 0%, rgb(221, 36, 118) 100%)`,
+    textTransform: "none",
+    borderRadius: "50px",
+    fontSize: "1rem",
+    px: [4],
+    color: "#fff",
+    border: "2px solid transparent",
+    "&:hover": {
+      background: "transparent",
+      border: "2px solid #EF3D4E",
+      color: "#EF3D4E",
+    },
+  }}
+>
+  Register Now
+</Button>
+
+            </Box>
+          ))}
+        </Box>
+      </Box> */}
       <Box sx={{ py: 5, bgcolor: "#000212" }}>
         <TitleWithDescription title="Contest Registration" />
         <Box

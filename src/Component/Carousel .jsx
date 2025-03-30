@@ -80,17 +80,18 @@ const Carousel = () => {
                 position: "relative",
               }}
             >
-              <Box
-                component="img"
-                src={slide.img}
-                alt={`Slide ${index + 1}`}
-                sx={{
-                  width: "100%",
-                  height: "100%", // Force the image to take up full height
-                  objectFit: "cover",
-                  objectPosition: index === 0 ? "top" : "center", // Align the first image to the top
-                }}
-              />
+            <Box
+  component="img"
+  src={slide.img}
+  alt={`Slide ${index + 1}`}
+  sx={{
+    width: "100%",
+    height: "100%", // Force the image to take up full height
+    objectFit: "cover",
+    objectPosition: { xs: "Center", sm: "top" }, // Left focus on mobile, center on larger screens
+  }}
+/>
+
               <Box
                 sx={{
                   position: "absolute",
@@ -116,24 +117,26 @@ const Carousel = () => {
                   {slide.title}
                 </Typography>
                 <Typography
-                  variant="h2"
+                  // variant="h2"
                   sx={{
                     fontWeight: "bold",
                     lineHeight: "1.3em",
-                    color: "#f7ebe8",
-                    fontFamily: "Lora, serif",
+                    color: "#FFFFFF",
+                    fontSize: {xs:"55px",md:"70px"},
+                    fontFamily: "'Dancing Script', cursive",
                   }}
                 >
                   {slide.topic}
                 </Typography>
                 <Typography
                   variant="h6"
-                  sx={{ marginTop: "20px", lineHeight: "1.5em" }}
+                  sx={{ marginTop: "20px", lineHeight: "1.5em",  fontFamily: "Lora, serif", }}
                 >
                   {slide.des}
                 </Typography>
 
                 {/* See More Button */}
+                {index !== 3 && (
                 <Box sx={{ marginTop: "20px" }}>
                   <Button
                     variant="contained"
@@ -156,7 +159,7 @@ const Carousel = () => {
                   >
                     See More
                   </Button>
-                </Box>
+                </Box>)}
               </Box>
             </Box>
           ))}
@@ -166,7 +169,7 @@ const Carousel = () => {
         <Box
           sx={{
             position: "absolute",
-            bottom: ["10px", "30px"],
+            bottom: ["10px", "10px"],
             left: "50%",
             transform: "translateX(-50%)",
             display: "flex",
@@ -184,8 +187,8 @@ const Carousel = () => {
               key={index}
               onClick={() => setCurrentIndex(index)}
               sx={{
-                width: { xs: "70px", sm: "100px" },
-                height: { xs: "100px", sm: "150px" },
+                width: { xs: "70px", sm: "80px" },
+                height: { xs: "100px", sm: "120px" },
                 flexShrink: 0,
                 position: "relative",
                 cursor: "pointer",
