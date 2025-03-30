@@ -164,6 +164,17 @@ const workshopData = [
     description: "Join us for an exciting workshop packed with fun games and creative performances! Showcase your talents in music, dance, drama, and more while enjoying an energetic and vibrant atmosphere.",
   },
   {
+    id: 19,
+    title: "IPL Auction",
+    date: "Date: 02nd-Apr-2025",
+    time: "Time: 09:00 a.m. - 05:30 p.m.",
+    venue: "Venue: 201",
+    chiefGuest: "A fun-filled, students-organized workshop",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeFWz1G2Z_Z4CnvtxtAAgi6ylPC_mPjmQnFH1PKVnsRuCf-YA/viewform?usp=send_form",
+    image: "/Assets/Posters/ipl.jpg",
+    description: "Build your dream IPL team at the Theta Auction – Strategy, Bidding, and Glory await on April 2nd!",
+  },
+  {
     id: 9,
     title: "Hands-on Networking with Cisco",
     date: "Date: 02nd-Apr-2025",
