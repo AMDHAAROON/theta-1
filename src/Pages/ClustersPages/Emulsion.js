@@ -22,25 +22,25 @@ const Emulsion = () => {
     {
       title: "Staff Photography Contest",
       lastDate: "30th - Mar - 2025",
-      submissionDates: "5th - Apr -2025",
+      submissionDates: "7th - Apr -2025",
       Link:"https://forms.gle/pWJzA8XZSQC2dCKH9",
     },
     {
       title: "Mobile Photography Contest",
       lastDate: "30th - Mar - 2025",
-      submissionDates: "5th - Apr -2025",
+      submissionDates: "7th - Apr -2025",
       Link:"https://forms.gle/fSRMLtcVoFat1Mus8",
     },
     {
       title: "MashUp Contest",
       lastDate: "30th - Mar - 2025",
-      submissionDates: "5th - Apr -2025",
+      submissionDates: "7th - Apr -2025",
       Link:"https://forms.gle/NJACW6dxvKawTEEW7",
     },
     {
       title: "Digital Camera Photography ",
       lastDate: "30th - Mar - 2025",
-      submissionDates: "5th - Apr -2025",
+      submissionDates: "7th - Apr -2025",
       Link:"https://forms.gle/kfm8Q2BbSERbb3247",
     },
     {
