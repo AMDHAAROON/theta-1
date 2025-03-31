@@ -211,17 +211,7 @@ const workshopData = [
     description: "Informatica",
   },
    
-  {
-    id: 17,
-    title: "Yoga",
-    date: "Date: Unveiling soon",
-    time: "Time: 10:00 a.m. - 01:00 p.m.",
-    venue: "Venue: Drawing Hall",
-    chiefGuest: "R. Ganesh Kumar, Proffessional Physical Director,Kumbakonam",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeZkIW0wgB2Uv7X9OY5ycq0mIKp3AfEDNOC-MzWxkFWd676ew/viewform",
-    image: "/Assets/Posters/yoga.jpeg",
-    description: "Enhance flexibility, relaxation, and well-being with guided yoga techniques.",
-  },
+
 ];
 
 export default function Workshops() {

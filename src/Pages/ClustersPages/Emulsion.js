@@ -315,7 +315,7 @@ const Emulsion = () => {
             >
               <Typography
                 sx={{
-                  fontSize: "1.2rem",
+                  fontSize: "1.5rem",
                   fontWeight: "bold",
                   color: "#333",
                   mb: 1,

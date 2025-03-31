@@ -142,3 +142,8 @@ export const reviews = [
       "Every event is a blast! I'm always looking forward to what Theta has next! 🎊 Their events are unforgettable experiences.",
   },
 ];
+
+export const event = {
+  logo: "./Assets/logo2.png", 
+  
+};
