@@ -112,7 +112,7 @@ const Events = () => {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
-    opacity: 0.2, // Reduce the opacity of the image
+    opacity: showMore ? 0 : 0.2, // Reduce the opacity of the image
     transform: "translate(-50%, -50%)",
     zIndex: 0,
   },

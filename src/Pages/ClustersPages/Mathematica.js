@@ -85,7 +85,7 @@ const Mathematica = () => {
       <Box
         sx={{
           position: "relative",
-          backgroundImage: "url(Assets/Clusterlogo/Ma.png)",
+          backgroundImage: "url(Assets/newclusterlogo/math1.png)",
           backgroundSize: "50%",
           backgroundPosition: "center",
           color: "white",

@@ -85,7 +85,7 @@ const Biogenesis = () => {
       <Box
         sx={{
           position: "relative",
-          backgroundImage: "url(Assets/Clusterlogo/Bio.png)",
+          backgroundImage: "url(Assets/newclusterlogo/biogenesis1.png)",
           backgroundSize: "50%",
           backgroundPosition: "center",
           color: "white",

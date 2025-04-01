@@ -85,7 +85,7 @@ const Electronica = () => {
       <Box
         sx={{
           position: "relative",
-          backgroundImage: "url(Assets/Clusterlogo/Electronica.png)",
+          backgroundImage: "url(Assets/newclusterlogo/elec1.png)",
           backgroundSize: "50%",
           backgroundPosition: "center",
           color: "white",

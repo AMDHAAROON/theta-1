@@ -87,7 +87,7 @@ const Access = () => {
       <Box
         sx={{
           position: "relative",
-          backgroundImage: "url(Assets/Clusterlogo/Ai.png)",
+          backgroundImage: "url(Assets/newclusterlogo/a1.png)",
           backgroundSize: "50%",
           backgroundPosition: "center",
           color: "white",
