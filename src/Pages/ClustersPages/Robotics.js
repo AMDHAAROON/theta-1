@@ -122,14 +122,14 @@ const Robotics = () => {
                 fontSize: "18px",
               }}
             >
-              Robotica
+              Robotics
             </Typography>
           </Box>
         </Box>
       </Box>
       <Box sx={{ py: 5, px: 2, bgcolor: "#000212",textAlign:'center' }}>
         <TitleWithDescription
-          title="About Robotica"
+          title="About Robotics"
           description="Robotica Cluster dives into the field of robotics, offering students insights into robotic design, automation, and real-world applications. It helps students explore the latest advancements in technology and engineering."
         />
         <Typography

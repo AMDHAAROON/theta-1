@@ -187,7 +187,7 @@ const Clusters = () => {
     {
       title: "",
       imgSrc: "Assets/Clusterlogo/Emulsion.png",
-      subtitle: "Emulsion",
+      subtitle: "EMULSION",
       description: "Emulsion captures creativity through competitions.",
       path: "/Emulsion",
     },
@@ -202,7 +202,7 @@ const Clusters = () => {
     {
       title: "",
       imgSrc: "Assets/newclusterlogo/robo1.png",
-      subtitle: "ROBOTICA",
+      subtitle: "ROBOTICS",
       description: "Innovative solutions through robotics technology.",
       path: "/Robotics",
     },
