@@ -16,27 +16,50 @@ import EventModal from '../../Component/EventModal';
 
 const day3Events = [
     {
-        id: 1,
-        title: "Tech Talent",
+        id: 18,
+        title: "The Great Treasure Hunt",
         date: "Date: 13th-Apr-2025",
-        time: "Time: 02:00 p.m. - 04:00 p.m.",
-        venue: "Venue: Lab 1",
-        registrationLink: "",
-        cluster:"INFORMATICA",
-        image: "",
+        time: "Time: 09:30 a.m. -  11:30 a.m",
+        venue: "Venue: 402",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScJPPRViXYwA3waFIV__0IJF3dKAvEW38QEuQzfEBTfQTMGvw/viewform?usp=dialog",
+         cluster:"ELECTRONICA",
+        image: "/Assets/event/GreatTreasureHunt.jpg",
         description: "",
       },
       {
         id: 32,
-        title: "Eureka Odyssey",
+        title: "Double Trouble",
         date: "Date: 13th-Apr-2025",
-        time: "Time: 10:00 a.m. - 12:00 p.m.",
-        venue: "Venue: 512",
-        registrationLink: "",
+        time: "Time: 10:00 a.m. - 12:00 p.m. ",
+        venue: "Venue: 512 ",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdJYJz8XEC-BsccHIRTrGEjt0B7qIesjV4WDfBvlaPXaKzPEw/viewform?usp=header",
          cluster:"Optica",
-        image: "",
+        image: "/Assets/event/DoubleTrouble.jpg",
         description: "",
       },
+      {
+        id: 17,
+        title: "Robo Race",
+        date: "Date: 13th-Apr-2025",
+        time: "Time: 10:00 a.m. -  11:00 a.m.",
+        venue: "Venue: 301 ",
+        registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScbvXFT1A-uLI40csXYNJKh1qhKVSp4Zr9Jp-SJjpIhZKWg7g/viewform",
+         cluster:"ROBOTICS",
+        image: "/Assets/event/RoboRace.jpg",
+        description: "",
+      },
+      {
+        id: 17,
+        title: "Esport",
+        date: "Date: 13th-Apr-2025",
+        time: "Time: 9:45 a.m.",
+        venue: "Venue: 201",
+        registrationLink: "",
+         cluster:"SPORTIVA",
+        image: "/Assets/event/ESports.jpeg",
+        description: "",
+      },
+      
 ];
 
 const Day3 = () => {
@@ -146,7 +169,7 @@ const Day3 = () => {
                             <Button
                                 variant="contained"
                                 onClick={() => handleOpenModal(event)}
-                                disabled={!event.registrationLink}
+                                disabled={!event.image}
                                 sx={{
                                     background: "linear-gradient(91.83deg, rgb(255, 81, 47), rgb(221, 36, 118))",
                                     width: "80%",

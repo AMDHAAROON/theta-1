@@ -162,7 +162,7 @@ const workshopData = [
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSd0mbesq8N6ax0IGfMAXgdhzj3PfywKBhIjL0WM_R-FTHW1uA/viewform",
     image: "/Assets/Posters/vv.jpeg",
     description: "Join us for an exciting workshop packed with fun games and creative performances! Showcase your talents in music, dance, drama, and more while enjoying an energetic and vibrant atmosphere.",
-  },*/
+  },
   {
     id: 19,
     title: "IPL Auction",
@@ -186,7 +186,7 @@ const workshopData = [
     image: "/Assets/Posters/networ.jpeg",
     description:
       "Explore physics with 20+ thrilling experiments! Experience hands-on learning, challenge myths, and ignite curiosity in every participant.",
-  },
+  },*/
   {
     id: 13,
     title: "Archery",

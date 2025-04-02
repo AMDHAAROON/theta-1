@@ -82,8 +82,8 @@ export default function FeaturedModal({ isOpen, onClose, event }) {
           pb: 3,
         }}
       >
-        {/* Register Button */}
-        {event.registrationLink && (
+        {/* Registration Button */}
+        {event.registrationLink ? (
           <a
             href={event.registrationLink}
             target="_blank"
@@ -99,6 +99,7 @@ export default function FeaturedModal({ isOpen, onClose, event }) {
               borderRadius: "50px",
               textDecoration: "none",
               fontWeight: "600",
+              border: "2px solid transparent",
               transition: "all 0.3s ease",
             }}
             onMouseEnter={(e) => {
@@ -115,6 +116,30 @@ export default function FeaturedModal({ isOpen, onClose, event }) {
           >
             Register Now
           </a>
+        ) : (
+          <Button
+            sx={{
+              width: "100%",
+              padding: "12px 0",
+              fontSize: "1rem",
+              textAlign: "center",
+              color: "white",
+              background:
+                "linear-gradient(91.83deg, rgb(255, 81, 47), rgb(221, 36, 118))",
+              borderRadius: "50px",
+              fontWeight: "600",
+              border: "2px solid transparent",
+              transition: "all 0.3s ease",
+              "&:hover": {
+                background: "transparent",
+                color: "#EF3D4E",
+                border: "2px solid #EF3D4E",
+              },
+            }}
+            disabled
+          >
+            On-Spot Registration
+          </Button>
         )}
 
         {/* Close Button */}

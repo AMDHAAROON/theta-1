@@ -6,18 +6,28 @@ import { event } from "../utility/data"; // Import the new FeaturedModal compone
 
 const events = [
   {
-    id: 1,
-    title: "CINEPATTARAI",
-    date: "April 12, 2025",
-    time: "10:00 AM - 1:00 PM",
+    id: 2,
+    title: "Koothupatrai",
+    date: "April 11, 2025",
+    time: "2:00 PM - 3:00 PM",
     venue: "Auditorium",
-    description: "A fun-filled cinematic experience with short films.",
-    image: "/Assets/Posters/guest.jpg",
-    registrationLink: "https://example.com/register-cinepattarai",
+    description: "",
+    image: "/Assets/Posters/ipl.jpg",
+    registrationLink: "https://example.com/register-pattimandram",
   },
   {
     id: 2,
-    title: "PATTIMANDRAM",
+    title: "Pattimandram",
+    date: "April 12, 2025",
+    time: "2:00 PM - 5:00 PM",
+    venue: "Auditorium",
+    description: "",
+    image: "/Assets/Posters/ipl.jpg",
+    registrationLink: "https://example.com/register-pattimandram",
+  },
+  {
+    id: 2,
+    title: "Therukuthu ",
     date: "April 13, 2025",
     time: "2:00 PM - 5:00 PM",
     venue: "Hall B",
@@ -25,6 +35,7 @@ const events = [
     image: "/Assets/Posters/ipl.jpg",
     registrationLink: "https://example.com/register-pattimandram",
   },
+  
 ];
 
 const Events = () => {

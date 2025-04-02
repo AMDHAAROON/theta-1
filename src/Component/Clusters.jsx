@@ -265,8 +265,8 @@ const Clusters = () => {
     {
       title: "",
       imgSrc: "Assets/newclusterlogo/vv.jpg",
-      subtitle: "VINODHA VAAHINI",
-      description: "Uniting Hearts with Joyful Moments",
+      subtitle: "వినోద వాహిని",
+      description: "కళా ప్రపంచం",
       path: "/Vv",
     },
   ];

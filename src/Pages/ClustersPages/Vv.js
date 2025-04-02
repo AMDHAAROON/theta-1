@@ -119,7 +119,7 @@ const Vv = () => {
               textAlign: "center",
             }}
           >
-            Vinodha vaahini
+           వినోద వాహిని
           </Typography>
           <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
             <Link to="/" style={{ textDecoration: "none" }}>
@@ -171,7 +171,7 @@ const Vv = () => {
             paddingTop: "1.5rem",
           }}
         >
-         "We express, we unite, we thrive."
+         "కళా ప్రపంచం."
         </Typography>
       </Box>
       {/* <Box sx={{ py: 5, bgcolor: "#000212" }}>
