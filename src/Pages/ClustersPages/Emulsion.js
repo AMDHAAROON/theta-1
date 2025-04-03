@@ -46,7 +46,7 @@ const Emulsion = () => {
     {
       title: "On spot Photography contest",
       lastDate: "9th - Apr - 2025",
-      submissionDates: "10th - Apr - 2025",
+      submissionDates: "11th - Apr - 2025",
       Link:"https://forms.gle/3QGJrYZ7gXkpj7pf6",
     },
   ];
