@@ -19,7 +19,7 @@ const Home = () => {
         <Carousel />
         <Navbar color="#fff" />
       </Box>
-      {/* <Box><Events/></Box> */}
+      <Box><Events/></Box>
       <Box sx={{ display: { xs: "none", md: "block" } }}>
         <TitleWithDescription title="Visit our Clusters" />
         <Clusters />

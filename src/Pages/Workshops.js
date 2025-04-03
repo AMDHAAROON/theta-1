@@ -186,7 +186,7 @@ const workshopData = [
     image: "/Assets/Posters/networ.jpeg",
     description:
       "Explore physics with 20+ thrilling experiments! Experience hands-on learning, challenge myths, and ignite curiosity in every participant.",
-  },*/
+  },
   {
     id: 13,
     title: "Archery",
@@ -197,7 +197,7 @@ const workshopData = [
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSf3ODMuanFra-7Z73nayAUE46INoN8HwvLx7BKzLvuqSK5q-A/viewform",
     image: "/Assets/Posters/archery.jpeg",
     description: "Learn precision, accuracy, and focus in this hands-on archery session.",
-  },
+  },*/
 
   {
     id: 18,
@@ -205,9 +205,9 @@ const workshopData = [
     date: "Date: 04th and 05th-Apr-2025 ",
     time: "Time: 09:00 a.m. - 05:00 p.m.",
     venue: "Venue: 201 & Auditorium",
-    chiefGuest: "",
-    registrationLink: "",
-    image: "/Assets/Posters/docker.jpg",
+    chiefGuest: "Mr. Magesh Kuppan",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfywxTvM58db1SIi2QxBbyheAs0iliYxL31rf6KTQRXAbbdMA/viewform",
+    image: "/Assets/Posters/doc.jpg",
     description: "Informatica",
   },
    
