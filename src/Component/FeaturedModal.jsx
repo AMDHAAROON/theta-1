@@ -138,7 +138,7 @@ export default function FeaturedModal({ isOpen, onClose, event }) {
             }}
           
           >
-           Entry Free
+            Free Entry
           </Button>
         )}
 
