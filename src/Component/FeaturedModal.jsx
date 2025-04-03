@@ -63,13 +63,13 @@ export default function FeaturedModal({ isOpen, onClose, event }) {
           />
         </div>
 
-        {/* Event Description */}
+        {/* 
         <div style={{ textAlign: "center" }}>
           <p style={{ fontSize: "1.1rem", fontWeight: "600" }}>
             📝 Description:{" "}
             <span style={{ fontWeight: "400" }}>{event.description}</span>
           </p>
-        </div>
+        </div> */}
       </DialogContent>
 
       {/* Modal Actions */}
@@ -136,9 +136,9 @@ export default function FeaturedModal({ isOpen, onClose, event }) {
                 border: "2px solid #EF3D4E",
               },
             }}
-            disabled
+          
           >
-            On-Spot Registration
+           Entry Free
           </Button>
         )}
 

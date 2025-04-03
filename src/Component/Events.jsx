@@ -7,33 +7,33 @@ import { event } from "../utility/data"; // Import the new FeaturedModal compone
 const events = [
   {
     id: 2,
-    title: "Koothupatrai",
+    title: "கூத்துப்பட்டறை",
     date: "April 11, 2025",
     time: "2:00 PM - 3:00 PM",
     venue: "Auditorium",
     description: "",
-    image: "/Assets/Posters/ipl.jpg",
-    registrationLink: "https://example.com/register-pattimandram",
+    image: "/Assets/event/koothuparai.jpeg",
+    registrationLink: "",
   },
   {
     id: 2,
-    title: "Pattimandram",
+    title: "பட்டிமன்றம்",
     date: "April 12, 2025",
     time: "2:00 PM - 5:00 PM",
     venue: "Auditorium",
     description: "",
-    image: "/Assets/Posters/ipl.jpg",
-    registrationLink: "https://example.com/register-pattimandram",
+    image: "/Assets/event/pattimandram.jpg",
+    registrationLink: "",
   },
   {
     id: 2,
-    title: "Therukuthu ",
+    title: "தெருக்கூத்து ",
     date: "April 13, 2025",
-    time: "2:00 PM - 5:00 PM",
-    venue: "Hall B",
+    time: "10:00 AM - 11:00 AM",
+    venue: "Portico",
     description: "A lively debate event with participants from all walks of life.",
-    image: "/Assets/Posters/ipl.jpg",
-    registrationLink: "https://example.com/register-pattimandram",
+    image: "/Assets/event/therukoothu.jpeg",
+    registrationLink: "",
   },
   
 ];
@@ -133,14 +133,12 @@ const Events = () => {
 
         <CardContent>
           <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1, color: "#ff4444" }}>
-            Featured Events
+          Fusion Fest
           </Typography>
           <Typography sx={{ color: "#ffffff", fontFamily: "'Concert One', sans-serif", fontSize: ["1.8rem", "2.4rem"] }}>
             Theta 2k25
           </Typography>
-          <Typography variant="body2" sx={{ opacity: 0.9, mt: 1, color: "#ffc2c2" }}>
-            April 10, 2025 | April 11, 2025
-          </Typography>
+          
 
           {!showMore && (
             <Button
@@ -167,7 +165,7 @@ const Events = () => {
 
           {showMore && (
             <Box sx={{ mt: 3, display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <IconButton onClick={handlePrev} sx={{ color: "#ffffff", left: "-20px",right:"-20px" }}>
+              <IconButton onClick={handlePrev} sx={{ color: "#ffffff", right: "-2px", }}>
                 <ArrowBackIos />
               </IconButton>
 
@@ -221,7 +219,7 @@ const Events = () => {
                 </Button>
               </Box>
 
-              <IconButton onClick={handleNext} sx={{ color: "#ffffff", right: "-20px" }}>
+              <IconButton onClick={handleNext} sx={{ color: "#ffffff", right: "-4px" }}>
                 <ArrowForwardIos />
               </IconButton>
             </Box>
