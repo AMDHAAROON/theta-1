@@ -21,8 +21,8 @@ const Emulsion = () => {
     },
     {
       title: "Staff Photography Contest",
-      lastDate: "7th - Apr -2025",
-      submissionDates: "8th - Apr -2025",
+      lastDate: "9th - Apr -2025",
+      submissionDates: "10th - Apr -2025",
       Link:"https://forms.gle/pWJzA8XZSQC2dCKH9",
     },
     {
