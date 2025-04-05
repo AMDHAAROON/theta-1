@@ -96,37 +96,24 @@ export default function PopupModal({ isOpen, onClose, workshop }) {
         }}
       >
         {/* Register Button - Redirects user to workshop registration link */}
-        <a
-          href={workshop.registrationLink} // Opens registration link in a new tab
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
+        <Button
+          sx={{
             width: "100%",
             padding: "12px 0",
             fontSize: "1rem",
             textAlign: "center",
             color: "white",
             background:
-              "linear-gradient(91.83deg, rgb(255, 81, 47), rgb(221, 36, 118))", // Gradient styling
+              "linear-gradient(91.83deg, rgb(114, 107, 107), rgb(60, 60, 60), rgb(0, 0, 0))",
             borderRadius: "50px",
-            textDecoration: "none",
             fontWeight: "600",
-            transition: "all 0.3s ease", // Smooth hover transition
-          }}
-          onMouseEnter={(e) => {
-            e.target.style.background = "transparent"; // Makes button transparent on hover
-            e.target.style.color = "#EF3D4E"; // Changes text color to red
-            e.target.style.border = "2px solid #EF3D4E"; // Adds border
-          }}
-          onMouseLeave={(e) => {
-            e.target.style.background =
-              "linear-gradient(91.83deg, rgb(255, 81, 47), rgb(221, 36, 118))"; // Restores gradient background
-            e.target.style.color = "white";
-            e.target.style.border = "none";
+            border: "2px solid transparent",
+            transition: "all 0.3s ease",
+            cursor: "not-allowed",
           }}
         >
-          Register Now
-        </a>
+          Closed
+        </Button>
 
         {/* Close Button - Closes the modal */}
         <Button
@@ -147,7 +134,7 @@ export default function PopupModal({ isOpen, onClose, workshop }) {
             },
           }}
         >
-          Close
+          Hide
         </Button>
       </DialogActions>
     </Dialog>

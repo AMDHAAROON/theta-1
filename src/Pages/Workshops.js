@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { useState, useEffect } from "react";
+import { Box, Button, Fade, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import Navbar from ".././Component/Navbar";
@@ -8,7 +8,7 @@ import PopupModal from "../Component/PopupModal"; // Import the modal component
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const workshopData = [
-  /*{
+  {
     id: 2,
     title: "WonderlaW: Explore the Wonder",
     date: "Date: 24th-Feb-2025",
@@ -21,8 +21,8 @@ const workshopData = [
 
     description:
       "Experience the wonders of law and technology combined, featuring interactive sessions, expert panels, and innovative demonstrations.",
-  },*/
-  /* {
+  },
+  {
     id: 3,
     title: "Cutting edge techniques in molecular biology",
     date: "Date: 25th-Feb-2025",
@@ -44,9 +44,10 @@ const workshopData = [
     chiefGuest: "Ms.V.Manochitra and Ms.M.Divya",
     registrationLink: "https://forms.gle/EhCcrjThdLmub8Lv9",
     image: "/Assets/Posters/wordexcel.jpg",
-    description: "Unlock your potential through our interactive workshop to boost productivity with expert tips, smart techniques, and time-saving hacks.",
+    description:
+      "Unlock your potential through our interactive workshop to boost productivity with expert tips, smart techniques, and time-saving hacks.",
   },
-  
+
   {
     id: 6,
     title: "Graphics design and digital branding",
@@ -75,7 +76,8 @@ const workshopData = [
     date: "Date: 05th-Mar-2025",
     time: "Time: 09:00 a.m. - 04:00 p.m.",
     venue: "Venue: Auditorium",
-    chiefGuest: "B. S. Umamaheswari, B.Com, (CA) , Nivedha Venkatesh, B.Com, (CA) , E. Kirubhakaran, B.Com, (CA)",
+    chiefGuest:
+      "B. S. Umamaheswari, B.Com, (CA) , Nivedha Venkatesh, B.Com, (CA) , E. Kirubhakaran, B.Com, (CA)",
     registrationLink: "https://forms.gle/USCwhoqVsr6uLU7X9",
     image: "/Assets/Posters/income.jpg",
     description: "Strategia",
@@ -87,20 +89,25 @@ const workshopData = [
     time: "Time: 09:00 a.m. - 05:00 p.m.",
     venue: "Venue: Auditorium",
     chiefGuest: "Aravind Baranitharan AI/ML Specialist ",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScNv71LZmJbQvxC3y3fcbHXpxwypToyNmEgsmO514oZn9ZBCQ/viewform",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScNv71LZmJbQvxC3y3fcbHXpxwypToyNmEgsmO514oZn9ZBCQ/viewform",
     image: "/Assets/Posters/future.jpeg",
-    description: "Join the Brainstorming Session on The Future of IoT & ML to explore cutting-edge innovations in AI and IoT",
+    description:
+      "Join the Brainstorming Session on The Future of IoT & ML to explore cutting-edge innovations in AI and IoT",
   },
   {
     id: 11,
-    title: "Deep Learning For Computer Vision and organizing projects with GitHub",
+    title:
+      "Deep Learning For Computer Vision and organizing projects with GitHub",
     date: "Date: 10th-Mar-2025",
     time: "Time: 10:15 a.m. - 04:15 p.m.",
     venue: "Venue: Auditorium,Computer Lab",
-    chiefGuest: "Karthik Venkatesh.N-Automation and AI Engineer,Jefferson Roosevelt.K-AI engineer,vignesh .S-Automation and AI Engineer ,Kavya-Full Stack developer.",
+    chiefGuest:
+      "Karthik Venkatesh.N-Automation and AI Engineer,Jefferson Roosevelt.K-AI engineer,vignesh .S-Automation and AI Engineer ,Kavya-Full Stack developer.",
     registrationLink: "https://forms.gle/twvNDLwRdMZtRY5D6",
     image: "/Assets/Posters/deep.jpeg",
-    description: "Hands-on workshop on Deep Learning, Computer Vision, and GitHub project organization by industry experts. 🚀",
+    description:
+      "Hands-on workshop on Deep Learning, Computer Vision, and GitHub project organization by industry experts. 🚀",
   },
   {
     id: 5,
@@ -121,13 +128,14 @@ const workshopData = [
     date: "Date: 13th-Mar-2025",
     time: "Time: 09:00 a.m. - 05:00 p.m.",
     venue: "Venue: 201",
-    chiefGuest:"M/s. NWAREHOUSE PVT. LTD., TRICHY and M/s. CROBOT TECHNOLOGIES PVT. LTD CHENNAI",
+    chiefGuest:
+      "M/s. NWAREHOUSE PVT. LTD., TRICHY and M/s. CROBOT TECHNOLOGIES PVT. LTD CHENNAI",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSeJ90E42YMcX7D2ljnJsBmb3YvOmWXOKKTj5kRjuHVB7fPN_w/viewform",
     image: "/Assets/Posters/iot.jpeg",
     description:
       "This workshop explores the integration of Industrial Internet of Things (IIoT) with Robotics, showcasing how these technologies are revolutionizing industrial automation.",
-  }, 
+  },
 
   {
     id: 14,
@@ -135,10 +143,13 @@ const workshopData = [
     date: "Date: 18th-Mar-2025",
     time: "Time: 09:00 a.m. - 05:00 p.m.",
     venue: "Venue: Auditorium",
-    chiefGuest: "A.Devaprathima, certified ethical Hacker cyber security Engy at spam technologies",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeuuHyGVdyn5l8Xjx4dvsU8EvagYIRq7HYRLgdxaNfYYv6fMA/viewform",
+    chiefGuest:
+      "A.Devaprathima, certified ethical Hacker cyber security Engy at spam technologies",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeuuHyGVdyn5l8Xjx4dvsU8EvagYIRq7HYRLgdxaNfYYv6fMA/viewform",
     image: "/Assets/Posters/hack.jpeg",
-    description: "Gain insights into cybersecurity, ethical hacking concepts, and system protection.",
+    description:
+      "Gain insights into cybersecurity, ethical hacking concepts, and system protection.",
   },
   {
     id: 15,
@@ -147,9 +158,11 @@ const workshopData = [
     time: "Time: 09:00 a.m. - 01:00 p.m.",
     venue: "Venue: Auditorium",
     chiefGuest: "Dr. Sukanya N, MBBS M. S OG",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfJqIgOpH_Vn4nraDMBtY18-shDuxFNfqLg3FJpy3Hc4N6G0g/viewform",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfJqIgOpH_Vn4nraDMBtY18-shDuxFNfqLg3FJpy3Hc4N6G0g/viewform",
     image: "/Assets/Posters/fem.jpg",
-    description: "FemCare 360 is a women's wellness workshop focused on reproductive health, nutrition, and hygiene, led by expert doctors.",
+    description:
+      "FemCare 360 is a women's wellness workshop focused on reproductive health, nutrition, and hygiene, led by expert doctors.",
   },
 
   {
@@ -159,9 +172,11 @@ const workshopData = [
     time: "Time: 09:00 a.m. - 05:00 p.m.",
     venue: "Venue: Auditorium",
     chiefGuest: "A fun-filled, students-organized workshop",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSd0mbesq8N6ax0IGfMAXgdhzj3PfywKBhIjL0WM_R-FTHW1uA/viewform",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSd0mbesq8N6ax0IGfMAXgdhzj3PfywKBhIjL0WM_R-FTHW1uA/viewform",
     image: "/Assets/Posters/vv.jpeg",
-    description: "Join us for an exciting workshop packed with fun games and creative performances! Showcase your talents in music, dance, drama, and more while enjoying an energetic and vibrant atmosphere.",
+    description:
+      "Join us for an exciting workshop packed with fun games and creative performances! Showcase your talents in music, dance, drama, and more while enjoying an energetic and vibrant atmosphere.",
   },
   {
     id: 19,
@@ -170,9 +185,11 @@ const workshopData = [
     time: "Time: 09:00 a.m. - 05:30 p.m.",
     venue: "Venue: 201",
     chiefGuest: "A fun-filled, students-organized workshop",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeFWz1G2Z_Z4CnvtxtAAgi6ylPC_mPjmQnFH1PKVnsRuCf-YA/viewform?usp=send_form",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeFWz1G2Z_Z4CnvtxtAAgi6ylPC_mPjmQnFH1PKVnsRuCf-YA/viewform?usp=send_form",
     image: "/Assets/Posters/ipl.jpg",
-    description: "Build your dream IPL team at the Theta Auction – Strategy, Bidding, and Glory await on April 2nd!",
+    description:
+      "Build your dream IPL team at the Theta Auction – Strategy, Bidding, and Glory await on April 2nd!",
   },
   {
     id: 9,
@@ -193,11 +210,14 @@ const workshopData = [
     date: "Date: 03rd-Apr-2025",
     time: "Time: 10:00 a.m. - 01:00 p.m.",
     venue: "Venue: Basketball Court",
-    chiefGuest: "vDr.Shihan Hussaini, level 3 world archery coach and  Dr.Vijayabalan, PAN INDIA trained level 2 archery Coach ",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSf3ODMuanFra-7Z73nayAUE46INoN8HwvLx7BKzLvuqSK5q-A/viewform",
+    chiefGuest:
+      "vDr.Shihan Hussaini, level 3 world archery coach and  Dr.Vijayabalan, PAN INDIA trained level 2 archery Coach ",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSf3ODMuanFra-7Z73nayAUE46INoN8HwvLx7BKzLvuqSK5q-A/viewform",
     image: "/Assets/Posters/archery.jpeg",
-    description: "Learn precision, accuracy, and focus in this hands-on archery session.",
-  },*/
+    description:
+      "Learn precision, accuracy, and focus in this hands-on archery session.",
+  },
 
   {
     id: 18,
@@ -206,12 +226,11 @@ const workshopData = [
     time: "Time: 09:00 a.m. - 05:00 p.m.",
     venue: "Venue: 201 & Auditorium",
     chiefGuest: "Mr. Magesh Kuppan",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfywxTvM58db1SIi2QxBbyheAs0iliYxL31rf6KTQRXAbbdMA/viewform",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfywxTvM58db1SIi2QxBbyheAs0iliYxL31rf6KTQRXAbbdMA/viewform",
     image: "/Assets/Posters/doc.jpg",
     description: "Informatica",
   },
-   
-
 ];
 
 export default function Workshops() {
@@ -231,6 +250,12 @@ export default function Workshops() {
     setSelectedWorkshop(null);
   };
 
+  const [showThanks, setShowThanks] = useState(false);
+
+  useEffect(() => {
+    setShowThanks(true);
+  }, []); // Triggers the fade-in when the component loads
+
   return (
     <>
       {/* Header Section with Navbar */}
@@ -238,7 +263,7 @@ export default function Workshops() {
         sx={{
           position: "relative",
           backgroundImage: "url(Assets/logo2.png)",
-          backgroundSize:{ xs:"60%",sm:"30%"},
+          backgroundSize: { xs: "60%", sm: "30%" },
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           color: "white",
@@ -262,6 +287,7 @@ export default function Workshops() {
         }}
       >
         <Navbar color="#fff" />
+
         <Box>
           <Typography
             sx={{
@@ -301,7 +327,28 @@ export default function Workshops() {
           </Box>
         </Box>
       </Box>
-
+      <Box
+        sx={{
+          padding: "20px",
+          textAlign: "center",
+          backgroundColor: "#000212",
+        }}
+      >
+        {/* Thanks Message with Fade Effect */}
+        <Fade in={showThanks} timeout={2000}>
+          <Typography
+            variant="h4"
+            sx={{
+              marginBottom: "20px",
+              fontWeight: "bold",
+              color: "#ffff",
+              fontFamily: "'Dancing Script', cursive",
+            }}
+          >
+            🎉 Thank You for Your Amazing Support!
+          </Typography>
+        </Fade>
+      </Box>
       {/* Workshops Listing */}
       <Box sx={{ py: 5, bgcolor: "#000212" }}>
         <Box
@@ -373,24 +420,20 @@ export default function Workshops() {
               <Button
                 variant="contained"
                 onClick={() => handleRegisterClick(workshop.id)}
-                disabled={!workshop.registrationLink}
+                disabled={!workshop.image}
                 sx={{
-                  background: !workshop.registrationLink
+                  background: !workshop.image
                     ? "linear-gradient(91.83deg, rgb(255, 81, 47), rgb(221, 36, 118))"
                     : "linear-gradient(91.83deg, rgb(255, 81, 47), rgb(221, 36, 118))",
                   width: "80%",
                   borderRadius: "50px",
                   textTransform: "none",
                   fontSize: "1rem",
-                  color: !workshop.registrationLink ? "#A9A9A9" : "#fff",
+                  color: !workshop.image ? "#A9A9A9" : "#fff",
                   border: "2px solid transparent",
-                  cursor: !workshop.registrationLink
-                    ? "not-allowed"
-                    : "pointer",
+                  cursor: !workshop.image ? "not-allowed" : "pointer",
                   "&:hover": {
-                    background: !workshop.registrationLink
-                      ? "transparent"
-                      : "transparent",
+                    background: !workshop.image ? "transparent" : "transparent",
                     border: "2px solid #EF3D4E",
                     color: "#EF3D4E",
                   },
