@@ -68,17 +68,17 @@ export default function Navbar(props) {
         return;
       }
       const days = String(
-        Math.floor(difference / (1000 * 60 * 60 * 24)),
+        Math.floor(difference / (1000 * 60 * 60 * 24))
       ).padStart(2, "0");
       const hours = String(
-        Math.floor((difference / (1000 * 60 * 60)) % 24),
+        Math.floor((difference / (1000 * 60 * 60)) % 24)
       ).padStart(2, "0");
       const minutes = String(
-        Math.floor((difference / (1000 * 60)) % 60),
+        Math.floor((difference / (1000 * 60)) % 60)
       ).padStart(2, "0");
       const seconds = String(Math.floor((difference / 1000) % 60)).padStart(
         2,
-        "0",
+        "0"
       );
       setTimeLeft(`${days}d ${hours}:${minutes}:${seconds}`);
     };
@@ -97,13 +97,13 @@ export default function Navbar(props) {
   // Navigation items
   const navItems = [
     { link: "/", name: "Home" },
-    
+
     { link: "/gallery", name: "Gallery" },
     { link: "/Workshops", name: "Workshops" },
     { link: "/allEvents", name: "Events" },
     !isMdUp && { link: "/Cluster", name: "Clusters" },
     { link: "/contact-us", name: "Contact Us" },
-   // { link: "/merchandise", name: "Merchandise" },
+    // { link: "/merchandise", name: "Merchandise" },
   ].filter(Boolean); // Remove falsy values
 
   // Drawer component for mobile navigation
@@ -148,7 +148,7 @@ export default function Navbar(props) {
             />
           </ListItem>
         ))}
-       <ListItem sx={{ justifyContent: "center" }}>
+        <ListItem sx={{ justifyContent: "center" }}>
           <DevBtn />
         </ListItem>
       </List>
@@ -194,18 +194,53 @@ export default function Navbar(props) {
             </ImageListItem>
             {/* Countdown Timer */}
             <Box
-              sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}
+              sx={{
+                flexGrow: 1,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
             >
-              <Typography
+              <Box
                 sx={{
-                  fontWeight: "bold",
-                  fontSize: { xs: "1rem", sm: "1.2rem" },
-                  color: isDown ? "#000" : "#fff",
+                  px: 2,
+                  py: 0.7,
+                  borderRadius: "14px",
+                  border: "3px solid transparent",
+                  backgroundOrigin: "border-box",
+                  backgroundClip: "padding-box, border-box",
+                  animation: "festPulse 4s infinite ease-in-out",
+                  boxShadow: "0 0 15px 4px rgba(255, 87, 34, 0.4)",
+                  "@keyframes festPulse": {
+                    "0%": {
+                      boxShadow: "0 0 10px 2px rgba(255, 87, 34, 0.3)",
+                    },
+                    "50%": {
+                      boxShadow: "0 0 20px 5px rgba(255, 193, 7, 0.6)",
+                    },
+                    "100%": {
+                      boxShadow: "0 0 10px 2px rgba(255, 87, 34, 0.3)",
+                    },
+                  },
                 }}
               >
-                {timeLeft}
-              </Typography>
+                <Typography
+                  sx={{
+                    fontWeight: 800,
+                    fontSize: { xs: "1.1rem", sm: "1.5rem" },
+                    textAlign: "center",
+                    background:
+                      "linear-gradient(90deg, #ff6f00, #ffc107, #d50000)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    letterSpacing: "1px",
+                  }}
+                >
+                  {timeLeft}
+                </Typography>
+              </Box>
             </Box>
+
             {/* Desktop Navigation */}
             <Box sx={{ display: { xs: "none", md: "flex" }, gap: "1rem" }}>
               {navItems.map((item, index) => (
@@ -221,7 +256,7 @@ export default function Navbar(props) {
                   {item.name}
                 </Button>
               ))}
-             <DevBtn />  
+              <DevBtn />
             </Box>
             {/* Mobile Navigation Button */}
             <IconButton
