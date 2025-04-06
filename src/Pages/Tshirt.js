@@ -6,7 +6,7 @@ import Tshirt from "../Component/Tshirt";
 const TShirtPage = () => {
   return (
     <>
-   <Tshirt/>
+   <Tshirt/> //Used the Tshirt component here 
     </>
   );
 };
