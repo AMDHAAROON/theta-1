@@ -9,6 +9,34 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const workshopData = [
   {
+    id: 51,
+    title: "Interview Boot Camp",
+    date: "Date: 14th-Feb-2025",
+    time: "Time: 09:00 a.m. - 04:15 p.m.",
+    venue: "Venue: Auditorium",
+    chiefGuest: "Bhadri Narayanan, placement and training",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSe4Qq4hE7tdMSrrbk-3kEfgdL4iWwosdFTViNM_pfbOhnmeSw/viewform",
+    image: "/Assets/Posters/inter.jpg",
+
+    description:
+      "A multi-day training (14ᵗʰ, 20ᵗʰ & 21ˢᵗ Feb) to boost your interview, aptitude, and corporate readiness skills at SASTRA Auditorium.",
+  },
+  {
+    id: 50,
+    title: "AI Powered tech development",
+    date: "Date: 22nd-Feb-2025",
+    time: "Time: 09:00 a.m. - 05:00 p.m.",
+    venue: "Venue: Auditorium",
+    chiefGuest: "M. Dhanarajan, MCA, Managing Director & corporate, trainer ILIFE Technological, Trichy",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSe4Qq4hE7tdMSrrbk-3kEfgdL4iWwosdFTViNM_pfbOhnmeSw/viewform",
+    image: "/Assets/Posters/aiwrkshop.jpg",
+
+    description:
+      "A one-day workshop on 22ⁿᵈ Feb 2025 exploring AI tools, e-learning, and tech trends by iLife Technologies at SASTRA SRC.",
+  },
+  {
     id: 2,
     title: "WonderlaW: Explore the Wonder",
     date: "Date: 24th-Feb-2025",
