@@ -1,3 +1,4 @@
+// Import necessary modules and components
 import { Box, Typography, IconButton } from "@mui/material";
 import { GitHub, LinkedIn, Instagram } from "@mui/icons-material";
 import React from "react";
@@ -6,7 +7,9 @@ import { Link } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import Footer from ".././Component/Footer";
 
+// Define Developers component
 const Developers = () => {
+  // Developers data array
   const developers = [
     {
       name: "Hari haran",
@@ -72,6 +75,7 @@ const Developers = () => {
 
   return (
     <>
+      {/* Hero Section with logo background and overlay */}
       <Box
         sx={{
           position: "relative",
@@ -100,7 +104,10 @@ const Developers = () => {
           },
         }}
       >
+        {/* Top navigation bar */}
         <Navbar color="#fff" />
+
+        {/* Heading and breadcrumb */}
         <Box>
           <Typography
             sx={{
@@ -140,6 +147,8 @@ const Developers = () => {
           </Box>
         </Box>
       </Box>
+
+      {/* Developers Card Grid */}
       <Box sx={{ py: 5, bgcolor: "#000212", textAlign: "center" }}>
         <Box
           sx={{
@@ -150,6 +159,7 @@ const Developers = () => {
             padding: 4,
           }}
         >
+          {/* Mapping through developers array to display cards */}
           {developers.map((dev, index) => (
             <Box
               key={index}
@@ -167,6 +177,7 @@ const Developers = () => {
                 },
               }}
             >
+              {/* Developer profile image */}
               <Box
                 component="img"
                 src={dev.image}
@@ -178,6 +189,7 @@ const Developers = () => {
                   mb: 2,
                 }}
               />
+              {/* Developer name */}
               <Typography
                 sx={{
                   fontSize: "2rem",
@@ -188,6 +200,8 @@ const Developers = () => {
               >
                 {dev.name}
               </Typography>
+
+              {/* Role */}
               <Typography
                 sx={{
                   fontSize: "1.1rem",
@@ -198,6 +212,8 @@ const Developers = () => {
               >
                 {dev.role}
               </Typography>
+
+              {/* Description */}
               <Typography
                 sx={{
                   fontSize: "1.3rem",
@@ -208,6 +224,8 @@ const Developers = () => {
               >
                 {dev.description}
               </Typography>
+
+              {/* Social media icons */}
               <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
                 <IconButton
                   href={dev.github}
@@ -235,6 +253,8 @@ const Developers = () => {
           ))}
         </Box>
       </Box>
+
+      {/* Footer component */}
       <Footer />
     </>
   );
