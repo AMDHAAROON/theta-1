@@ -10,7 +10,7 @@ const Cluster = () => {
       <Box sx={{ bgcolor: "#000212", py: 10 }}>
         <Navbar color="#fff" />
         <TitleWithDescription title="Visit our Clusters" />
-        <Clusters />
+        <Clusters />// Used the Clusters component here
       </Box>
     </>
   );
