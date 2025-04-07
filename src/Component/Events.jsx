@@ -20,7 +20,7 @@ const events = [
     id: 3,
     title: "CINEPATARAI",
     date: "April 12, 2025",
-    time: "08:30 PM - 1:00 PM",
+    time: "08:30 AM - 1:00 PM",
     venue: "Auditorium",
     description: "",
     image: "/Assets/event/cine.jpg",
