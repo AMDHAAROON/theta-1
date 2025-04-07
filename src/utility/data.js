@@ -44,7 +44,7 @@ export const slides = [
     buttons: ["SEE MORE"],
     thumbnailtitle: "Day 1",
     thumbnaildesc: "",
-    path: "/Workshops",
+    path: "/day-one",
   },
   {
     img: "Assets/bg/bg-2.png",
@@ -54,7 +54,7 @@ export const slides = [
     buttons: ["SEE MORE"],
     thumbnailtitle: "Day 2",
     thumbnaildesc: " ",
-    path: "/Workshops",
+    path: "/day-two",
   },
   {
     img: "Assets/bg/finaloutlove.jpg",
@@ -64,7 +64,7 @@ export const slides = [
     buttons: ["SEE MORE"],
     thumbnailtitle: "Day 3",
     thumbnaildesc: "",
-    path: "/Workshops",
+    path: "/day-three",
   },
 ];
 export const aboutTheta = {
