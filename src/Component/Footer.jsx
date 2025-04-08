@@ -40,8 +40,8 @@ const ScrollToTop = () => {
 
 const Footer = () => {
   // State for responsive handling
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
-  const [isTablet, setIsTablet] = useState(
+  const [, setIsMobile] = useState(window.innerWidth < 600);
+  const [, setIsTablet] = useState(
     window.innerWidth >= 600 && window.innerWidth < 960,
   );
 
