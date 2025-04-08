@@ -28,7 +28,7 @@ const socialLinks = [
   { Icon: LinkedinIcon, url: "https://www.linkedin.com/company/theta-src" },
   {
     Icon: InstagramIcon,
-    url: "https://www.instagram.com/theta_src?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    url: "https://www.instagram.com/theta_src",
   },
   { Icon: YouTubeIcon, url: "https://www.youtube.com/@thetasrc" },
 ];
@@ -42,7 +42,7 @@ const Footer = () => {
   // State for responsive handling
   const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
   const [isTablet, setIsTablet] = useState(
-    window.innerWidth >= 600 && window.innerWidth < 960
+    window.innerWidth >= 600 && window.innerWidth < 960,
   );
 
   // Function to handle window resizing
