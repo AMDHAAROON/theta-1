@@ -135,7 +135,7 @@ const AnimatedImageCard = ({ src, alt }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setIsVisible(entry.isIntersecting),
-      { threshold: 0.4 },
+      { threshold: 0.4 }
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -171,7 +171,7 @@ const AnimatedHeader = ({ title, subtitle }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setIsHeaderVisible(entry.isIntersecting),
-      { threshold: 0.3 },
+      { threshold: 0.3 }
     );
 
     if (headerRef.current) observer.observe(headerRef.current);
@@ -237,34 +237,27 @@ const Gallery = () => (
         component="img"
         src="./Assets/logo2.png"
         alt="Background Logo"
-        
         sx={{
           position: "absolute",
           top: "40%",
           left: "50%",
           transform: "translate(-50%, -50%)",
-          opacity: 0.10,
+          opacity: 0.1,
           width: { xs: "300px", sm: "280px", md: "380px" },
           pointerEvents: "none",
           zIndex: 1,
-          
         }}
       />
       <Navbar />
-        
       {/* Section with Theta videos */}
       <Box sx={{ py: "3" }}>
         <AnimatedHeader title="Check out our Theta videos!" />
-                {/* Sliding YouTube Thumbnails */}
-                <SlidingRow videos={thetaVideos} direction="left" />
+        {/* Sliding YouTube Thumbnails */}
+        <SlidingRow videos={thetaVideos} direction="left" />
       </Box>
-
       //Social media icons
       <Box sx={{ textAlign: "center" }}>
-        <Typography
-          variant="h6"
-          sx={{ color: "#fff", fontWeight: 600, mb: 2 }}
-        >
+        <Typography variant="h6" sx={{ color: "#fff", fontWeight: 600, mb: 2 }}>
           Stay Updated with Our Latest Videos & Events!
         </Typography>
         <Box sx={{ display: "flex", justifyContent: "center", gap: 3, mb: 4 }}>
@@ -288,18 +281,14 @@ const Gallery = () => (
           </IconButton>
         </Box>
       </Box>
-
-
       {/* Main Gallery Header */}
       <AnimatedHeader
         title="GALLERY"
         subtitle="Experience Team Emulsions' creativity through captivating short films."
       />
-
       {/* Sliding rows of videos */}
       <SlidingRow videos={upperRowVideos} direction="left" />
       <SlidingRow videos={lowerRowVideos} direction="right" />
-
       {/* Call-to-action button */}
       <Box sx={{ textAlign: "center", mt: 8, mb: 8 }}>
         <Typography
@@ -323,11 +312,7 @@ const Gallery = () => (
           Subscribe
         </Button>
       </Box>
-
-
-            // theta Videos
-
-
+      // theta Videos
     </Box>
 
     {/* Footer Component */}
