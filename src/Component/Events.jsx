@@ -13,7 +13,7 @@ const events = [
     venue: "Auditorium",
     description: "",
     image: "/Assets/event/koothuparai.jpeg",
-    registrationLink: "",
+    registrationLink: "https://forms.gle/NmH7jCwWEYUWgFgA6",
     onSpot: false,
   },
   {
