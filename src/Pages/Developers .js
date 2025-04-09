@@ -79,8 +79,8 @@ const Developers = () => {
       <Box
         sx={{
           position: "relative",
-          backgroundImage: "url(Assets/Logo.png)",
-          backgroundSize: "20%",
+          backgroundImage: "url(Assets/logo2.png)",
+          backgroundSize: { xs: "60%", sm: "30%" },
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundColor: "#0B1121",
