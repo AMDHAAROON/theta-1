@@ -35,14 +35,12 @@ const theme = createTheme({
 
 const ContactUs = () => {
   const contactInfo = [
-   {
+    {
       icon: <HowToRegIcon style={{ fontSize: "40px", color: "#1E88E5 " }} />,
       title: "Convenor",
       content: (
         <>
-          
           <strong>Dr. Srinivasan A</strong> <br /> Phone No : +91 70107 45391{" "}
-        
         </>
       ),
     },
@@ -55,7 +53,6 @@ const ContactUs = () => {
       title: "Co-Convenors",
       content: (
         <>
-         
           <strong>Capt. Senthilnathan T</strong> <br /> Phone No : +91 94432
           75916 <br />
           <br />
@@ -65,17 +62,15 @@ const ContactUs = () => {
           50345 <br />
           <br />
           <strong>Mr. Swaminathan R</strong> <br /> Phone No : +91 89402 50154{" "}
-         
         </>
       ),
     },
-    
+
     {
       icon: <PhoneIcon style={{ fontSize: "40px", color: "#D32F2F" }} />,
       title: "Contact Us",
       content: (
         <>
-        
           <strong>President : Surya C</strong> <br /> Phone No : +91 93606 17308{" "}
           <br />
           <br />
@@ -84,7 +79,6 @@ const ContactUs = () => {
           <br />
           <strong>Vice-President : Karen Angel I</strong> <br /> Phone No : +91
           74183 15768
-          
         </>
       ),
     },
@@ -194,69 +188,68 @@ const ContactUs = () => {
           </Typography>
         </Box>
         <Grid container spacing={4} justifyContent="center">
-  {contactInfo.map((info, index) => (
-    <Grid item xs={12} sm={6} md={4} key={index}>
-      <Grow in timeout={800 + index * 200}>
-        <Card
-          sx={{
-            height: "450px", // Fixed height for consistency
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            textAlign: "center",
-            backgroundColor: "#1A1F36",
-            backdropFilter: "blur(15px)",
-            boxShadow: "0 10px 30px rgba(255, 105, 135, 0.3)",
-            borderRadius: "20px",
-            p: 2,
-            border: "1px solid rgba(255, 255, 255, 0.3)",
-            "&:hover": {
-              transform: "scale(1.05)",
-              boxShadow: "0 20px 40px rgba(255, 105, 135, 0.5)",
-            },
-          }}
-        >
-          <CardContent
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: 1, // Equal spacing between elements
-              width: "100%",
-              height: "100%", // Stretch to fit the card height
-            }}
-          >
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                marginBottom: "15px",
-              }}
-            >
-              {info.icon}
-            </Box>
-            <Typography
-              variant="h6"
-              sx={{
-                color: info.icon.props.style.color,
-                fontWeight: "bold",
-              }}
-            >
-              {info.title}
-            </Typography>
-            <Typography variant="body2" sx={{ textAlign: "center" }}>
-              {info.content}
-            </Typography>
-          </CardContent>
-        </Card>
-      </Grow>
-    </Grid>
-  ))}
-</Grid>
-
+          {contactInfo.map((info, index) => (
+            <Grid item xs={12} sm={6} md={4} key={index}>
+              <Grow in timeout={800 + index * 200}>
+                <Card
+                  sx={{
+                    height: "450px", // Fixed height for consistency
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    textAlign: "center",
+                    backgroundColor: "#1A1F36",
+                    backdropFilter: "blur(15px)",
+                    boxShadow: "0 10px 30px rgba(255, 105, 135, 0.3)",
+                    borderRadius: "20px",
+                    p: 2,
+                    border: "1px solid rgba(255, 255, 255, 0.3)",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                      boxShadow: "0 20px 40px rgba(255, 105, 135, 0.5)",
+                    },
+                  }}
+                >
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: 1, // Equal spacing between elements
+                      width: "100%",
+                      height: "100%", // Stretch to fit the card height
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        marginBottom: "15px",
+                      }}
+                    >
+                      {info.icon}
+                    </Box>
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        color: info.icon.props.style.color,
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {info.title}
+                    </Typography>
+                    <Typography variant="body2" sx={{ textAlign: "center" }}>
+                      {info.content}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grow>
+            </Grid>
+          ))}
+        </Grid>
 
         <Box sx={{ textAlign: "center", mb: 3, mt: 3, px: [2, 3, 6] }}>
           <Typography
@@ -297,8 +290,8 @@ const ContactUs = () => {
               mt: "8px",
             }}
           >
-            Locate our place easily using the map above. We look forward to
-            see you!
+            Locate our place easily using the map above. We look forward to see
+            you!
           </Typography>
         </Box>
         <Box sx={{ textAlign: "center" }}>
@@ -315,7 +308,11 @@ const ContactUs = () => {
             Visit Our Gallery
           </Typography>
 
-          <Link to="/gallery" onClick={scrollToTop} style={{ textDecoration: "none" }}>
+          <Link
+            to="/gallery"
+            onClick={scrollToTop}
+            style={{ textDecoration: "none" }}
+          >
             <Button
               variant="contained"
               sx={{
