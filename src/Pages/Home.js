@@ -97,15 +97,21 @@ const Home = () => {
         fontFamily: "'Poppins', sans-serif",
         fontSize: "1rem",
         color: "#fff",
+        fontSize: {
+          xs: "0.95rem", // mobile
+          sm: "1.1rem",  // tablets and up
+          md: "1.25rem", // desktops
+        },
       }}
     >
       Stay connected with every moment of Theta 2K25! Get updates, event alerts, and schedules — all in one app.
     </Typography>
     <Link to="/app" style={{ textDecoration: "none" }}>
     <Button
-      variant="contained"
-      href="/theta-app.apk"
-      download
+        variant="contained"
+        href="https://drive.google.com/file/d/1-gJCfHrvRQR1VRpGWEfiBLLMKPSYV2bF/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
       sx={{
         background: "linear-gradient(135deg, #ff5e62, #ff9966)",
         color: "#fff",
@@ -118,6 +124,7 @@ const Home = () => {
         "&:hover": {
           background: "linear-gradient(135deg, #ff9966, #ff5e62)",
         },
+        
       }}
     >
       📲 Download Now
