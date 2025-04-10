@@ -25,16 +25,15 @@ import CloseIcon from "@mui/icons-material/Close";
 
 const Home = () => {
   const [openPopup, setOpenPopup] = useState(false);
-
   useEffect(() => {
-    const navEntries = performance.getEntriesByType("navigation");
-    const isHardRefresh =
-      navEntries.length > 0 ? navEntries[0].type === "reload" : performance.navigation.type === 1;
-
-    if (isHardRefresh) {
+    const hasShownPopup = sessionStorage.getItem("thetaAppPopupShown");
+  
+    if (!hasShownPopup) {
       setOpenPopup(true);
+      sessionStorage.setItem("thetaAppPopupShown", "true");
     }
   }, []);
+  
 
   const handleClose = () => {
     setOpenPopup(false);
