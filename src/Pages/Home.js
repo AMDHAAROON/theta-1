@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Carousel from "../Component/Carousel ";
 import Brands from "../Component/Brands";
-import { Box, Divider } from "@mui/material";
+import { Link } from "react-router-dom";
+import {
+  Box,
+  Divider,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  Typography,
+  Button,
+  IconButton,
+} from "@mui/material";
 import TitleWithDescription from "../Component/TitleWithDescription ";
 import Faq from "../Component/Faq";
 import Navbar from "../Component/Navbar";
@@ -11,10 +21,112 @@ import Footer from "../Component/Footer";
 import Allclusters from "../Component/Allclusters";
 import Theta from "../Component/Theta";
 import Events from "../Component/Events";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Home = () => {
+  const [openPopup, setOpenPopup] = useState(false);
+
+  useEffect(() => {
+    const navEntries = performance.getEntriesByType("navigation");
+    const isHardRefresh =
+      navEntries.length > 0 ? navEntries[0].type === "reload" : performance.navigation.type === 1;
+
+    if (isHardRefresh) {
+      setOpenPopup(true);
+    }
+  }, []);
+
+  const handleClose = () => {
+    setOpenPopup(false);
+  };
+
   return (
     <>
+      {/* Popup shown only on hard refresh */}
+      <Dialog
+  open={openPopup}
+  onClose={handleClose}
+  BackdropProps={{
+    sx: {
+      backgroundColor: "rgba(0, 0, 0, 0.3)", // darkened transparent overlay
+      backdropFilter: "blur(8px)",
+      WebkitBackdropFilter: "blur(8px)",
+    },
+  }}
+  PaperProps={{
+    sx: {
+      background: "rgba(255, 255, 255, 0.1)",
+      backdropFilter: "blur(12px)",
+      WebkitBackdropFilter: "blur(12px)",
+      borderRadius: 4,
+      border: "1px solid rgba(255, 255, 255, 0.2)",
+      boxShadow: "0 8px 32px rgba(0, 0, 0, 0.5)",
+      color: "#fff",
+      p: 3,
+    },
+  }}
+>
+  <DialogTitle
+    sx={{
+      textAlign: "center",
+      fontWeight: "bold",
+      fontFamily: "'Poppins', sans-serif",
+      fontSize: "1.5rem",
+      position: "relative",
+      color: "#fff",
+    }}
+  >
+    🎉 Introducing the Theta App!
+    <IconButton
+      onClick={handleClose}
+      sx={{
+        position: "absolute",
+        right: 8,
+        top: 8,
+        color: "#fff",
+      }}
+    >
+      <CloseIcon />
+    </IconButton>
+  </DialogTitle>
+
+  <DialogContent sx={{ textAlign: "center", mt: 1 }}>
+    <Typography
+      sx={{
+        mb: 3,
+        fontFamily: "'Poppins', sans-serif",
+        fontSize: "1rem",
+        color: "#fff",
+      }}
+    >
+      Stay connected with every moment of Theta 2K25! Get updates, event alerts, and schedules — all in one app.
+    </Typography>
+    <Link to="/app" style={{ textDecoration: "none" }}>
+    <Button
+      variant="contained"
+      href="/theta-app.apk"
+      download
+      sx={{
+        background: "linear-gradient(135deg, #ff5e62, #ff9966)",
+        color: "#fff",
+        px: 5,
+        py: 1,
+        borderRadius: "25px",
+        fontWeight: "bold",
+        textTransform: "none",
+        boxShadow: "0 4px 12px rgba(255, 94, 98, 0.5)",
+        "&:hover": {
+          background: "linear-gradient(135deg, #ff9966, #ff5e62)",
+        },
+      }}
+    >
+      📲 Download Now
+    </Button>
+    </Link>
+  </DialogContent>
+</Dialog>
+
+
       <Box sx={{ bgcolor: "#000212" }}>
         <Carousel />
         <Navbar color="#fff" />

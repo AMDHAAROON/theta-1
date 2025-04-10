@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
 import DevBtn from "./DevBtn";
+import AppBtn from "./AppGlowButton";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -103,7 +104,6 @@ export default function Navbar(props) {
     { link: "/allEvents", name: "Events" },
     !isMdUp && { link: "/Cluster", name: "Clusters" },
     { link: "/contact-us", name: "Contact Us" },
-    // { link: "/merchandise", name: "Merchandise" },
   ].filter(Boolean); // Remove falsy values
 
   // Drawer component for mobile navigation
@@ -148,7 +148,16 @@ export default function Navbar(props) {
             />
           </ListItem>
         ))}
-        <ListItem sx={{ justifyContent: "center" }}>
+        <ListItem
+          sx={{
+            justifyContent: "center",
+            alignItems: "center", // Center horizontally
+            flexDirection: "column", // Stack vertically
+            display: "flex", // Ensure flexbox is active
+            gap: "0.5rem", // Optional: space between buttons
+          }}
+        >
+          <AppBtn />
           <DevBtn />
         </ListItem>
       </List>
@@ -256,6 +265,7 @@ export default function Navbar(props) {
                   {item.name}
                 </Button>
               ))}
+              <AppBtn />
               <DevBtn />
             </Box>
             {/* Mobile Navigation Button */}

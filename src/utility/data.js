@@ -147,3 +147,8 @@ export const event = {
   logo: "./Assets/logo2.png", 
   
 };
+export const AppAssets = {
+  background: "Assets/bg/app.jpg",
+  sizeChart: "/assets/size-chart.png",
+ 
+};

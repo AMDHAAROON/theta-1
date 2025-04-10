@@ -30,6 +30,7 @@ import Optica from "./Pages/ClustersPages/Optica";
 import Sportiva from "./Pages/ClustersPages/Sportiva";
 import Strategia from "./Pages/ClustersPages/Strategia";
 import Vv from "./Pages/ClustersPages/Vv";
+import Applaunch from "./Pages/Applaunch";
 
 function App() {
   useEffect(() => {
@@ -62,6 +63,8 @@ function App() {
         <Route path="/cluster" element={<Cluster />} />
         <Route path="/gallery" element={<Gal />} />
         <Route path="/merchandise" element={<Tshirt />} />
+        <Route path="/App" element={<Applaunch />} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Analytics />
