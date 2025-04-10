@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import TitleWithDescription from "../Component/TitleWithDescription ";
 import Faq from "../Component/Faq";
+import App from "../Component/AppBanner";
 import Navbar from "../Component/Navbar";
 import Clusters from "../Component/Clusters";
 import Review from "../Component/Review";
@@ -136,6 +137,9 @@ const Home = () => {
       <Box sx={{ bgcolor: "#000212" }}>
         <Carousel />
         <Navbar color="#fff" />
+      </Box>
+      <Box>
+        <App/>
       </Box>
       <Box>
         <Events />
