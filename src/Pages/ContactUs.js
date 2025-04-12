@@ -18,6 +18,7 @@ import Navbar from "../Component/Navbar";
 import { Link } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
+// Create a custom theme using MUI's createTheme
 const theme = createTheme({
   typography: {
     fontFamily: `'Poppins', sans-serif`,
@@ -34,6 +35,7 @@ const theme = createTheme({
 });
 
 const ContactUs = () => {
+  // Array containing contact card information with icons, titles, and details
   const contactInfo = [
     {
       icon: <HowToRegIcon style={{ fontSize: "40px", color: "#1E88E5 " }} />,
@@ -65,7 +67,6 @@ const ContactUs = () => {
         </>
       ),
     },
-
     {
       icon: <PhoneIcon style={{ fontSize: "40px", color: "#D32F2F" }} />,
       title: "Contact Us",
@@ -84,10 +85,12 @@ const ContactUs = () => {
     },
   ];
 
+  // Set the document title on page load
   useEffect(() => {
     document.title = "Contact Us - Theta Program";
   }, []);
 
+  // Scroll to top helper function
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -95,6 +98,8 @@ const ContactUs = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+
+      {/* Hero Section with background and navigation */}
       <Box
         sx={{
           position: "relative",
@@ -134,6 +139,8 @@ const ContactUs = () => {
         >
           Contact Us
         </Typography>
+
+        {/* Breadcrumb Navigation */}
         <Box
           sx={{
             display: "flex",
@@ -161,9 +168,11 @@ const ContactUs = () => {
         </Box>
       </Box>
 
+      {/* Contact Details Section */}
       <Box
         sx={{ backgroundColor: "#000212", py: 6, px: { xs: 4, sm: 6, md: 12 } }}
       >
+        {/* Section Heading */}
         <Box
           sx={{
             pb: 5,
@@ -187,13 +196,15 @@ const ContactUs = () => {
             Join Us for an Unforgettable Cultural Experience
           </Typography>
         </Box>
+
+        {/* Cards Grid for Contact Info */}
         <Grid container spacing={4} justifyContent="center">
           {contactInfo.map((info, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Grow in timeout={800 + index * 200}>
                 <Card
                   sx={{
-                    height: "450px", // Fixed height for consistency
+                    height: "450px",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -217,9 +228,9 @@ const ContactUs = () => {
                       flexDirection: "column",
                       alignItems: "center",
                       justifyContent: "center",
-                      gap: 1, // Equal spacing between elements
+                      gap: 1,
                       width: "100%",
-                      height: "100%", // Stretch to fit the card height
+                      height: "100%",
                     }}
                   >
                     <Box
@@ -251,6 +262,7 @@ const ContactUs = () => {
           ))}
         </Grid>
 
+        {/* Map Heading */}
         <Box sx={{ textAlign: "center", mb: 3, mt: 3, px: [2, 3, 6] }}>
           <Typography
             variant="h5"
@@ -260,7 +272,7 @@ const ContactUs = () => {
           </Typography>
         </Box>
 
-        {/* Responsive Google Map */}
+        {/* Embedded Google Map */}
         <Box
           sx={{
             display: "block",
@@ -294,6 +306,8 @@ const ContactUs = () => {
             you!
           </Typography>
         </Box>
+
+        {/* Gallery Button Section */}
         <Box sx={{ textAlign: "center" }}>
           <Typography
             variant="h5"
@@ -338,22 +352,21 @@ const ContactUs = () => {
               View Gallery
             </Button>
           </Link>
+
+          {/* Pulse animation for the gallery button */}
           <style>
             {`
               @keyframes pulse {
                 0% { transform: scale(1); }
-                50% { transform: scale(1.1); }
+                50% { transform: scale(1.05); }
                 100% { transform: scale(1); }
-              }
-
-              @keyframes slideDown {
-                0% { opacity: 0; transform: translateY(-20px); }
-                100% { opacity: 1; transform: translateY(0); }
               }
             `}
           </style>
         </Box>
       </Box>
+
+      {/* Footer Component */}
       <Footer />
     </ThemeProvider>
   );
