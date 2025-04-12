@@ -1,5 +1,5 @@
-import { Box, Button, Typography } from "@mui/material";
-import React, { useState } from "react";
+import { Box, Button, Typography,Fade } from "@mui/material";
+import React, { useState,useEffect } from "react";
 import Navbar from "../../Component/Navbar";
 import { Link } from "react-router-dom";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
@@ -186,6 +186,11 @@ const Day2 = () => {
     setIsModalOpen(false);
     setSelectedEvent(null);
   };
+  const [showThanks, setShowThanks] = useState(false);
+
+  useEffect(() => {
+    setShowThanks(true);
+  }, []); // Triggers the fade-in when the component loads
 
   return (
     <>
@@ -255,6 +260,28 @@ const Day2 = () => {
           <EventNavbar />
         </Box>
       </Box>
+        <Box
+              sx={{
+                padding: "20px",
+                textAlign: "center",
+                backgroundColor: "#000212",
+              }}
+            >
+              {/* Thanks Message with Fade Effect */}
+              <Fade in={showThanks} timeout={2000}>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    marginBottom: "20px",
+                    fontWeight: "bold",
+                    color: "#ffff",
+                    fontFamily: "'Dancing Script', cursive",
+                  }}
+                >
+               🌟None of this would be possible without your support ✨
+                </Typography> 
+              </Fade>
+            </Box>
       <Box sx={{ py: 5, bgcolor: "#000212" }}>
         <Box
           sx={{
